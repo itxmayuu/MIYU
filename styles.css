@@ -283,7 +283,8 @@ body {
   font-family: 'Antonio', sans-serif;
   font-weight: 700;
   font-size: 19px;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
   color: var(--color-text-dark);
 }
 
