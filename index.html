@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@300;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="styles.css?v=12">
+  <link rel="stylesheet" href="styles.css?v=13">
 </head>
 <body>
 
@@ -159,6 +159,64 @@
     </div>
 
     <div class="bottom-safe-space"></div>
+  </section>
+
+
+  <!-- ======================================================== -->
+  <!-- PANTALLA 3: TRAIN / ROUTINE DETAIL (Figma Node 1:1462)   -->
+  <!-- ======================================================== -->
+  <section id="screenTrain" class="screen screen-train">
+    <!-- Hero Banner con color e ilustración del grupo -->
+    <header id="trainHero" class="train-hero">
+      <div class="train-top-bar">
+        <button id="btnBackToTopics" class="train-back-btn" title="Volver a categorías">←</button>
+        <div class="train-brand-pill">
+          <img src="assets/miyu/miyu-icon.svg" class="train-brand-icon" alt="Miyu">
+          <span>MIYU</span>
+        </div>
+      </div>
+
+      <div class="train-hero-body">
+        <div class="train-hero-info">
+          <span id="trainGroupLabel" class="train-group-label">PIERNAS</span>
+          <h1 id="trainTitle" class="train-title">Leg Day</h1>
+          <p id="trainSummary" class="train-summary">15 ejercicios · ~7.5 min</p>
+        </div>
+        <div class="train-hero-art">
+          <img id="trainHeroImg" src="assets/topics/leg.svg" alt="Workout Illustration">
+        </div>
+      </div>
+    </header>
+
+    <!-- Selector de Pestañas: Before (Dinámico) / After (Estático) -->
+    <div class="train-tabs-wrapper">
+      <div class="train-tabs" role="tablist">
+        <button id="tabBefore" class="train-tab active" data-phase="calentamiento" role="tab" aria-selected="true">
+          Before <span class="tab-sub">(Calentamiento)</span>
+        </button>
+        <button id="tabAfter" class="train-tab" data-phase="estiramiento" role="tab" aria-selected="false">
+          After <span class="tab-sub">(Estiramiento)</span>
+        </button>
+        <div id="trainTabIndicator" class="train-tab-indicator"></div>
+      </div>
+    </div>
+
+    <!-- Descripción breve de la fase -->
+    <div class="train-phase-banner">
+      <p id="trainPhaseDesc" class="train-phase-desc"></p>
+    </div>
+
+    <!-- Lista de 15 Ejercicios -->
+    <div id="trainExerciseList" class="train-exercise-list">
+      <!-- Se renderiza dinámicamente desde ejercicios.json -->
+    </div>
+
+    <!-- Botón flotante inferior para iniciar la rutina -->
+    <div class="train-cta-dock">
+      <button id="btnStartRoutine" class="btn-start-routine">
+        START ROUTINE
+      </button>
+    </div>
   </section>
 
   <!-- Scripts principales -->
