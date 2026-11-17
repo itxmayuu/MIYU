@@ -8,12 +8,12 @@ const state = {
 
 // Configuración visual Figma por grupo muscular
 const GROUP_THEMES = {
-  piernas: { color: '#451cdf', art: 'assets/topics/leg.svg' },
-  brazos:  { color: '#8d73ee', art: 'assets/topics/arm.svg' },
-  pecho:   { color: '#6846e8', art: 'assets/topics/chest.svg' },
-  espalda: { color: '#ff6659', art: 'assets/topics/back.svg' },
-  abdomen: { color: '#ff958c', art: 'assets/topics/abs.svg' },
-  cardio:  { color: '#f59d0e', art: 'assets/topics/cardio.svg' }
+  piernas: { color: '#451cdf', art: 'assets/topics/leg.svg',    trainArt: 'assets/train/leg.svg' },
+  brazos:  { color: '#8d73ee', art: 'assets/topics/arm.svg',    trainArt: 'assets/train/arm.svg' },
+  pecho:   { color: '#6846e8', art: 'assets/topics/chest.svg',  trainArt: 'assets/train/chest.svg' },
+  espalda: { color: '#ff6659', art: 'assets/topics/back.svg',   trainArt: 'assets/train/back.svg' },
+  abdomen: { color: '#ff958c', art: 'assets/topics/abs.svg',    trainArt: 'assets/train/abs.svg' },
+  cardio:  { color: '#f59d0e', art: 'assets/topics/cardio.svg', trainArt: 'assets/train/cardio.svg' }
 };
 
 // Cargar la base de datos oficial ejercicios.json de forma segura
@@ -96,7 +96,7 @@ function renderTrainScreen() {
   }
 
   if (trainHeroImg) {
-    trainHeroImg.src = theme.art;
+    trainHeroImg.src = theme.trainArt;
   }
 
   if (!groupData) {
