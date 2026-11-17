@@ -341,13 +341,13 @@ body {
 
 .card-arm {
   background-color: var(--card-arm);
-  height: 156px;
+  height: 172px;
   color: #fef9f3;
 }
 
 .card-chest {
   background-color: var(--card-chest);
-  height: 156px;
+  height: 172px;
 }
 
 .card-back {
@@ -396,11 +396,18 @@ body {
 
 .card-arm .card-art-img,
 .card-chest .card-art-img {
-  max-height: 108px;
+  max-height: 132px;
+  max-width: 98%;
+  transform: scale(1.08); /* Aumenta notablemente el tamaño de Arm y Chest */
 }
 
 .workout-card:active .card-art-img {
   transform: scale(1.08);
+}
+
+.card-arm:active .card-art-img,
+.card-chest:active .card-art-img {
+  transform: scale(1.15);
 }
 
 .card-footer {
