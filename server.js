@@ -45,14 +45,26 @@ const server = http.createServer((req, res) => {
 
 function getLocalIP() {
   const nets = os.networkInterfaces();
+  const candidates = [];
+
   for (const name of Object.keys(nets)) {
+    const lower = name.toLowerCase();
+    const isVirtual = lower.includes('virtual') || lower.includes('vethernet') || lower.includes('docker') || lower.includes('wsl');
+    
     for (const net of nets[name]) {
       if (net.family === 'IPv4' && !net.internal) {
-        return net.address;
+        // Ignorar IP de VirtualBox (192.168.56.x)
+        if (!net.address.startsWith('192.168.56.') && !isVirtual) {
+          const isWifi = lower.includes('wi-fi') || lower.includes('wifi') || lower.includes('wlan') || lower.includes('inalámbrico');
+          candidates.push({ name, address: net.address, priority: isWifi ? 1 : 2 });
+        }
       }
     }
   }
-  return 'localhost';
+
+  // Ordenar para preferir siempre la tarjeta Wi-Fi real
+  candidates.sort((a, b) => a.priority - b.priority);
+  return candidates.length > 0 ? candidates[0].address : '192.168.0.7';
 }
 
 let currentPort = 3000;
