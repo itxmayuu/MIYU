@@ -232,16 +232,19 @@ body {
 .screen-choose-topic {
   background-color: var(--color-bg-light);
   color: var(--color-text-dark);
-  max-width: 430px;
+  width: 100%;
+  max-width: 414px;
   margin: 0 auto;
-  padding: calc(var(--safe-top) + 8px) 20px calc(var(--safe-bottom) + 20px) 20px;
+  padding: calc(var(--safe-top) + 12px) 16px calc(var(--safe-bottom) + 24px) 16px;
+  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 .top-nav-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 }
 
 .btn-icon-back, .btn-icon-settings {
@@ -272,54 +275,57 @@ body {
 }
 
 .topic-header {
-  margin-bottom: 24px;
+  margin-bottom: 18px;
 }
 
 .topic-main-title {
   font-family: 'Anton', sans-serif;
-  font-size: 32px;
+  font-size: 27px;
   line-height: 1.15;
   color: var(--color-text-dark);
   letter-spacing: 0.3px;
-  margin-top: 6px;
+  margin-top: 4px;
 }
 
 .topic-subtitle {
   font-family: 'Antonio', sans-serif;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 15px;
   color: var(--color-text-muted);
-  margin-top: 8px;
+  margin-top: 6px;
 }
 
-/* Grilla Asimétrica / Masonry de 2 Columnas */
+/* Grilla Asimétrica / Masonry Adaptable */
 .masonry-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-  max-width: 480px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  width: 100%;
+  max-width: 100%;
   margin: 0 auto;
 }
 
 .masonry-col {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 12px;
+  min-width: 0;
 }
 
-/* Tarjetas de Entrenamiento */
+/* Tarjetas de Entrenamiento Proporcionales */
 .workout-card {
   border-radius: 16px;
-  padding: 16px;
+  padding: 14px 12px;
   color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
   transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s ease;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
   position: relative;
   overflow: hidden;
+  min-width: 0;
 }
 
 .workout-card:active {
@@ -327,35 +333,36 @@ body {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
+/* Alturas adaptadas armónicamente a pantallas de iPhone */
 .card-leg {
   background-color: var(--card-leg);
-  height: 210px;
+  height: 175px;
 }
 
 .card-arm {
   background-color: var(--card-arm);
-  height: 167px;
+  height: 138px;
   color: #fef9f3;
 }
 
 .card-chest {
   background-color: var(--card-chest);
-  height: 167px;
+  height: 138px;
 }
 
 .card-back {
   background-color: var(--card-back);
-  height: 210px;
+  height: 175px;
 }
 
 .card-abs {
   background-color: var(--card-abs);
-  height: 210px;
+  height: 175px;
 }
 
 .card-cardio {
   background-color: var(--card-cardio);
-  height: 210px;
+  height: 175px;
 }
 
 .card-art-area {
@@ -366,18 +373,18 @@ body {
 }
 
 .card-art-icon {
-  font-size: 42px;
-  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.15));
+  font-size: 36px;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
   transition: transform 0.2s ease;
 }
 
 .card-footer {
-  margin-top: 8px;
+  margin-top: 6px;
 }
 
 .card-title {
   font-family: 'Anton', sans-serif;
-  font-size: 19px;
+  font-size: 17px;
   letter-spacing: 0.5px;
   color: inherit;
   line-height: 1.1;
@@ -389,7 +396,7 @@ body {
   opacity: 0.85;
   font-weight: 500;
   display: block;
-  margin-top: 4px;
+  margin-top: 3px;
 }
 
 .bottom-safe-space {
