@@ -21,24 +21,24 @@ async function loadExercisesDatabase() {
 function showScreen(screenName) {
   state.currentScreen = screenName;
 
+  const allScreens = document.querySelectorAll('.screen');
+  allScreens.forEach(s => s.classList.remove('active'));
+
   const screenWelcome = document.getElementById('screenWelcome');
   const screenChooseTopic = document.getElementById('screenChooseTopic');
 
-  if (!screenWelcome || !screenChooseTopic) return;
-
-  screenWelcome.classList.remove('active');
-  screenChooseTopic.classList.remove('active');
-
-  if (screenName === 'welcome') {
+  if (screenName === 'welcome' && screenWelcome) {
     screenWelcome.classList.add('active');
     document.body.style.backgroundColor = '#000000';
-  } else if (screenName === 'chooseTopic') {
+  } else if (screenName === 'chooseTopic' && screenChooseTopic) {
     screenChooseTopic.classList.add('active');
     document.body.style.backgroundColor = '#fefefe';
   }
 
-  // Desplazar arriba suavemente
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  // Asegurar que el scroll empiece arriba de inmediato
+  window.scrollTo(0, 0);
+  document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0;
 }
 
 // Inicializar eventos cuando el DOM esté listo
