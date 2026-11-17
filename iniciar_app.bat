@@ -1,8 +1,8 @@
 @echo off
-title GymWarm & Stretch PWA
+title MIYU Workout App
 cd /d "%~dp0"
 echo ======================================================
-echo    Iniciando GymWarm & Stretch en tu red local...
+echo    Iniciando MIYU Workout App en tu red local...
 echo ======================================================
 node server.js
 pause

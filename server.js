@@ -55,17 +55,34 @@ function getLocalIP() {
   return 'localhost';
 }
 
-server.listen(PORT, '0.0.0.0', () => {
-  const localIP = getLocalIP();
-  console.log('\n======================================================');
-  console.log('   🔥 GymWarm & Stretch - Servidor Local Listo');
-  console.log('======================================================\n');
-  console.log(`💻 En tu PC Asus (Windows):`);
-  console.log(`   http://localhost:${PORT}\n`);
-  console.log(`📱 En tu iPhone (conectado a la misma red Wi-Fi):`);
-  console.log(`   http://${localIP}:${PORT}\n`);
-  console.log('💡 TIP PARA IPHONE:');
-  console.log('   Abre la URL en Safari, toca "Compartir" y luego');
-  console.log('   "Agregar a pantalla de inicio" para instalar la app.\n');
-  console.log('Presiona Ctrl + C para detener el servidor.\n');
+let currentPort = 3000;
+
+function startServer(port) {
+  server.listen(port, '0.0.0.0', () => {
+    const localIP = getLocalIP();
+    console.log('\n======================================================');
+    console.log('   🔥 MIYU Workout App - Servidor Local Listo');
+    console.log('======================================================\n');
+    console.log(`💻 En tu PC Asus (Windows):`);
+    console.log(`   http://localhost:${port}\n`);
+    console.log(`📱 En tu iPhone (conectado a la misma red Wi-Fi):`);
+    console.log(`   http://${localIP}:${port}\n`);
+    console.log('💡 TIP PARA IPHONE:');
+    console.log('   Abre la URL en Safari, toca el botón "Compartir" y luego');
+    console.log('   "Agregar a pantalla de inicio" para tenerla instalada como app.\n');
+    console.log('Presiona Ctrl + C para detener el servidor.\n');
+  });
+}
+
+server.on('error', (err) => {
+  if (err.code === 'EADDRINUSE') {
+    console.log(`⚠️  El puerto ${currentPort} ya está en uso por otra ventana o proceso.`);
+    currentPort++;
+    console.log(`🔄 Intentando automáticamente en el puerto ${currentPort}...\n`);
+    startServer(currentPort);
+  } else {
+    console.error('Error en el servidor:', err);
+  }
 });
+
+startServer(currentPort);
