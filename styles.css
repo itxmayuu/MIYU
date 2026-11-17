@@ -162,9 +162,9 @@ body {
 .welcome-monster-layer {
   position: relative;
   z-index: 5;
-  width: 86%;
-  max-width: 355px;
-  margin-bottom: 16px; /* Separación natural con el botón */
+  width: 92%;
+  max-width: 385px;
+  margin-bottom: 26px; /* Ligeramente más arriba, con presencia heroica */
   display: flex;
   justify-content: center;
 }
