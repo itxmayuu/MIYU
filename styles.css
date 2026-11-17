@@ -314,8 +314,8 @@ body {
 
 /* Tarjetas de Entrenamiento Proporcionales */
 .workout-card {
-  border-radius: 16px;
-  padding: 14px 12px;
+  border-radius: 18px;
+  padding: 12px 14px 14px 14px;
   color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -333,36 +333,36 @@ body {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
-/* Alturas adaptadas armónicamente a pantallas de iPhone */
+/* Alturas adaptadas con espacio generoso para las ilustraciones */
 .card-leg {
   background-color: var(--card-leg);
-  height: 175px;
+  height: 195px;
 }
 
 .card-arm {
   background-color: var(--card-arm);
-  height: 138px;
+  height: 156px;
   color: #fef9f3;
 }
 
 .card-chest {
   background-color: var(--card-chest);
-  height: 138px;
+  height: 156px;
 }
 
 .card-back {
   background-color: var(--card-back);
-  height: 175px;
+  height: 195px;
 }
 
 .card-abs {
   background-color: var(--card-abs);
-  height: 175px;
+  height: 195px;
 }
 
 .card-cardio {
   background-color: var(--card-cardio);
-  height: 175px;
+  height: 195px;
 }
 
 .card-art-area {
@@ -370,29 +370,37 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
   position: relative;
-  padding: 6px 0;
+  width: 100%;
+  min-height: 0;
+  padding: 4px 0;
 }
 
 .card-art-img {
-  width: auto;
+  width: 100%;
   height: 100%;
-  max-height: 98px;
-  max-width: 90%;
+  max-width: 96%;
+  max-height: 135px;
   object-fit: contain;
-  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.14));
+  filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.18));
   transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   display: block;
 }
 
+.card-leg .card-art-img,
+.card-back .card-art-img,
+.card-abs .card-art-img,
+.card-cardio .card-art-img {
+  max-height: 138px;
+}
+
 .card-arm .card-art-img,
 .card-chest .card-art-img {
-  max-height: 78px;
+  max-height: 108px;
 }
 
 .workout-card:active .card-art-img {
-  transform: scale(1.06);
+  transform: scale(1.08);
 }
 
 .card-footer {
