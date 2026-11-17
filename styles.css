@@ -175,6 +175,8 @@ body {
   flex-direction: column;
   align-items: center;
   box-shadow: 0 10px 30px rgba(132, 100, 252, 0.35);
+  position: relative;
+  z-index: 10;
 }
 
 .btn-get-started {
@@ -188,6 +190,8 @@ body {
   border: none;
   border-radius: 30px;
   cursor: pointer;
+  position: relative;
+  z-index: 20;
   transition: transform 0.15s ease, background-color 0.15s ease;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
 }
