@@ -62,23 +62,35 @@ body {
 .screen-welcome {
   background-color: var(--color-black);
   color: #ffffff;
-  min-height: 100vh;
+  height: 100vh;
+  height: 100dvh;
+  max-width: 430px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   padding: 0;
   overflow: hidden;
+  position: relative;
 }
 
-/* 1. Header con logo e icono (Figma 319:4 y 319:5) */
+/* 1. Header y Títulos (Proporciones exactas de Figma) */
+.welcome-top-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: calc(var(--safe-top) + 24px);
+  z-index: 10;
+  flex-shrink: 0;
+}
+
 .welcome-top-brand {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  padding-top: calc(var(--safe-top) + 12px);
-  z-index: 20;
+  margin-bottom: 32px; /* Separación armónica entre el logo superior y el título */
 }
 
 .welcome-top-icon {
@@ -95,18 +107,16 @@ body {
   letter-spacing: 1px;
 }
 
-/* 2. Titulares (Figma 1:3493 y 1:3499) */
 .welcome-titles {
   text-align: center;
   padding: 0 20px;
-  margin-top: 10px;
-  z-index: 20;
+  margin-bottom: 14px;
 }
 
 .welcome-main-heading {
   font-family: 'Anton', sans-serif;
-  font-size: 34px;
-  line-height: 1.15;
+  font-size: 38px;
+  line-height: 1.12;
   letter-spacing: 0.3px;
   color: #ffffff;
   font-weight: 400;
@@ -118,40 +128,43 @@ body {
   font-size: 15px;
   color: #ebeaec;
   margin-top: 10px;
-  line-height: 1.4;
-  max-width: 290px;
+  line-height: 1.45;
+  max-width: 310px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* 3. Escenario Inferior: Domo + Miyu + Base Púrpura */
-.welcome-stage {
+/* 2. Bloque Inferior Unificado (Domo + Monstruo + Botón sin cortes ni líneas negras) */
+.welcome-lower-block {
   position: relative;
   width: 100%;
+  flex: 1; /* Ocupa de forma continua todo el alto restante hasta el fondo */
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: auto;
+  justify-content: flex-end;
+  margin-top: 10px; /* Conecta suavemente tras el subtítulo, eliminando el vacío negro */
+  overflow: hidden;
 }
 
-/* Domo púrpura concéntrico de fondo (Figma Ellipses) */
-.purple-dome-svg {
+/* Fondo continuo: Domo concéntrico que se fusiona con la base en una sola pieza */
+.unified-purple-bg {
   position: absolute;
-  bottom: 150px;
+  top: 0;
   left: 0;
   width: 100%;
-  height: 250px;
-  z-index: 2;
+  height: 100%;
+  z-index: 1;
   pointer-events: none;
 }
 
-/* Contenedor del Monstruo Miyu */
-.welcome-monster-container {
+/* Monstruo Miyu en su posición centrada en el domo */
+.welcome-monster-layer {
   position: relative;
   z-index: 5;
-  width: 90%;
-  max-width: 386px;
-  margin-bottom: -15px; /* Encaja perfectamente sobre la base púrpura */
+  width: 86%;
+  max-width: 355px;
+  margin-bottom: 16px; /* Separación natural con el botón */
   display: flex;
   justify-content: center;
 }
@@ -162,19 +175,17 @@ body {
   display: block;
 }
 
-/* Base Púrpura Sólida a todo el ancho (Figma Rectangle 211) */
-.welcome-solid-base {
-  background-color: var(--color-purple-base);
-  width: 100%;
+/* Dock del Botón GET STARTED integrado directamente sobre el fondo púrpura */
+.welcome-btn-dock {
   position: relative;
   z-index: 10;
-  padding: 24px 20px calc(var(--safe-bottom) + 14px) 20px;
+  width: 100%;
+  padding: 0 24px calc(var(--safe-bottom) + 16px) 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* Botón GET STARTED (Figma 1:3504 y 1:3505) */
 .btn-figma-started {
   width: 100%;
   max-width: 374px;

@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@300;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body>
 
@@ -27,50 +27,44 @@
   <!-- ======================================================== -->
   <section id="screenWelcome" class="screen screen-welcome active">
     
-    <!-- Header Brand (Figma 319:4 y 319:5) -->
-    <div class="welcome-top-brand">
-      <img src="assets/miyu/miyu-icon.svg" class="welcome-top-icon" alt="Miyu Icon">
-      <span class="welcome-top-text">MIYU</span>
+    <!-- Parte Superior: Header y Títulos -->
+    <div class="welcome-top-content">
+      <!-- Header Brand (Figma 319:4 y 319:5) -->
+      <div class="welcome-top-brand">
+        <img src="assets/miyu/miyu-icon.svg" class="welcome-top-icon" alt="Miyu Icon">
+        <span class="welcome-top-text">MIYU</span>
+      </div>
+
+      <!-- Hero Titles (Figma 1:3493 y 1:3499) -->
+      <div class="welcome-titles">
+        <h1 class="welcome-main-heading">Welcome<br>to Miyu</h1>
+        <p class="welcome-sub-heading">Explore the app, Start strong, finish recovered.</p>
+      </div>
     </div>
 
-    <!-- Hero Titles (Figma 1:3493 y 1:3499) -->
-    <div class="welcome-titles">
-      <h1 class="welcome-main-heading">Welcome<br>to Miyu</h1>
-      <p class="welcome-sub-heading">Explore the app, Start strong, finish recovered.</p>
-    </div>
-
-    <!-- Zona Inferior Integrada (Domo Púrpura Sólido + Monstruo Miyu + Botón) -->
-    <div class="welcome-stage">
-      <!-- Domo concéntrico sólido de Figma (Ellipses 13, 12, 11, 10) -->
-      <svg class="purple-dome-svg" viewBox="0 0 414 300" preserveAspectRatio="none">
-        <defs>
-          <radialGradient id="domeGrad" cx="50%" cy="100%" r="100%">
-            <stop offset="0%" stop-color="#8464fc" />
-            <stop offset="35%" stop-color="#7654ed" />
-            <stop offset="65%" stop-color="#6440e2" />
-            <stop offset="100%" stop-color="#502bd6" />
-          </radialGradient>
-        </defs>
-        <!-- Arcos concéntricos con las tonalidades de Figma -->
-        <ellipse cx="207" cy="300" rx="246" ry="246" fill="#502bd6" />
-        <ellipse cx="207" cy="300" rx="211" ry="211" fill="#6440e2" />
-        <ellipse cx="207" cy="300" rx="177" ry="177" fill="#7654ed" />
-        <ellipse cx="207" cy="300" rx="142" ry="142" fill="#8464fc" />
+    <!-- Parte Inferior Unificada (Domo + Monstruo + Botón sin cortes ni líneas negras) -->
+    <div class="welcome-lower-block">
+      <!-- Fondo continuo integrado: Arcos Púrpuras + Base Sólida en un solo SVG -->
+      <svg class="unified-purple-bg" viewBox="0 0 414 540" preserveAspectRatio="none">
+        <!-- Elipses concéntricas de Figma (1:3494 a 1:3500) -->
+        <ellipse cx="207" cy="240" rx="250" ry="240" fill="#502bd6" />
+        <ellipse cx="207" cy="240" rx="215" ry="206" fill="#6440e2" />
+        <ellipse cx="207" cy="240" rx="180" ry="172" fill="#7654ed" />
+        <ellipse cx="207" cy="240" rx="145" ry="138" fill="#8464fc" />
+        <!-- Base sólida que baja hasta el fondo (Figma 1:3501) -->
+        <rect x="0" y="235" width="414" height="305" fill="#8464fc" />
       </svg>
 
-      <!-- Monstruo Miyu Oficial (Tamaño grande exacto de Figma: 386px) -->
-      <div class="welcome-monster-container">
+      <!-- Monstruo Miyu Oficial colocado en su posición exacta de Figma -->
+      <div class="welcome-monster-layer">
         <img src="assets/miyu/miyu-welcome.svg" class="welcome-monster-img" alt="Miyu Monster">
       </div>
 
-      <!-- Base Púrpura Sólida a todo el ancho (Figma Rectangle 211) -->
-      <div class="welcome-solid-base">
-        <!-- Botón GET STARTED (Figma Rectangle 210 y 1:3505) -->
+      <!-- Dock del Botón GET STARTED integrado sobre el fondo púrpura -->
+      <div class="welcome-btn-dock">
         <button id="btnGetStarted" class="btn-figma-started">
           GET STARTED
         </button>
-
-        <!-- Barra Indicadora de Inicio de iPhone (Figma Line 1) -->
         <div class="iphone-home-bar"></div>
       </div>
     </div>
