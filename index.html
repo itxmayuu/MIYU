@@ -13,50 +13,66 @@
   <meta name="apple-mobile-web-app-title" content="MIYU">
   <link rel="apple-touch-icon" href="icons/icon.svg">
   
-  <!-- Google Fonts para coincidir con la tipografía de Figma -->
+  <!-- Tipografías exactas de Figma: Anton y Antonio -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@300;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@300;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <!-- ======================================================== -->
-  <!-- PANTALLA 1: WELCOME SCREEN (Figma Node 1:3480)            -->
+  <!-- PANTALLA 1: WELCOME SCREEN (Figma Frame 1:3480)          -->
   <!-- ======================================================== -->
   <section id="screenWelcome" class="screen screen-welcome active">
+    
     <!-- Header Brand (Figma 319:4 y 319:5) -->
-    <div class="welcome-header">
-      <img src="assets/miyu/miyu-icon.svg" class="welcome-logo-img" alt="Miyu Icon">
-      <h2 class="welcome-brand">MIYU</h2>
+    <div class="welcome-top-brand">
+      <img src="assets/miyu/miyu-icon.svg" class="welcome-top-icon" alt="Miyu Icon">
+      <span class="welcome-top-text">MIYU</span>
     </div>
 
-    <!-- Main Hero Text (Figma 1:3493 y 1:3499) -->
-    <div class="welcome-hero-text">
-      <h1>Welcome <br>to Miyu</h1>
-      <p>Explore the app, Start strong, finish recovered.</p>
+    <!-- Hero Titles (Figma 1:3493 y 1:3499) -->
+    <div class="welcome-titles">
+      <h1 class="welcome-main-heading">Welcome<br>to Miyu</h1>
+      <p class="welcome-sub-heading">Explore the app, Start strong, finish recovered.</p>
     </div>
 
-    <!-- Concentric Focus Rings & Central Character (Figma 1:3494..1:3500 y 319:7) -->
-    <div class="welcome-visual-container">
-      <div class="focus-ring ring-4"></div>
-      <div class="focus-ring ring-3"></div>
-      <div class="focus-ring ring-2"></div>
-      <div class="focus-ring ring-1"></div>
-      
-      <!-- Monstruo Miyu Central Oficial -->
-      <div class="welcome-character-wrapper">
-        <img src="assets/miyu/miyu-welcome.svg" class="welcome-character-img" alt="Miyu Monster">
+    <!-- Zona Inferior Integrada (Domo Púrpura Sólido + Monstruo Miyu + Botón) -->
+    <div class="welcome-stage">
+      <!-- Domo concéntrico sólido de Figma (Ellipses 13, 12, 11, 10) -->
+      <svg class="purple-dome-svg" viewBox="0 0 414 300" preserveAspectRatio="none">
+        <defs>
+          <radialGradient id="domeGrad" cx="50%" cy="100%" r="100%">
+            <stop offset="0%" stop-color="#8464fc" />
+            <stop offset="35%" stop-color="#7654ed" />
+            <stop offset="65%" stop-color="#6440e2" />
+            <stop offset="100%" stop-color="#502bd6" />
+          </radialGradient>
+        </defs>
+        <!-- Arcos concéntricos con las tonalidades de Figma -->
+        <ellipse cx="207" cy="300" rx="246" ry="246" fill="#502bd6" />
+        <ellipse cx="207" cy="300" rx="211" ry="211" fill="#6440e2" />
+        <ellipse cx="207" cy="300" rx="177" ry="177" fill="#7654ed" />
+        <ellipse cx="207" cy="300" rx="142" ry="142" fill="#8464fc" />
+      </svg>
+
+      <!-- Monstruo Miyu Oficial (Tamaño grande exacto de Figma: 386px) -->
+      <div class="welcome-monster-container">
+        <img src="assets/miyu/miyu-welcome.svg" class="welcome-monster-img" alt="Miyu Monster">
       </div>
-    </div>
 
-    <!-- Bottom Curved Accent Card & Button (Figma 1:3501, 1:3504, 1:3505) -->
-    <div class="welcome-bottom-card">
-      <button id="btnGetStarted" class="btn-get-started">
-        GET STARTED
-      </button>
-      <div class="home-indicator-bar"></div>
+      <!-- Base Púrpura Sólida a todo el ancho (Figma Rectangle 211) -->
+      <div class="welcome-solid-base">
+        <!-- Botón GET STARTED (Figma Rectangle 210 y 1:3505) -->
+        <button id="btnGetStarted" class="btn-figma-started">
+          GET STARTED
+        </button>
+
+        <!-- Barra Indicadora de Inicio de iPhone (Figma Line 1) -->
+        <div class="iphone-home-bar"></div>
+      </div>
     </div>
   </section>
 
@@ -80,7 +96,6 @@
     <div class="masonry-grid" id="masonryContainer">
       <!-- Columna Izquierda -->
       <div class="masonry-col">
-        <!-- 1. Leg Day (210px) -->
         <div class="workout-card card-leg" data-group-id="piernas">
           <div class="card-art-area">
             <div class="card-art-icon">🦵</div>
@@ -91,7 +106,6 @@
           </div>
         </div>
 
-        <!-- 3. Chest Day (167px) -->
         <div class="workout-card card-chest" data-group-id="pecho">
           <div class="card-art-area">
             <div class="card-art-icon">🫁</div>
@@ -102,7 +116,6 @@
           </div>
         </div>
 
-        <!-- 5. Abs Day (210px) -->
         <div class="workout-card card-abs" data-group-id="abdomen">
           <div class="card-art-area">
             <div class="card-art-icon">🧱</div>
@@ -116,7 +129,6 @@
 
       <!-- Columna Derecha -->
       <div class="masonry-col">
-        <!-- 2. Arm Day (167px) -->
         <div class="workout-card card-arm" data-group-id="brazos">
           <div class="card-art-area">
             <div class="card-art-icon">💪</div>
@@ -127,7 +139,6 @@
           </div>
         </div>
 
-        <!-- 4. Back Day (210px) -->
         <div class="workout-card card-back" data-group-id="espalda">
           <div class="card-art-area">
             <div class="card-art-icon">🪽</div>
@@ -138,7 +149,6 @@
           </div>
         </div>
 
-        <!-- 6. Cardio Day (210px) -->
         <div class="workout-card card-cardio" data-group-id="cardio">
           <div class="card-art-area">
             <div class="card-art-icon">❤️</div>
@@ -154,7 +164,7 @@
     <div class="bottom-safe-space"></div>
   </section>
 
-  <!-- Scripts principales (compatible con doble clic directo file:// y con servidor local) -->
+  <!-- Scripts principales -->
   <script defer src="app.js"></script>
 </body>
 </html>

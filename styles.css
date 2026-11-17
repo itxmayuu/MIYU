@@ -5,13 +5,14 @@
   --color-black: #000000;
   --color-white: #ffffff;
   --color-brand-yellow: #f7ff66;
-  --color-brand-purple: #8464fc;
+  --color-purple-base: #8464fc;
+  --color-btn-bg: #ebeaec;
   --color-btn-red: #ff0200;
   --color-text-dark: #3f414e;
   --color-text-muted: #a1a4b2;
   --color-bg-light: #fefefe;
   
-  /* Colores exactos de las tarjetas de Figma */
+  /* Colores de las tarjetas de Figma (Pantalla 2) */
   --card-leg: #451cdf;
   --card-arm: #8d73ee;
   --card-chest: #6846e8;
@@ -40,7 +41,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Sistema de Pantallas (Single Page View Switcher) */
+/* Sistema de Pantallas */
 .screen {
   display: none;
   width: 100%;
@@ -53,162 +54,152 @@ body {
 .screen.active {
   display: flex;
   flex-direction: column;
-  animation: fadeIn 0.3s ease-in-out forwards;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: scale(0.99); }
-  to { opacity: 1; transform: scale(1); }
 }
 
 /* ======================================================== */
-/* PANTALLA 1: WELCOME SCREEN (Figma 1:3480)                */
+/* PANTALLA 1: WELCOME SCREEN (Exacto a Figma Frame 1:3480) */
 /* ======================================================== */
 .screen-welcome {
   background-color: var(--color-black);
   color: #ffffff;
-  padding: calc(var(--safe-top) + 10px) 20px 0 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  text-align: center;
-  min-height: 100vh;
+  padding: 0;
+  overflow: hidden;
 }
 
-.welcome-header {
+/* 1. Header con logo e icono (Figma 319:4 y 319:5) */
+.welcome-top-brand {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
+  gap: 10px;
+  padding-top: calc(var(--safe-top) + 12px);
+  z-index: 20;
 }
 
-.welcome-logo-img {
+.welcome-top-icon {
   width: 44px;
   height: 44px;
   object-fit: contain;
-  filter: drop-shadow(0 2px 10px rgba(247, 255, 102, 0.4));
 }
 
-.welcome-brand {
+.welcome-top-text {
   font-family: 'Antonio', sans-serif;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   color: var(--color-brand-yellow);
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
-.welcome-hero-text {
-  margin-top: 14px;
+/* 2. Titulares (Figma 1:3493 y 1:3499) */
+.welcome-titles {
+  text-align: center;
+  padding: 0 20px;
+  margin-top: 10px;
+  z-index: 20;
 }
 
-.welcome-hero-text h1 {
+.welcome-main-heading {
   font-family: 'Anton', sans-serif;
   font-size: 34px;
-  line-height: 1.2;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
+  line-height: 1.15;
+  letter-spacing: 0.3px;
   color: #ffffff;
+  font-weight: 400;
 }
 
-.welcome-hero-text p {
+.welcome-sub-heading {
   font-family: 'Antonio', sans-serif;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 15px;
   color: #ebeaec;
-  margin-top: 8px;
-  max-width: 300px;
-  line-height: 1.45;
+  margin-top: 10px;
+  line-height: 1.4;
+  max-width: 290px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* Anillos Concéntricos de Enfoque */
-.welcome-visual-container {
+/* 3. Escenario Inferior: Domo + Miyu + Base Púrpura */
+.welcome-stage {
   position: relative;
-  width: 300px;
-  height: 300px;
-  margin: 12px auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.focus-ring {
-  position: absolute;
-  border-radius: 50%;
-  pointer-events: none;
-}
-
-.ring-4 { width: 340px; height: 340px; border: 1px solid rgba(235, 234, 236, 0.05); }
-.ring-3 { width: 280px; height: 280px; border: 1px solid rgba(235, 234, 236, 0.08); }
-.ring-2 { width: 220px; height: 220px; border: 1px solid rgba(132, 100, 252, 0.22); }
-.ring-1 { width: 170px; height: 170px; border: 1px solid rgba(247, 255, 102, 0.25); }
-
-/* Monstruo Miyu Central Oficial */
-.welcome-character-wrapper {
-  position: relative;
-  z-index: 2;
-  width: 250px;
-  height: 250px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.welcome-character-img {
   width: 100%;
-  height: 100%;
-  object-fit: contain;
-  filter: drop-shadow(0 10px 24px rgba(132, 100, 252, 0.4));
-  animation: floatMiyu 4s ease-in-out infinite;
-}
-
-@keyframes floatMiyu {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-7px); }
-}
-
-/* Tarjeta Inferior Púrpura con Botón (Figma exacto) */
-.welcome-bottom-card {
-  width: 100%;
-  max-width: 414px;
-  background: var(--color-brand-purple);
-  border-radius: 36px 36px 0 0;
-  padding: 28px 24px calc(var(--safe-bottom) + 14px) 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 -8px 28px rgba(132, 100, 252, 0.35);
-  position: relative;
-  z-index: 10;
   margin-top: auto;
 }
 
-.btn-get-started {
+/* Domo púrpura concéntrico de fondo (Figma Ellipses) */
+.purple-dome-svg {
+  position: absolute;
+  bottom: 150px;
+  left: 0;
   width: 100%;
-  height: 62px;
-  background-color: #ebeaec;
+  height: 250px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Contenedor del Monstruo Miyu */
+.welcome-monster-container {
+  position: relative;
+  z-index: 5;
+  width: 90%;
+  max-width: 386px;
+  margin-bottom: -15px; /* Encaja perfectamente sobre la base púrpura */
+  display: flex;
+  justify-content: center;
+}
+
+.welcome-monster-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Base Púrpura Sólida a todo el ancho (Figma Rectangle 211) */
+.welcome-solid-base {
+  background-color: var(--color-purple-base);
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  padding: 24px 20px calc(var(--safe-bottom) + 14px) 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Botón GET STARTED (Figma 1:3504 y 1:3505) */
+.btn-figma-started {
+  width: 100%;
+  max-width: 374px;
+  height: 63px;
+  background-color: var(--color-btn-bg);
   color: var(--color-btn-red);
   font-family: 'Anton', sans-serif;
   font-size: 16px;
-  letter-spacing: 1px;
+  letter-spacing: 0.8px;
   border: none;
   border-radius: 38px;
   cursor: pointer;
-  position: relative;
-  z-index: 20;
-  transition: transform 0.15s ease, background-color 0.15s ease;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  transition: transform 0.1s ease, background-color 0.15s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.btn-get-started:active {
-  transform: scale(0.96);
+.btn-figma-started:active {
+  transform: scale(0.97);
   background-color: #ffffff;
 }
 
-.home-indicator-bar {
-  width: 134px;
+.iphone-home-bar {
+  width: 143px;
   height: 5px;
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.45);
   border-radius: 3px;
   margin-top: 18px;
 }
@@ -312,7 +303,6 @@ body {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
-/* Alturas exactas de Figma para crear el ritmo asimétrico */
 .card-leg {
   background-color: var(--card-leg);
   height: 210px;
@@ -344,7 +334,6 @@ body {
   height: 210px;
 }
 
-/* Área de Ilustración de cada tarjeta */
 .card-art-area {
   flex: 1;
   display: flex;
@@ -358,11 +347,6 @@ body {
   transition: transform 0.2s ease;
 }
 
-.workout-card:hover .card-art-icon {
-  transform: scale(1.1);
-}
-
-/* Pie de la tarjeta */
 .card-footer {
   margin-top: 8px;
 }
