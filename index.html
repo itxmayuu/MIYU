@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>GymWarm & Stretch</title>
+  
+  <!-- Configuración PWA e iOS Safari -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#090a0f">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="GymWarm">
+  <link rel="apple-touch-icon" href="icons/icon.svg">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient-glow"></div>
+
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <div class="logo-area">
+        <div class="logo-icon">🔥</div>
+        <div class="logo-title">
+          <h1>GymWarm</h1>
+          <p>Pre & Post Workout</p>
+        </div>
+      </div>
+      <button id="btnSettings" class="header-btn" title="Ajustes">⚙️</button>
+    </header>
+
+    <!-- Selector de Modo: Calentamiento Dinámico vs Estiramiento Estático -->
+    <div class="mode-selector">
+      <button id="tabWarmup" class="mode-tab active" data-mode="warmup">
+        <span class="tab-title">⚡ Pre-Entreno</span>
+        <span class="tab-subtitle">Calentamiento Dinámico</span>
+      </button>
+      <button id="tabCooldown" class="mode-tab" data-mode="cooldown">
+        <span class="tab-title">🧘 Post-Entreno</span>
+        <span class="tab-subtitle">Estiramiento Estático</span>
+      </button>
+    </div>
+
+    <!-- Banner informativo según el modo -->
+    <div id="modeBanner" class="mode-banner">
+      <span class="badge" id="bannerBadge">DINÁMICO</span>
+      <span id="bannerText">15 reps o 30s por ejercicio. Activa la articulación y prepara el SNC.</span>
+    </div>
+
+    <!-- Lista de Grupos Musculares / Rutinas -->
+    <div id="routinesContainer" class="routines-grid">
+      <!-- Se inyecta dinámicamente con JavaScript desde data.js -->
+    </div>
+
+    <!-- PWA Install Tip para iPhone -->
+    <div class="pwa-hint">
+      <div class="pwa-hint-icon">📲</div>
+      <div>
+        <strong>¿Usas iPhone?</strong> Toca el botón <em>Compartir</em> en Safari y selecciona <strong>"Agregar a pantalla de inicio"</strong> para tenerla a pantalla completa y sin conexión.
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL / PANTALLA COMPLETA DEL ENTRENADOR EN VIVO (PLAYER) -->
+  <div id="playerModal" class="player-modal">
+    <!-- SVG Gradients -->
+    <svg width="0" height="0" style="position: absolute;">
+      <defs>
+        <linearGradient id="timerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#f97316" />
+          <stop offset="100%" stop-color="#ef4444" />
+        </linearGradient>
+      </defs>
+    </svg>
+
+    <!-- Player Header -->
+    <div class="player-header">
+      <button id="playerCloseBtn" class="player-close-btn" title="Cerrar">✕</button>
+      <div class="player-routine-title">
+        <h2 id="playerRoutineName">Piernas</h2>
+        <span id="playerRoutineMode">Calentamiento Dinámico</span>
+      </div>
+      <button id="playerMuteBtn" class="player-audio-toggle" title="Silenciar / Activar sonido">🔊</button>
+    </div>
+
+    <!-- Barra de progreso superior -->
+    <div class="player-progress-bar">
+      <div id="playerProgressFill" class="player-progress-fill"></div>
+    </div>
+
+    <!-- Contenido del ejercicio actual -->
+    <div class="player-content">
+      <div id="playerStepLabel" class="exercise-step-label">Ejercicio 1 de 6</div>
+      <h1 id="playerExerciseTitle" class="current-exercise-title">Balanceos de pierna adelante y atrás</h1>
+      <div id="playerTargetBadge" class="current-exercise-target">Cadera e Isquiotibiales</div>
+
+      <!-- Temporizador Circular -->
+      <div class="timer-container">
+        <svg class="timer-svg" viewBox="0 0 220 220">
+          <circle class="timer-bg" cx="110" cy="110" r="95"></circle>
+          <circle id="timerProgressCircle" class="timer-progress" cx="110" cy="110" r="95" 
+                  stroke-dasharray="597" stroke-dashoffset="0"></circle>
+        </svg>
+        <div class="timer-inner-display">
+          <span id="playerTimerSeconds" class="timer-seconds">30</span>
+          <span id="playerTimerUnit" class="timer-unit">segundos</span>
+          <span id="playerRepsLabel" class="reps-label">o 15 reps</span>
+        </div>
+      </div>
+
+      <!-- Cuadro de Consejo y Postura -->
+      <div class="exercise-tip-box">
+        <p id="playerExerciseDetail">Sueltos, como un péndulo. Apóyate en una pared o poste si lo necesitas.</p>
+        <p id="playerExerciseTip" style="margin-top: 6px;"><span class="tip-strong">Tip:</span> Mantén el torso erguido sin arquear la zona lumbar.</p>
+      </div>
+
+      <!-- Próximo ejercicio -->
+      <div id="playerUpNext" class="up-next-card">
+        Siguiente: <strong>Balanceos laterales</strong>
+      </div>
+    </div>
+
+    <!-- Controles de Navegación -->
+    <div class="player-controls">
+      <button id="playerPrevBtn" class="btn-ctrl" title="Anterior">⏮</button>
+      <button id="playerPlayPauseBtn" class="btn-ctrl btn-main-play" title="Pausar / Continuar">⏸</button>
+      <button id="playerNextBtn" class="btn-ctrl" title="Siguiente">⏭</button>
+    </div>
+  </div>
+
+  <!-- MODAL DE AJUSTES -->
+  <div id="settingsModal" class="settings-modal">
+    <div class="settings-sheet">
+      <div class="settings-header">
+        <h3>Ajustes de Entrenamiento</h3>
+        <button id="settingsCloseBtn" class="player-close-btn">✕</button>
+      </div>
+
+      <div class="setting-row">
+        <div class="setting-label">
+          <h4>Voz de asistencia (TTS)</h4>
+          <p>Menciona en voz alta el nombre del ejercicio al cambiar</p>
+        </div>
+        <label class="toggle-switch">
+          <input type="checkbox" id="toggleSpeech" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="setting-row">
+        <div class="setting-label">
+          <h4>Sonidos y Beeps</h4>
+          <p>Pitidos de 3, 2, 1 y campana de cambio</p>
+        </div>
+        <label class="toggle-switch">
+          <input type="checkbox" id="toggleSound" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="setting-row">
+        <div class="setting-label">
+          <h4>Tiempo Calentamiento</h4>
+          <p>Duración por ejercicio dinámico</p>
+        </div>
+        <select id="selectWarmupDuration" class="settings-select">
+          <option value="20">20 segundos</option>
+          <option value="25">25 segundos</option>
+          <option value="30" selected>30 segundos (Recomendado)</option>
+          <option value="40">40 segundos</option>
+        </select>
+      </div>
+
+      <div class="setting-row">
+        <div class="setting-label">
+          <h4>Tiempo Estiramiento</h4>
+          <p>Duración por estiramiento estático</p>
+        </div>
+        <select id="selectCooldownDuration" class="settings-select">
+          <option value="30">30 segundos</option>
+          <option value="35" selected>35 segundos (Recomendado)</option>
+          <option value="45">45 segundos (Profundo)</option>
+          <option value="60">60 segundos</option>
+        </select>
+      </div>
+
+      <div class="setting-row">
+        <div class="setting-label">
+          <h4>Transición / Descanso</h4>
+          <p>Pausa para cambiar de postura</p>
+        </div>
+        <select id="selectTransitionDuration" class="settings-select">
+          <option value="0">Sin pausa (0s)</option>
+          <option value="5" selected>5 segundos</option>
+          <option value="10">10 segundos</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts principales como módulos ES6 -->
+  <script type="module" src="app.js"></script>
+</body>
+</html>
