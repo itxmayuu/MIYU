@@ -3,204 +3,170 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-  <title>GymWarm & Stretch</title>
+  <title>MIYU - Start Strong, Finish Recovered</title>
   
   <!-- Configuración PWA e iOS Safari -->
   <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#090a0f">
+  <meta name="theme-color" content="#000000">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="GymWarm">
+  <meta name="apple-mobile-web-app-title" content="MIYU">
   <link rel="apple-touch-icon" href="icons/icon.svg">
+  
+  <!-- Google Fonts para coincidir con la tipografía de Figma -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@300;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="ambient-glow"></div>
 
-  <div class="container">
-    <!-- Header -->
-    <header>
-      <div class="logo-area">
-        <div class="logo-icon">🔥</div>
-        <div class="logo-title">
-          <h1>GymWarm</h1>
-          <p>Pre & Post Workout</p>
-        </div>
-      </div>
-      <button id="btnSettings" class="header-btn" title="Ajustes">⚙️</button>
-    </header>
-
-    <!-- Selector de Modo: Calentamiento Dinámico vs Estiramiento Estático -->
-    <div class="mode-selector">
-      <button id="tabWarmup" class="mode-tab active" data-mode="warmup">
-        <span class="tab-title">⚡ Pre-Entreno</span>
-        <span class="tab-subtitle">Calentamiento Dinámico</span>
-      </button>
-      <button id="tabCooldown" class="mode-tab" data-mode="cooldown">
-        <span class="tab-title">🧘 Post-Entreno</span>
-        <span class="tab-subtitle">Estiramiento Estático</span>
-      </button>
+  <!-- ======================================================== -->
+  <!-- PANTALLA 1: WELCOME SCREEN (Figma Node 1:3480)            -->
+  <!-- ======================================================== -->
+  <section id="screenWelcome" class="screen screen-welcome active">
+    <!-- Header Brand -->
+    <div class="welcome-header">
+      <div class="welcome-logo-badge">29</div>
+      <h2 class="welcome-brand">MIYU</h2>
     </div>
 
-    <!-- Banner informativo según el modo -->
-    <div id="modeBanner" class="mode-banner">
-      <span class="badge" id="bannerBadge">DINÁMICO</span>
-      <span id="bannerText">15 reps o 30s por ejercicio. Activa la articulación y prepara el SNC.</span>
+    <!-- Main Hero Text -->
+    <div class="welcome-hero-text">
+      <h1>Welcome <br>to Miyu</h1>
+      <p>Explore the app, Start strong, finish recovered.</p>
     </div>
 
-    <!-- Lista de Grupos Musculares / Rutinas -->
-    <div id="routinesContainer" class="routines-grid">
-      <!-- Se inyecta dinámicamente con JavaScript desde data.js -->
-    </div>
-
-    <!-- PWA Install Tip para iPhone -->
-    <div class="pwa-hint">
-      <div class="pwa-hint-icon">📲</div>
-      <div>
-        <strong>¿Usas iPhone?</strong> Toca el botón <em>Compartir</em> en Safari y selecciona <strong>"Agregar a pantalla de inicio"</strong> para tenerla a pantalla completa y sin conexión.
-      </div>
-    </div>
-  </div>
-
-  <!-- MODAL / PANTALLA COMPLETA DEL ENTRENADOR EN VIVO (PLAYER) -->
-  <div id="playerModal" class="player-modal">
-    <!-- SVG Gradients -->
-    <svg width="0" height="0" style="position: absolute;">
-      <defs>
-        <linearGradient id="timerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stop-color="#f97316" />
-          <stop offset="100%" stop-color="#ef4444" />
-        </linearGradient>
-      </defs>
-    </svg>
-
-    <!-- Player Header -->
-    <div class="player-header">
-      <button id="playerCloseBtn" class="player-close-btn" title="Cerrar">✕</button>
-      <div class="player-routine-title">
-        <h2 id="playerRoutineName">Piernas</h2>
-        <span id="playerRoutineMode">Calentamiento Dinámico</span>
-      </div>
-      <button id="playerMuteBtn" class="player-audio-toggle" title="Silenciar / Activar sonido">🔊</button>
-    </div>
-
-    <!-- Barra de progreso superior -->
-    <div class="player-progress-bar">
-      <div id="playerProgressFill" class="player-progress-fill"></div>
-    </div>
-
-    <!-- Contenido del ejercicio actual -->
-    <div class="player-content">
-      <div id="playerStepLabel" class="exercise-step-label">Ejercicio 1 de 6</div>
-      <h1 id="playerExerciseTitle" class="current-exercise-title">Balanceos de pierna adelante y atrás</h1>
-      <div id="playerTargetBadge" class="current-exercise-target">Cadera e Isquiotibiales</div>
-
-      <!-- Temporizador Circular -->
-      <div class="timer-container">
-        <svg class="timer-svg" viewBox="0 0 220 220">
-          <circle class="timer-bg" cx="110" cy="110" r="95"></circle>
-          <circle id="timerProgressCircle" class="timer-progress" cx="110" cy="110" r="95" 
-                  stroke-dasharray="597" stroke-dashoffset="0"></circle>
+    <!-- Concentric Focus Rings & Graphic Art -->
+    <div class="welcome-visual-container">
+      <div class="focus-ring ring-4"></div>
+      <div class="focus-ring ring-3"></div>
+      <div class="focus-ring ring-2"></div>
+      <div class="focus-ring ring-1"></div>
+      
+      <!-- Central Athletic Art -->
+      <div class="welcome-art">
+        <svg viewBox="0 0 240 240" class="welcome-art-svg">
+          <defs>
+            <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#f7ff66" />
+              <stop offset="100%" stop-color="#8464fc" />
+            </linearGradient>
+          </defs>
+          <circle cx="120" cy="120" r="85" fill="rgba(132, 100, 252, 0.25)" />
+          <!-- Silueta atlética estilizada -->
+          <circle cx="120" cy="65" r="16" fill="#f7ff66" />
+          <path d="M 120 85 L 120 140 M 120 100 L 90 120 M 120 100 L 150 120 M 120 140 L 95 185 M 120 140 L 145 185" 
+                stroke="#ebeaec" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none" />
         </svg>
-        <div class="timer-inner-display">
-          <span id="playerTimerSeconds" class="timer-seconds">30</span>
-          <span id="playerTimerUnit" class="timer-unit">segundos</span>
-          <span id="playerRepsLabel" class="reps-label">o 15 reps</span>
-        </div>
-      </div>
-
-      <!-- Cuadro de Consejo y Postura -->
-      <div class="exercise-tip-box">
-        <p id="playerExerciseDetail">Sueltos, como un péndulo. Apóyate en una pared o poste si lo necesitas.</p>
-        <p id="playerExerciseTip" style="margin-top: 6px;"><span class="tip-strong">Tip:</span> Mantén el torso erguido sin arquear la zona lumbar.</p>
-      </div>
-
-      <!-- Próximo ejercicio -->
-      <div id="playerUpNext" class="up-next-card">
-        Siguiente: <strong>Balanceos laterales</strong>
       </div>
     </div>
 
-    <!-- Controles de Navegación -->
-    <div class="player-controls">
-      <button id="playerPrevBtn" class="btn-ctrl" title="Anterior">⏮</button>
-      <button id="playerPlayPauseBtn" class="btn-ctrl btn-main-play" title="Pausar / Continuar">⏸</button>
-      <button id="playerNextBtn" class="btn-ctrl" title="Siguiente">⏭</button>
+    <!-- Bottom Curved Accent Card & Button -->
+    <div class="welcome-bottom-card">
+      <button id="btnGetStarted" class="btn-get-started">
+        GET STARTED
+      </button>
+      <div class="home-indicator-bar"></div>
     </div>
-  </div>
+  </section>
 
-  <!-- MODAL DE AJUSTES -->
-  <div id="settingsModal" class="settings-modal">
-    <div class="settings-sheet">
-      <div class="settings-header">
-        <h3>Ajustes de Entrenamiento</h3>
-        <button id="settingsCloseBtn" class="player-close-btn">✕</button>
+
+  <!-- ======================================================== -->
+  <!-- PANTALLA 2: CHOOSE TOPIC / CATALOG (Figma Node 1:1608)   -->
+  <!-- ======================================================== -->
+  <section id="screenChooseTopic" class="screen screen-choose-topic">
+    <div class="topic-header">
+      <div class="top-nav-bar">
+        <button id="btnBackToWelcome" class="btn-icon-back" title="Volver al inicio">←</button>
+        <span class="top-brand">MIYU WORKOUTS</span>
+        <button id="btnSettings" class="btn-icon-settings" title="Ajustes">⚙️</button>
       </div>
 
-      <div class="setting-row">
-        <div class="setting-label">
-          <h4>Voz de asistencia (TTS)</h4>
-          <p>Menciona en voz alta el nombre del ejercicio al cambiar</p>
+      <h1 class="topic-main-title">What are you<br>training today?</h1>
+      <p class="topic-subtitle">Select your workout day:</p>
+    </div>
+
+    <!-- Masonry Grid: 6 Grupos Musculares (Exacto de Figma) -->
+    <div class="masonry-grid" id="masonryContainer">
+      <!-- Columna Izquierda -->
+      <div class="masonry-col">
+        <!-- 1. Leg Day (210px) -->
+        <div class="workout-card card-leg" data-group-id="piernas">
+          <div class="card-art-area">
+            <div class="card-art-icon">🦵</div>
+          </div>
+          <div class="card-footer">
+            <h3 class="card-title">Leg Day</h3>
+            <span class="card-count">30 ejercicios</span>
+          </div>
         </div>
-        <label class="toggle-switch">
-          <input type="checkbox" id="toggleSpeech" checked>
-          <span class="slider"></span>
-        </label>
+
+        <!-- 3. Chest Day (167px) -->
+        <div class="workout-card card-chest" data-group-id="pecho">
+          <div class="card-art-area">
+            <div class="card-art-icon">🫁</div>
+          </div>
+          <div class="card-footer">
+            <h3 class="card-title">Chest Day</h3>
+            <span class="card-count">30 ejercicios</span>
+          </div>
+        </div>
+
+        <!-- 5. Abs Day (210px) -->
+        <div class="workout-card card-abs" data-group-id="abdomen">
+          <div class="card-art-area">
+            <div class="card-art-icon">🧱</div>
+          </div>
+          <div class="card-footer">
+            <h3 class="card-title">Abs Day</h3>
+            <span class="card-count">30 ejercicios</span>
+          </div>
+        </div>
       </div>
 
-      <div class="setting-row">
-        <div class="setting-label">
-          <h4>Sonidos y Beeps</h4>
-          <p>Pitidos de 3, 2, 1 y campana de cambio</p>
+      <!-- Columna Derecha -->
+      <div class="masonry-col">
+        <!-- 2. Arm Day (167px) -->
+        <div class="workout-card card-arm" data-group-id="brazos">
+          <div class="card-art-area">
+            <div class="card-art-icon">💪</div>
+          </div>
+          <div class="card-footer">
+            <h3 class="card-title">Arm Day</h3>
+            <span class="card-count">30 ejercicios</span>
+          </div>
         </div>
-        <label class="toggle-switch">
-          <input type="checkbox" id="toggleSound" checked>
-          <span class="slider"></span>
-        </label>
-      </div>
 
-      <div class="setting-row">
-        <div class="setting-label">
-          <h4>Tiempo Calentamiento</h4>
-          <p>Duración por ejercicio dinámico</p>
+        <!-- 4. Back Day (210px) -->
+        <div class="workout-card card-back" data-group-id="espalda">
+          <div class="card-art-area">
+            <div class="card-art-icon">🪽</div>
+          </div>
+          <div class="card-footer">
+            <h3 class="card-title">Back Day</h3>
+            <span class="card-count">30 ejercicios</span>
+          </div>
         </div>
-        <select id="selectWarmupDuration" class="settings-select">
-          <option value="20">20 segundos</option>
-          <option value="25">25 segundos</option>
-          <option value="30" selected>30 segundos (Recomendado)</option>
-          <option value="40">40 segundos</option>
-        </select>
-      </div>
 
-      <div class="setting-row">
-        <div class="setting-label">
-          <h4>Tiempo Estiramiento</h4>
-          <p>Duración por estiramiento estático</p>
+        <!-- 6. Cardio Day (210px) -->
+        <div class="workout-card card-cardio" data-group-id="cardio">
+          <div class="card-art-area">
+            <div class="card-art-icon">❤️</div>
+          </div>
+          <div class="card-footer">
+            <h3 class="card-title">Cardio Day</h3>
+            <span class="card-count">30 ejercicios</span>
+          </div>
         </div>
-        <select id="selectCooldownDuration" class="settings-select">
-          <option value="30">30 segundos</option>
-          <option value="35" selected>35 segundos (Recomendado)</option>
-          <option value="45">45 segundos (Profundo)</option>
-          <option value="60">60 segundos</option>
-        </select>
-      </div>
-
-      <div class="setting-row">
-        <div class="setting-label">
-          <h4>Transición / Descanso</h4>
-          <p>Pausa para cambiar de postura</p>
-        </div>
-        <select id="selectTransitionDuration" class="settings-select">
-          <option value="0">Sin pausa (0s)</option>
-          <option value="5" selected>5 segundos</option>
-          <option value="10">10 segundos</option>
-        </select>
       </div>
     </div>
-  </div>
 
-  <!-- Scripts principales como módulos ES6 -->
+    <div class="bottom-safe-space"></div>
+  </section>
+
+  <!-- Scripts principales -->
   <script type="module" src="app.js"></script>
 </body>
 </html>
