@@ -26,44 +26,32 @@
   <!-- PANTALLA 1: WELCOME SCREEN (Figma Node 1:3480)            -->
   <!-- ======================================================== -->
   <section id="screenWelcome" class="screen screen-welcome active">
-    <!-- Header Brand -->
+    <!-- Header Brand (Figma 319:4 y 319:5) -->
     <div class="welcome-header">
-      <div class="welcome-logo-badge">29</div>
+      <img src="assets/miyu/miyu-icon.svg" class="welcome-logo-img" alt="Miyu Icon">
       <h2 class="welcome-brand">MIYU</h2>
     </div>
 
-    <!-- Main Hero Text -->
+    <!-- Main Hero Text (Figma 1:3493 y 1:3499) -->
     <div class="welcome-hero-text">
       <h1>Welcome <br>to Miyu</h1>
       <p>Explore the app, Start strong, finish recovered.</p>
     </div>
 
-    <!-- Concentric Focus Rings & Graphic Art -->
+    <!-- Concentric Focus Rings & Central Character (Figma 1:3494..1:3500 y 319:7) -->
     <div class="welcome-visual-container">
       <div class="focus-ring ring-4"></div>
       <div class="focus-ring ring-3"></div>
       <div class="focus-ring ring-2"></div>
       <div class="focus-ring ring-1"></div>
       
-      <!-- Central Athletic Art -->
-      <div class="welcome-art">
-        <svg viewBox="0 0 240 240" class="welcome-art-svg">
-          <defs>
-            <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#f7ff66" />
-              <stop offset="100%" stop-color="#8464fc" />
-            </linearGradient>
-          </defs>
-          <circle cx="120" cy="120" r="85" fill="rgba(132, 100, 252, 0.25)" />
-          <!-- Silueta atlética estilizada -->
-          <circle cx="120" cy="65" r="16" fill="#f7ff66" />
-          <path d="M 120 85 L 120 140 M 120 100 L 90 120 M 120 100 L 150 120 M 120 140 L 95 185 M 120 140 L 145 185" 
-                stroke="#ebeaec" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none" />
-        </svg>
+      <!-- Monstruo Miyu Central Oficial -->
+      <div class="welcome-character-wrapper">
+        <img src="assets/miyu/miyu-welcome.svg" class="welcome-character-img" alt="Miyu Monster">
       </div>
     </div>
 
-    <!-- Bottom Curved Accent Card & Button -->
+    <!-- Bottom Curved Accent Card & Button (Figma 1:3501, 1:3504, 1:3505) -->
     <div class="welcome-bottom-card">
       <button id="btnGetStarted" class="btn-get-started">
         GET STARTED
