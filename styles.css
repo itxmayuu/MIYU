@@ -61,11 +61,9 @@ body {
 @keyframes screenFadeIn {
   from {
     opacity: 0;
-    transform: translateY(6px);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
   }
 }
 
@@ -459,21 +457,23 @@ body {
   width: 100%;
   max-width: 414px;
   margin: 0 auto;
-  min-height: 100vh;
-  min-height: 100dvh;
-  padding-bottom: calc(var(--safe-bottom) + 96px);
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+  padding-bottom: 0;
 }
 
 /* Hero Banner del grupo */
 .train-hero {
   background-color: var(--group-theme);
   color: #ffffff;
-  padding: calc(var(--safe-top) + 12px) 18px 22px 18px;
+  padding: calc(var(--safe-top) + 12px) 18px 20px 18px;
   border-bottom-left-radius: 26px;
   border-bottom-right-radius: 26px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
   position: relative;
   overflow: hidden;
+  flex-shrink: 0;
   transition: background-color 0.25s ease;
 }
 
@@ -593,7 +593,9 @@ body {
 
 /* Tabs Before / After */
 .train-tabs-wrapper {
-  padding: 16px 18px 0 18px;
+  padding: 12px 18px 0 18px;
+  flex-shrink: 0;
+  background-color: var(--color-bg-light);
 }
 
 .train-tabs {
@@ -646,8 +648,12 @@ body {
   transform: translateX(100%);
 }
 
-/* Tarjetas de ejercicios limpias (estilo Figma / App Fitness, sin formato lista numerada) */
+/* Tarjetas de ejercicios limpias (scroll interno suave, sin atravesar botones ni reloj) */
 .train-exercise-list {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   padding: 12px 18px 20px 18px;
   display: flex;
   flex-direction: column;
@@ -792,17 +798,15 @@ body {
   margin: 0;
 }
 
-/* Botón flotante inferior CTA */
+/* Botón inferior CTA anclado al pie (sin position: fixed para evitar fallos en iOS) */
 .train-cta-dock {
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
+  flex-shrink: 0;
   width: 100%;
-  max-width: 414px;
-  padding: 12px 18px calc(var(--safe-bottom) + 14px) 18px;
-  background: linear-gradient(to top, rgba(254, 254, 254, 0.98) 70%, rgba(254, 254, 254, 0));
-  z-index: 30;
+  padding: 10px 18px calc(var(--safe-bottom) + 14px) 18px;
+  background-color: var(--color-bg-light);
+  border-top: 1px solid #f0f0f5;
+  z-index: 10;
   display: flex;
   justify-content: center;
 }
