@@ -826,3 +826,327 @@ body {
   transform: scale(0.97);
   opacity: 0.92;
 }
+
+/* ======================================================== */
+/* PANTALLA 4: MOOD / WORKOUT PLAYER (Figma 1:3978)         */
+/* ======================================================== */
+.screen-mood {
+  --group-theme: var(--card-leg);
+  background: radial-gradient(circle at 50% 28%, #1d1a31 0%, #09090d 65%, #000000 100%);
+  color: #ffffff;
+  width: 100%;
+  max-width: 414px;
+  margin: 0 auto;
+  height: 100vh;
+  height: 100dvh;
+  padding: calc(var(--safe-top) + 12px) 22px calc(var(--safe-bottom) + 20px) 22px;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.mood-top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  z-index: 5;
+}
+
+.mood-icon-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+.mood-icon-btn:active {
+  transform: scale(0.92);
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.mood-step-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.mood-step-badge {
+  font-family: 'Anton', sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: var(--color-brand-yellow);
+}
+
+.mood-phase-sub {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+/* Vista activa */
+.mood-active-view {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 0;
+  padding: 6px 0;
+}
+
+.mood-art-stage {
+  position: relative;
+  width: 210px;
+  height: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.mood-art-halo {
+  position: absolute;
+  width: 185px;
+  height: 185px;
+  border-radius: 50%;
+  background: var(--group-theme);
+  opacity: 0.28;
+  filter: blur(22px);
+}
+
+.mood-art-img {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform: scale(1.22);
+  filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.45));
+}
+
+.mood-exercise-info {
+  text-align: center;
+  width: 100%;
+  padding: 0 4px;
+}
+
+.mood-zone-pill {
+  display: inline-block;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.12);
+  padding: 4px 12px;
+  border-radius: 999px;
+  margin-bottom: 8px;
+}
+
+.mood-exercise-title {
+  font-family: 'Anton', sans-serif;
+  font-size: 26px;
+  line-height: 1.15;
+  color: #ffffff;
+  letter-spacing: 0.3px;
+}
+
+.mood-exercise-guide {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 13px;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.78);
+  margin-top: 8px;
+  max-width: 340px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Temporizador */
+.mood-timer-block {
+  width: 100%;
+  max-width: 330px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.mood-timer-display {
+  font-family: 'Anton', sans-serif;
+  font-size: 54px;
+  line-height: 1;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.mood-progress-track {
+  width: 100%;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.mood-progress-fill {
+  height: 100%;
+  width: 100%;
+  background-color: var(--group-theme);
+  border-radius: 999px;
+  transition: width 0.25s linear, background-color 0.25s ease;
+}
+
+/* Controles -15s / Play-Pause / +15s */
+.mood-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.mood-step-btn {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.06);
+  color: #ffffff;
+  font-family: 'Antonio', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  transition: transform 0.12s ease, background-color 0.15s ease;
+}
+
+.mood-step-btn:active {
+  transform: scale(0.92);
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.mood-play-btn {
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--group-theme);
+  color: #ffffff;
+  font-size: 26px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.45);
+  transition: transform 0.12s ease, opacity 0.15s ease;
+}
+
+.mood-play-btn:active {
+  transform: scale(0.94);
+}
+
+/* Navegación entre ejercicios */
+.mood-sequence-nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.mood-seq-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: none;
+  border-radius: 999px;
+  color: rgba(255, 255, 255, 0.85);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 12.5px;
+  font-weight: 600;
+  padding: 9px 16px;
+  cursor: pointer;
+  transition: opacity 0.15s ease, transform 0.12s ease;
+}
+
+.mood-seq-btn:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.mood-seq-btn:not(:disabled):active {
+  transform: scale(0.95);
+}
+
+/* Vista de Rutina Completada */
+.mood-completed-view {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.mood-done-art {
+  width: 210px;
+  height: 210px;
+  margin-bottom: 18px;
+}
+
+.mood-done-art img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.mood-done-title {
+  font-family: 'Anton', sans-serif;
+  font-size: 32px;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.mood-done-subtitle {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.78);
+  max-width: 280px;
+  line-height: 1.45;
+  margin-bottom: 26px;
+}
+
+.mood-done-actions {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mood-done-btn {
+  width: 100%;
+  height: 54px;
+  border-radius: 38px;
+  border: none;
+  font-family: 'Anton', sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.8px;
+  cursor: pointer;
+}
+
+.mood-done-btn.primary {
+  background-color: var(--group-theme);
+  color: #ffffff;
+}
+
+.mood-done-btn.secondary {
+  background-color: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+}

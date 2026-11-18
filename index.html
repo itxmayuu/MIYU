@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@300;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="styles.css?v=18">
+  <link rel="stylesheet" href="styles.css?v=19">
 </head>
 <body>
 
@@ -214,7 +214,72 @@
     </div>
   </section>
 
+
+  <!-- ======================================================== -->
+  <!-- PANTALLA 4: MOOD / WORKOUT PLAYER (Figma Node 1:3978)    -->
+  <!-- ======================================================== -->
+  <section id="screenMood" class="screen screen-mood">
+    <!-- Barra superior del reproductor -->
+    <div class="mood-top-bar">
+      <button id="btnExitMood" class="mood-icon-btn" title="Salir">✕</button>
+      <div class="mood-step-info">
+        <span id="moodStepLabel" class="mood-step-badge">1 DE 5</span>
+        <span id="moodPhaseLabel" class="mood-phase-sub">Before · Calentamiento</span>
+      </div>
+      <button id="btnToggleAudio" class="mood-icon-btn" title="Sonido / Voz">🔊</button>
+    </div>
+
+    <!-- Vista Activa del Ejercicio -->
+    <div id="moodActiveView" class="mood-active-view">
+      <div class="mood-art-stage">
+        <div class="mood-art-halo"></div>
+        <img id="moodArtImg" src="assets/train/leg.svg" class="mood-art-img" alt="Miyu Exercise">
+      </div>
+
+      <div class="mood-exercise-info">
+        <span id="moodExerciseZone" class="mood-zone-pill">Cadera y muslos</span>
+        <h1 id="moodExerciseTitle" class="mood-exercise-title">Sentadillas al aire</h1>
+        <p id="moodExerciseGuide" class="mood-exercise-guide">Bajando profundo y con fluidez, sin peso.</p>
+      </div>
+
+      <!-- Temporizador y Barra de Progreso -->
+      <div class="mood-timer-block">
+        <div id="moodTimerDisplay" class="mood-timer-display">00:30</div>
+        <div class="mood-progress-track">
+          <div id="moodProgressFill" class="mood-progress-fill"></div>
+        </div>
+      </div>
+
+      <!-- Controles principales (-15s / Play-Pause / +15s) -->
+      <div class="mood-controls">
+        <button id="btnMinus15" class="mood-step-btn" title="Restar 15 segundos">-15s</button>
+        <button id="btnPlayPause" class="mood-play-btn" title="Pausar o reanudar">⏸</button>
+        <button id="btnPlus15" class="mood-step-btn" title="Sumar 15 segundos">+15s</button>
+      </div>
+
+      <!-- Navegación entre ejercicios (oculta si es 1 solo ejercicio) -->
+      <div id="moodSequenceNav" class="mood-sequence-nav">
+        <button id="btnPrevExercise" class="mood-seq-btn">← Anterior</button>
+        <button id="btnNextExercise" class="mood-seq-btn">Siguiente →</button>
+      </div>
+    </div>
+
+    <!-- Vista de Rutina Completada -->
+    <div id="moodCompletedView" class="mood-completed-view" style="display: none;">
+      <div class="mood-done-art">
+        <img src="assets/miyu/miyu-welcome.svg" alt="Miyu Feliz">
+      </div>
+      <h2 id="moodDoneTitle" class="mood-done-title">¡Rutina completada!</h2>
+      <p id="moodDoneSubtitle" class="mood-done-subtitle">Excelente trabajo. Ya estás listo para darlo todo.</p>
+      <div class="mood-done-actions">
+        <button id="btnRepeatRoutine" class="mood-done-btn primary">Repetir</button>
+        <button id="btnDoneBackToTrain" class="mood-done-btn secondary">Volver a ejercicios</button>
+      </div>
+    </div>
+  </section>
+
   <!-- Scripts principales -->
-  <script defer src="app.js?v=6"></script>
+  <script defer src="audio.js?v=1"></script>
+  <script defer src="app.js?v=7"></script>
 </body>
 </html>

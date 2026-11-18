@@ -1,9 +1,19 @@
 // Estado global de la aplicación
 const state = {
-  currentScreen: 'welcome', // 'welcome' | 'chooseTopic' | 'train'
+  currentScreen: 'welcome', // 'welcome' | 'chooseTopic' | 'train' | 'mood'
   ejerciciosData: null,
   selectedGroup: 'piernas',
-  selectedPhase: 'calentamiento' // 'calentamiento' (Before) | 'estiramiento' (After)
+  selectedPhase: 'calentamiento', // 'calentamiento' (Before) | 'estiramiento' (After)
+  player: {
+    queue: [],
+    currentIndex: 0,
+    totalSeconds: 30,
+    remainingSeconds: 30,
+    isRunning: false,
+    intervalId: null,
+    audioMuted: false,
+    wakeLock: null
+  }
 };
 
 // Configuración visual Figma por grupo muscular
@@ -38,6 +48,7 @@ function showScreen(screenName) {
   const screenWelcome = document.getElementById('screenWelcome');
   const screenChooseTopic = document.getElementById('screenChooseTopic');
   const screenTrain = document.getElementById('screenTrain');
+  const screenMood = document.getElementById('screenMood');
 
   if (screenName === 'welcome' && screenWelcome) {
     screenWelcome.classList.add('active');
@@ -48,6 +59,9 @@ function showScreen(screenName) {
   } else if (screenName === 'train' && screenTrain) {
     screenTrain.classList.add('active');
     document.body.style.backgroundColor = '#fefefe';
+  } else if (screenName === 'mood' && screenMood) {
+    screenMood.classList.add('active');
+    document.body.style.backgroundColor = '#09090d';
   }
 
   // Asegurar que el scroll empiece arriba de inmediato
@@ -62,6 +76,16 @@ function getSelectedGroupData() {
     return null;
   }
   return state.ejerciciosData.grupos.find(g => g.id === state.selectedGroup) || null;
+}
+
+// Selección aleatoria de N elementos (Fisher-Yates)
+function pickRandomExercises(list, count) {
+  const copy = [...list];
+  for (let i = copy.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [copy[i], copy[j]] = [copy[j], copy[i]];
+  }
+  return copy.slice(0, Math.min(count, copy.length));
 }
 
 // Renderizar Pantalla 3 (Train) con el grupo y fase (Before/After) seleccionados
@@ -119,6 +143,7 @@ function renderTrainScreen() {
     const phaseLabel = isAfter ? 'Estiramiento estático' : 'Calentamiento dinámico';
     trainSummary.textContent = `${exercises.length} ejercicios disponibles · ${phaseLabel}`;
   }
+
   if (trainExerciseList) {
     trainExerciseList.innerHTML = '';
 
@@ -129,7 +154,7 @@ function renderTrainScreen() {
       item.className = 'exercise-item';
       item.innerHTML = `
         <div class="exercise-row">
-          <div class="exercise-play-icon" aria-hidden="true">▶</div>
+          <button type="button" class="exercise-play-icon" title="Iniciar solo este ejercicio" aria-label="Iniciar ${ex.nombre}">▶</button>
           <div class="exercise-main">
             <div class="exercise-name">${ex.nombre}</div>
             <div class="exercise-muscle">${ex.musculoObjetivo || ''}</div>
@@ -149,6 +174,16 @@ function renderTrainScreen() {
         </div>
       `;
 
+      // Botón ▶ separado: abre Pantalla 4 con SOLO ese ejercicio
+      const playBtn = item.querySelector('.exercise-play-icon');
+      if (playBtn) {
+        playBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          startWorkoutPlayer([ex]);
+        });
+      }
+
+      // Tocar el resto de la tarjeta: selecciona e ilumina para ver Guía y Tip
       item.addEventListener('click', () => {
         const wasExpanded = item.classList.contains('expanded');
         trainExerciseList.querySelectorAll('.exercise-item.expanded').forEach(el => {
@@ -164,6 +199,195 @@ function renderTrainScreen() {
   }
 }
 
+// ==========================================================
+// MOTOR DE PANTALLA 4: MOOD / REPRODUCTOR CON TEMPORIZADOR
+// ==========================================================
+async function requestScreenWakeLock() {
+  if ('wakeLock' in navigator && !state.player.wakeLock) {
+    try {
+      state.player.wakeLock = await navigator.wakeLock.request('screen');
+    } catch (e) {}
+  }
+}
+
+function releaseScreenWakeLock() {
+  if (state.player.wakeLock) {
+    try {
+      state.player.wakeLock.release();
+    } catch (e) {}
+    state.player.wakeLock = null;
+  }
+}
+
+function formatTimer(seconds) {
+  const safe = Math.max(0, Math.floor(seconds));
+  const mins = String(Math.floor(safe / 60)).padStart(2, '0');
+  const secs = String(safe % 60).padStart(2, '0');
+  return `${mins}:${secs}`;
+}
+
+function stopTimerInterval() {
+  if (state.player.intervalId) {
+    clearInterval(state.player.intervalId);
+    state.player.intervalId = null;
+  }
+  state.player.isRunning = false;
+}
+
+function updateTimerUI() {
+  const timerDisplay = document.getElementById('moodTimerDisplay');
+  const progressFill = document.getElementById('moodProgressFill');
+  const btnPlayPause = document.getElementById('btnPlayPause');
+
+  if (timerDisplay) {
+    timerDisplay.textContent = formatTimer(state.player.remainingSeconds);
+  }
+  if (progressFill) {
+    const pct = state.player.totalSeconds > 0
+      ? (state.player.remainingSeconds / state.player.totalSeconds) * 100
+      : 0;
+    progressFill.style.width = `${Math.max(0, Math.min(100, pct))}%`;
+  }
+  if (btnPlayPause) {
+    btnPlayPause.textContent = state.player.isRunning ? '⏸' : '▶';
+  }
+}
+
+function loadCurrentPlayerExercise(autoAnnounce = true) {
+  const { queue, currentIndex } = state.player;
+  const ex = queue[currentIndex];
+  if (!ex) return;
+
+  const duration = ex.duracionSegundos || 30;
+  state.player.totalSeconds = duration;
+  state.player.remainingSeconds = duration;
+
+  const stepLabel = document.getElementById('moodStepLabel');
+  const phaseLabel = document.getElementById('moodPhaseLabel');
+  const zoneEl = document.getElementById('moodExerciseZone');
+  const titleEl = document.getElementById('moodExerciseTitle');
+  const guideEl = document.getElementById('moodExerciseGuide');
+  const seqNav = document.getElementById('moodSequenceNav');
+  const prevBtn = document.getElementById('btnPrevExercise');
+  const nextBtn = document.getElementById('btnNextExercise');
+
+  if (stepLabel) {
+    stepLabel.textContent = queue.length === 1
+      ? 'EJERCICIO INDIVIDUAL'
+      : `${currentIndex + 1} DE ${queue.length}`;
+  }
+  if (phaseLabel) {
+    const isAfter = state.selectedPhase === 'estiramiento';
+    phaseLabel.textContent = isAfter ? 'After · Estiramiento' : 'Before · Calentamiento';
+  }
+  if (zoneEl) zoneEl.textContent = ex.musculoObjetivo || 'Movilidad general';
+  if (titleEl) titleEl.textContent = ex.nombre;
+  if (guideEl) guideEl.textContent = ex.instrucciones || '';
+
+  if (seqNav) {
+    seqNav.style.display = queue.length > 1 ? 'flex' : 'none';
+  }
+  if (prevBtn) prevBtn.disabled = currentIndex === 0;
+  if (nextBtn) nextBtn.disabled = currentIndex >= queue.length - 1;
+
+  updateTimerUI();
+
+  if (autoAnnounce && !state.player.audioMuted && window.soundManager) {
+    window.soundManager.speak(ex.nombre);
+  }
+}
+
+function showCompletedView() {
+  stopTimerInterval();
+  releaseScreenWakeLock();
+
+  const activeView = document.getElementById('moodActiveView');
+  const completedView = document.getElementById('moodCompletedView');
+  const doneTitle = document.getElementById('moodDoneTitle');
+  const doneSub = document.getElementById('moodDoneSubtitle');
+
+  if (activeView) activeView.style.display = 'none';
+  if (completedView) completedView.style.display = 'flex';
+
+  const isSingle = state.player.queue.length === 1;
+  if (doneTitle) {
+    doneTitle.textContent = isSingle ? '¡Ejercicio completado!' : '¡Rutina completada!';
+  }
+  if (doneSub) {
+    doneSub.textContent = isSingle
+      ? 'Buen trabajo. Puedes repetirlo o volver a elegir otro.'
+      : 'Completaste tus 5 ejercicios. ¡Ya estás listo para darlo todo!';
+  }
+
+  if (!state.player.audioMuted && window.soundManager) {
+    window.soundManager.playComplete();
+  }
+}
+
+function startTimerLoop() {
+  stopTimerInterval();
+  state.player.isRunning = true;
+  updateTimerUI();
+
+  state.player.intervalId = setInterval(() => {
+    if (state.player.remainingSeconds > 0) {
+      state.player.remainingSeconds -= 1;
+      updateTimerUI();
+
+      // Avisos sonoros en los últimos 3 segundos
+      if (state.player.remainingSeconds > 0 && state.player.remainingSeconds <= 3) {
+        if (!state.player.audioMuted && window.soundManager) {
+          window.soundManager.playCountdown();
+        }
+      }
+
+      if (state.player.remainingSeconds === 0) {
+        const hasNext = state.player.currentIndex < state.player.queue.length - 1;
+        if (hasNext) {
+          state.player.currentIndex += 1;
+          if (!state.player.audioMuted && window.soundManager) {
+            window.soundManager.playNext();
+          }
+          loadCurrentPlayerExercise(true);
+        } else {
+          showCompletedView();
+        }
+      }
+    }
+  }, 1000);
+}
+
+function startWorkoutPlayer(exercisesQueue) {
+  if (!exercisesQueue || exercisesQueue.length === 0) return;
+
+  const screenMood = document.getElementById('screenMood');
+  const moodArtImg = document.getElementById('moodArtImg');
+  const activeView = document.getElementById('moodActiveView');
+  const completedView = document.getElementById('moodCompletedView');
+  const theme = GROUP_THEMES[state.selectedGroup] || GROUP_THEMES.piernas;
+
+  if (screenMood) {
+    screenMood.style.setProperty('--group-theme', theme.color);
+  }
+  if (moodArtImg) {
+    moodArtImg.src = theme.trainArt;
+  }
+  if (activeView) activeView.style.display = 'flex';
+  if (completedView) completedView.style.display = 'none';
+
+  state.player.queue = exercisesQueue;
+  state.player.currentIndex = 0;
+
+  if (window.soundManager && !state.player.audioMuted) {
+    window.soundManager.init();
+  }
+
+  requestScreenWakeLock();
+  showScreen('mood');
+  loadCurrentPlayerExercise(true);
+  startTimerLoop();
+}
+
 // Inicializar eventos cuando el DOM esté listo
 document.addEventListener('DOMContentLoaded', async () => {
   const btnGetStarted = document.getElementById('btnGetStarted');
@@ -174,7 +398,17 @@ document.addEventListener('DOMContentLoaded', async () => {
   const tabAfter = document.getElementById('tabAfter');
   const workoutCards = document.querySelectorAll('.workout-card');
 
-  // Cargar la base de datos al iniciar
+  // Controles de Pantalla 4 (Mood)
+  const btnExitMood = document.getElementById('btnExitMood');
+  const btnToggleAudio = document.getElementById('btnToggleAudio');
+  const btnMinus15 = document.getElementById('btnMinus15');
+  const btnPlayPause = document.getElementById('btnPlayPause');
+  const btnPlus15 = document.getElementById('btnPlus15');
+  const btnPrevExercise = document.getElementById('btnPrevExercise');
+  const btnNextExercise = document.getElementById('btnNextExercise');
+  const btnRepeatRoutine = document.getElementById('btnRepeatRoutine');
+  const btnDoneBackToTrain = document.getElementById('btnDoneBackToTrain');
+
   await loadExercisesDatabase();
 
   if (btnGetStarted) {
@@ -203,7 +437,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     card.addEventListener('click', async () => {
       const groupId = card.getAttribute('data-group-id');
       state.selectedGroup = groupId;
-      state.selectedPhase = 'calentamiento'; // Siempre inicia en Before
+      state.selectedPhase = 'calentamiento';
 
       if ('vibrate' in navigator) {
         try { navigator.vibrate(25); } catch (e) {}
@@ -230,13 +464,105 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
   });
 
-  // Botón START ROUTINE (listo para conectar la Pantalla 4: Reproductor con temporizador)
+  // Botón START ROUTINE: selecciona exactamente 5 ejercicios aleatorios de la fase actual
   if (btnStartRoutine) {
     btnStartRoutine.addEventListener('click', () => {
       const groupData = getSelectedGroupData();
-      const phaseName = state.selectedPhase === 'estiramiento' ? 'After (Estiramiento)' : 'Before (Calentamiento)';
-      const title = groupData ? groupData.subtitulo : state.selectedGroup;
-      alert(`🚀 ¡Listo para iniciar ${title} — ${phaseName}!\n\nEn el siguiente paso conectaremos la Pantalla 4 (Reproductor guiado con temporizador y audio).`);
+      const phaseData = groupData ? groupData[state.selectedPhase] : null;
+      const allExercises = (phaseData && Array.isArray(phaseData.ejercicios)) ? phaseData.ejercicios : [];
+
+      if (allExercises.length === 0) return;
+
+      const selectedFive = pickRandomExercises(allExercises, 5);
+      startWorkoutPlayer(selectedFive);
+    });
+  }
+
+  // Eventos del reproductor (Pantalla 4)
+  if (btnExitMood) {
+    btnExitMood.addEventListener('click', () => {
+      stopTimerInterval();
+      releaseScreenWakeLock();
+      if (window.speechSynthesis) {
+        try { window.speechSynthesis.cancel(); } catch (e) {}
+      }
+      showScreen('train');
+    });
+  }
+
+  if (btnToggleAudio) {
+    btnToggleAudio.addEventListener('click', () => {
+      state.player.audioMuted = !state.player.audioMuted;
+      btnToggleAudio.textContent = state.player.audioMuted ? '🔇' : '🔊';
+      if (window.soundManager) {
+        window.soundManager.soundEnabled = !state.player.audioMuted;
+        window.soundManager.speechEnabled = !state.player.audioMuted;
+      }
+      if (state.player.audioMuted && window.speechSynthesis) {
+        try { window.speechSynthesis.cancel(); } catch (e) {}
+      }
+    });
+  }
+
+  if (btnPlayPause) {
+    btnPlayPause.addEventListener('click', () => {
+      if (state.player.isRunning) {
+        stopTimerInterval();
+        updateTimerUI();
+      } else {
+        startTimerLoop();
+      }
+    });
+  }
+
+  if (btnMinus15) {
+    btnMinus15.addEventListener('click', () => {
+      state.player.remainingSeconds = Math.max(5, state.player.remainingSeconds - 15);
+      updateTimerUI();
+    });
+  }
+
+  if (btnPlus15) {
+    btnPlus15.addEventListener('click', () => {
+      state.player.remainingSeconds += 15;
+      if (state.player.remainingSeconds > state.player.totalSeconds) {
+        state.player.totalSeconds = state.player.remainingSeconds;
+      }
+      updateTimerUI();
+    });
+  }
+
+  if (btnPrevExercise) {
+    btnPrevExercise.addEventListener('click', () => {
+      if (state.player.currentIndex > 0) {
+        state.player.currentIndex -= 1;
+        loadCurrentPlayerExercise(true);
+        if (state.player.isRunning) startTimerLoop();
+      }
+    });
+  }
+
+  if (btnNextExercise) {
+    btnNextExercise.addEventListener('click', () => {
+      if (state.player.currentIndex < state.player.queue.length - 1) {
+        state.player.currentIndex += 1;
+        loadCurrentPlayerExercise(true);
+        if (state.player.isRunning) startTimerLoop();
+      }
+    });
+  }
+
+  if (btnRepeatRoutine) {
+    btnRepeatRoutine.addEventListener('click', () => {
+      startWorkoutPlayer([...state.player.queue]);
+    });
+  }
+
+  if (btnDoneBackToTrain) {
+    btnDoneBackToTrain.addEventListener('click', () => {
+      stopTimerInterval();
+      releaseScreenWakeLock();
+      showScreen('train');
     });
   }
 });
