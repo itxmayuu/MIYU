@@ -78,7 +78,6 @@ function renderTrainScreen() {
   const trainTitle = document.getElementById('trainTitle');
   const trainSummary = document.getElementById('trainSummary');
   const trainHeroImg = document.getElementById('trainHeroImg');
-  const trainPhaseDesc = document.getElementById('trainPhaseDesc');
   const trainExerciseList = document.getElementById('trainExerciseList');
 
   const tabBefore = document.getElementById('tabBefore');
@@ -120,15 +119,11 @@ function renderTrainScreen() {
     const phaseLabel = isAfter ? 'Estiramiento estático' : 'Calentamiento dinámico';
     trainSummary.textContent = `${exercises.length} ejercicios disponibles · ${phaseLabel}`;
   }
-  if (trainPhaseDesc) {
-    trainPhaseDesc.textContent = groupData.descripcion || '';
-  }
-
   if (trainExerciseList) {
     trainExerciseList.innerHTML = '';
 
     exercises.forEach((ex, index) => {
-      const num = String(index + 1).padStart(2, '0');
+      const num = index + 1;
       const seg = ex.duracionSegundos || 30;
 
       const item = document.createElement('div');
@@ -144,10 +139,7 @@ function renderTrainScreen() {
         </div>
         <div class="exercise-details">
           <div>${ex.instrucciones || ''}</div>
-          <div class="exercise-detail-tip">
-            <strong>Meta:</strong> ${ex.repsOTiempo || `${seg}s`}<br>
-            <strong>Tip:</strong> ${ex.consejo || ''}
-          </div>
+          ${ex.consejo ? `<div class="exercise-detail-tip">${ex.consejo}</div>` : ''}
         </div>
       `;
 

@@ -19,10 +19,13 @@
             "instrucciones": "Sueltos, como un péndulo. Apóyate en una pared o poste si lo necesitas.",
             "repsOTiempo": "15 reps por pierna o 30s",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Cadera e Isquiotibiales",
+            "musculoObjetivo": "Cadera e Parte trasera del muslo",
             "consejo": "Mantén el torso erguido sin arquear la zona lumbar.",
             "equipamiento": "Pared o poste",
-            "media": { "tipo": "svg", "archivo": "leg-warm-01.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "leg-warm-01.svg"
+            }
           },
           {
             "id": "leg-warm-02",
@@ -30,10 +33,13 @@
             "instrucciones": "Cruzando por delante del cuerpo y abriendo hacia el lateral.",
             "repsOTiempo": "15 reps por pierna o 30s",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Aductores y Abductores",
+            "musculoObjetivo": "Parte interna y externa del muslo",
             "consejo": "Movimiento controlado sin forzar el tope articular bruscamente.",
             "equipamiento": "Pared o soporte",
-            "media": { "tipo": "svg", "archivo": "leg-warm-02.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "leg-warm-02.svg"
+            }
           },
           {
             "id": "leg-warm-03",
@@ -41,10 +47,13 @@
             "instrucciones": "Bajando profundo y con fluidez, sin peso.",
             "repsOTiempo": "15 reps fluidas",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Cuádriceps, Glúteos y Tobillos",
+            "musculoObjetivo": "Muslos, Glúteos y Tobillos",
             "consejo": "Empuja las rodillas hacia afuera y mantén el pecho levantado.",
             "equipamiento": "Ninguno (peso corporal)",
-            "media": { "tipo": "svg", "archivo": "leg-warm-03.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "leg-warm-03.svg"
+            }
           },
           {
             "id": "leg-warm-04",
@@ -52,10 +61,13 @@
             "instrucciones": "Manos en la cintura, dibujando círculos grandes y fluidos en ambos sentidos.",
             "repsOTiempo": "10 círculos por lado o 30s",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Articulación coxofemoral y lumbares",
+            "musculoObjetivo": "Cadera y espalda baja",
             "consejo": "Movimiento suave y continuo para lubricar la articulación.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "leg-warm-04.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "leg-warm-04.svg"
+            }
           },
           {
             "id": "leg-warm-05",
@@ -63,10 +75,13 @@
             "instrucciones": "Paso amplio sin peso, alternando piernas y manteniendo el torso vertical.",
             "repsOTiempo": "16 pasos alternos o 30s",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Psoas, Cuádriceps y Glúteos",
+            "musculoObjetivo": "Cadera, Muslos y Glúteos",
             "consejo": "No dejes que la rodilla delantera sobrepase en exceso la punta del pie.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "leg-warm-05.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "leg-warm-05.svg"
+            }
           },
           {
             "id": "leg-warm-06",
@@ -74,10 +89,13 @@
             "instrucciones": "Eleva la rodilla agarrándola brevemente contra el pecho en cada paso.",
             "repsOTiempo": "15 reps alternas o 30s",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Flexores de cadera y Glúteo mayor",
+            "musculoObjetivo": "Cadera y glúteos",
             "consejo": "Ponte de puntillas en el pie de apoyo para activar pantorrillas.",
             "equipamiento": "Espacio para caminar",
-            "media": { "tipo": "svg", "archivo": "leg-warm-06.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "leg-warm-06.svg"
+            }
           },
           {
             "id": "leg-warm-07",
@@ -85,10 +103,13 @@
             "instrucciones": "Piernas muy abiertas, desplazando el peso hacia un lado bajando profundo mientras la otra pierna queda estirada.",
             "repsOTiempo": "10 a 12 reps alternas o 30s",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Aductores, Isquios y Movilidad de tobillo",
+            "musculoObjetivo": "Parte interna del muslo, Parte trasera del muslo y Movilidad de tobillo",
             "consejo": "Mantén el talón del pie de apoyo completamente pegado al suelo.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "leg-warm-07.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "leg-warm-07.svg"
+            }
           },
           {
             "id": "leg-warm-08",
@@ -96,32 +117,41 @@
             "instrucciones": "Boca arriba con rodillas dobladas, elevar la pelvis apretando glúteos arriba por 1 segundo.",
             "repsOTiempo": "15 reps controladas",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Glúteo mayor e Isquiotibiales",
+            "musculoObjetivo": "Glúteos e Parte trasera del muslo",
             "consejo": "Empuja a través de los talones, no de la punta de los pies.",
             "equipamiento": "Colchoneta o suelo",
-            "media": { "tipo": "svg", "archivo": "leg-warm-08.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "leg-warm-08.svg"
+            }
           },
           {
             "id": "leg-warm-09",
-            "nombre": "Círculos de cadera en cuadrupedia (Fire Hydrants)",
+            "nombre": "Círculos de cadera en cuadrupedia",
             "instrucciones": "En cuatro apoyos, elevar la rodilla doblada lateralmente y rotar en círculos amplios.",
             "repsOTiempo": "8 círculos por pierna en cada sentido",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Glúteo medio y Rotadores de cadera",
+            "musculoObjetivo": "Glúteos y Cadera",
             "consejo": "No gires la espalda; aísla el movimiento en la cadera.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "leg-warm-09.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "leg-warm-09.svg"
+            }
           },
           {
             "id": "leg-warm-10",
-            "nombre": "Buenos días al aire (Good Mornings)",
+            "nombre": "Buenos días al aire",
             "instrucciones": "Manos tras la nuca, rodillas ligeramente dobladas, empujar los glúteos hacia atrás con espalda recta.",
             "repsOTiempo": "12 a 15 reps fluidas",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Cadena posterior, Isquios y Erectores espinales",
+            "musculoObjetivo": "Cadena posterior, Parte trasera del muslo y Espalda baja",
             "consejo": "Siente la tensión elástica en los isquiotibiales antes de subir.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "leg-warm-10.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "leg-warm-10.svg"
+            }
           },
           {
             "id": "leg-warm-11",
@@ -129,10 +159,13 @@
             "instrucciones": "Paso amplio al costado, doblando la rodilla hacia afuera y regresando con impulso al centro.",
             "repsOTiempo": "12 a 14 reps alternadas",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Glúteo medio, Cuádriceps y Aductores",
+            "musculoObjetivo": "Glúteos, Muslos y Parte interna del muslo",
             "consejo": "Mantén el pecho erguido y el pie contrario apoyado.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "leg-warm-11.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "leg-warm-11.svg"
+            }
           },
           {
             "id": "leg-warm-12",
@@ -140,43 +173,55 @@
             "instrucciones": "De pie, pararse de puntillas al máximo y luego balancearse sobre los talones levantando las puntas.",
             "repsOTiempo": "20 repeticiones rítmicas",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Gastrocnemio, Sóleo y Tibial anterior",
+            "musculoObjetivo": "Pantorrillas y tobillos",
             "consejo": "Crucial para preparar la flexión dorsal del tobillo en sentadilla profunda.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "leg-warm-12.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "leg-warm-12.svg"
+            }
           },
           {
             "id": "leg-warm-13",
-            "nombre": "Paso de cangrejo en semi-sentadilla (Monster Walk)",
+            "nombre": "Paso de cangrejo en semi-sentadilla",
             "instrucciones": "En posición atlética baja, dar pasos cortos laterales manteniendo tensión constante.",
             "repsOTiempo": "10 pasos a un lado y 10 al otro",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Abductores, Tensor de la fascia lata y Glúteos",
+            "musculoObjetivo": "Cadera lateral y glúteos",
             "consejo": "Si tienes una mini-banda elástica en las rodillas, úsala aquí.",
             "equipamiento": "Opcional mini-banda",
-            "media": { "tipo": "svg", "archivo": "leg-warm-13.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "leg-warm-13.svg"
+            }
           },
           {
             "id": "leg-warm-14",
-            "nombre": "Patadas de glúteo en cuadrupedia (Donkey Kicks)",
+            "nombre": "Patadas de glúteo en cuadrupedia",
             "instrucciones": "En cuatro apoyos, patear con el talón doblado a 90° directamente hacia el techo.",
             "repsOTiempo": "12 reps por pierna o 30s",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Glúteo mayor (porción superior)",
+            "musculoObjetivo": "Glúteos",
             "consejo": "Aprieta el glúteo al llegar arriba sin arquear la zona lumbar.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "leg-warm-14.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "leg-warm-14.svg"
+            }
           },
           {
             "id": "leg-warm-15",
-            "nombre": "Paso de oso corto (Bear Crawl steps)",
+            "nombre": "Paso de oso corto",
             "instrucciones": "En cuadrupedia con rodillas a solo 3 cm del suelo, dar pequeños pasos coordinados.",
             "repsOTiempo": "20 a 30 segundos continuos",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Core, Cuádriceps y Estabilidad de rodilla",
+            "musculoObjetivo": "Abdomen, Muslos y Estabilidad de rodilla",
             "consejo": "Mantén la espalda tan plana como una mesa durante todo el tiempo.",
             "equipamiento": "Colchoneta o suelo",
-            "media": { "tipo": "svg", "archivo": "leg-warm-15.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "leg-warm-15.svg"
+            }
           }
         ]
       },
@@ -190,21 +235,27 @@
             "instrucciones": "Talón al glúteo con una mano, rodillas juntas y empujando suavemente la pelvis al frente.",
             "repsOTiempo": "30 a 45s por pierna",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Cuádriceps femoral (recto anterior)",
+            "musculoObjetivo": "Parte frontal del muslo",
             "consejo": "Mantén las dos rodillas paralelas sin abrir la pierna de lado.",
             "equipamiento": "Pared para equilibrio",
-            "media": { "tipo": "svg", "archivo": "leg-cool-01.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "leg-cool-01.svg"
+            }
           },
           {
             "id": "leg-cool-02",
-            "nombre": "Isquiotibiales sentado",
+            "nombre": "Parte trasera del muslo sentado",
             "instrucciones": "Pierna extendida al frente alcanzando la punta del pie desde la bisagra de cadera.",
             "repsOTiempo": "30 a 45s por pierna",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Isquiosurales (bíceps femoral, semitendinoso)",
+            "musculoObjetivo": "Parte trasera del muslo",
             "consejo": "No curvees la espalda alta; busca acercar el ombligo al muslo.",
             "equipamiento": "Colchoneta o suelo",
-            "media": { "tipo": "svg", "archivo": "leg-cool-02.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "leg-cool-02.svg"
+            }
           },
           {
             "id": "leg-cool-03",
@@ -212,10 +263,13 @@
             "instrucciones": "Paso largo con rodilla trasera apoyada en suelo, bajando la cadera para abrir el psoas.",
             "repsOTiempo": "30 a 45s por lado",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Psoas ilíaco y Flexores profundos de cadera",
+            "musculoObjetivo": "Cadera e ingle",
             "consejo": "Aprieta el glúteo de la pierna trasera para potenciar la relajación del psoas.",
             "equipamiento": "Colchoneta para la rodilla",
-            "media": { "tipo": "svg", "archivo": "leg-cool-03.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "leg-cool-03.svg"
+            }
           },
           {
             "id": "leg-cool-04",
@@ -223,10 +277,13 @@
             "instrucciones": "Plantas de los pies juntas, sujetando los tobillos y empujando rodillas hacia el suelo.",
             "repsOTiempo": "35 a 45s sostenido",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Aductor mayor, mediano y recto interno",
+            "musculoObjetivo": "Parte interna del muslo",
             "consejo": "Exhala profundamente dejando que la gravedad baje tus rodillas.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "leg-cool-04.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "leg-cool-04.svg"
+            }
           },
           {
             "id": "leg-cool-05",
@@ -234,10 +291,13 @@
             "instrucciones": "Boca arriba, apoyar un tobillo sobre la rodilla contraria y jalar el muslo hacia el pecho.",
             "repsOTiempo": "30 a 45s por lado",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Glúteo medio y Músculo piramidal",
+            "musculoObjetivo": "Glúteos y cadera",
             "consejo": "Excelente para aliviar presión sobre el nervio ciático tras prensa o sentadillas.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "leg-cool-05.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "leg-cool-05.svg"
+            }
           },
           {
             "id": "leg-cool-06",
@@ -245,21 +305,27 @@
             "instrucciones": "Punta del pie apoyada en alto contra la pared, talón en suelo y acercando la cadera hacia el muro.",
             "repsOTiempo": "30 a 45s por pierna",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Gastrocnemio y Tendón de Aquiles",
+            "musculoObjetivo": "Pantorrillas y tobillo",
             "consejo": "Mantén la rodilla de atrás totalmente extendida y bloqueada.",
             "equipamiento": "Pared o columna",
-            "media": { "tipo": "svg", "archivo": "leg-cool-06.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "leg-cool-06.svg"
+            }
           },
           {
             "id": "leg-cool-07",
-            "nombre": "Pose de la paloma en suelo (Pigeon Pose)",
+            "nombre": "Estiramiento profundo de glúteo en suelo",
             "instrucciones": "Pierna delantera flexionada a 90° en el suelo, pierna trasera totalmente estirada hacia atrás.",
             "repsOTiempo": "35 a 45s por lado",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Rotadores externos de cadera y Glúteos profundos",
+            "musculoObjetivo": "Cadera y glúteos",
             "consejo": "Si la cadera queda en el aire, apoya un bloque o toalla debajo.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "leg-cool-07.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "leg-cool-07.svg"
+            }
           },
           {
             "id": "leg-cool-08",
@@ -267,87 +333,111 @@
             "instrucciones": "Sentado con ambas piernas en ángulos de 90 grados (una al frente y otra al lateral), inclinando el torso al frente.",
             "repsOTiempo": "35s por lado",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Cápsula articular de la cadera (rotación interna y externa)",
+            "musculoObjetivo": "Movilidad de cadera",
             "consejo": "Mantén la columna erguida mientras te proyectas sobre la espinilla delantera.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "leg-cool-08.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "leg-cool-08.svg"
+            }
           },
           {
             "id": "leg-cool-09",
-            "nombre": "Estiramiento de sofá (Couch Stretch)",
+            "nombre": "Estiramiento de sofá",
             "instrucciones": "Rodilla en el suelo pegada a la pared o banco con la espinilla vertical hacia arriba, torso erguido.",
             "repsOTiempo": "30 a 45s por pierna",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Psoas, Cuádriceps y Recto femoral profundo",
+            "musculoObjetivo": "Cadera, Muslos y Parte frontal del muslo",
             "consejo": "Es el estiramiento más potente de tren inferior; respira con calma sin arquear la espalda.",
             "equipamiento": "Pared o banco + almohadilla",
-            "media": { "tipo": "svg", "archivo": "leg-cool-09.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "leg-cool-09.svg"
+            }
           },
           {
             "id": "leg-cool-10",
-            "nombre": "Estiramiento de rana (Frog Stretch)",
+            "nombre": "Estiramiento de rana",
             "instrucciones": "En cuatro apoyos, abrir las rodillas lo más ancho posible, pies hacia afuera y desplazar la pelvis suavemente hacia atrás.",
             "repsOTiempo": "35 a 45s continuo",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Aductores profundos e Ingle",
+            "musculoObjetivo": "Parte interna del muslo",
             "consejo": "Ve milímetro a milímetro respetando tu umbral de flexibilidad.",
             "equipamiento": "Colchoneta suave",
-            "media": { "tipo": "svg", "archivo": "leg-cool-10.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "leg-cool-10.svg"
+            }
           },
           {
             "id": "leg-cool-11",
-            "nombre": "Isquiotibiales con talón en banco",
+            "nombre": "Parte trasera del muslo con talón en banco",
             "instrucciones": "Apoyar el talón en un banco plano o cajón, flexionar el tobillo hacia ti y llevar el pecho al frente.",
             "repsOTiempo": "30 a 45s por pierna",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Vientre medio de los isquiotibiales",
+            "musculoObjetivo": "Parte trasera del muslo",
             "consejo": "Mantén las caderas cuadradas apuntando al frente.",
             "equipamiento": "Banco de gym o cajón",
-            "media": { "tipo": "svg", "archivo": "leg-cool-11.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "leg-cool-11.svg"
+            }
           },
           {
             "id": "leg-cool-12",
-            "nombre": "Sóleo contra la pared con rodilla doblada",
+            "nombre": "Pantorrilla contra la pared con rodilla doblada",
             "instrucciones": "Como el estiramiento de gemelos pero flexionando intencionalmente la rodilla de atrás 15 grados.",
             "repsOTiempo": "30 a 40s por pierna",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Músculo sóleo y Porción baja del tendón de Aquiles",
+            "musculoObjetivo": "Pantorrilla baja y tobillo",
             "consejo": "No levantes el talón del suelo al doblar la rodilla.",
             "equipamiento": "Pared",
-            "media": { "tipo": "svg", "archivo": "leg-cool-12.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "leg-cool-12.svg"
+            }
           },
           {
             "id": "leg-cool-13",
-            "nombre": "Banda iliotibial (ITB) cruzada de pie",
+            "nombre": "Lateral del muslo con piernas cruzadas",
             "instrucciones": "Cruzar una pierna por detrás de la otra e inclinar el torso y los brazos hacia el lado opuesto.",
             "repsOTiempo": "30 a 40s por lado",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Banda iliotibial y Glúteo menor",
+            "musculoObjetivo": "Lateral del muslo y Glúteos",
             "consejo": "Empuja la cadera hacia el costado que queda detrás.",
             "equipamiento": "Pared o poste para apoyo",
-            "media": { "tipo": "svg", "archivo": "leg-cool-13.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "leg-cool-13.svg"
+            }
           },
           {
             "id": "leg-cool-14",
-            "nombre": "Pose del niño con rodillas abiertas (Wide Child's Pose)",
+            "nombre": "Descanso de espalda en el suelo con rodillas abiertas",
             "instrucciones": "Dedos gordos de los pies juntos, rodillas separadas al ancho de la colchoneta, sentarse en talones y estirar brazos.",
             "repsOTiempo": "40 a 50s continuo",
             "duracionSegundos": 40,
-            "musculoObjetivo": "Descompresión lumbar, Aductores y Cadera",
+            "musculoObjetivo": "Espalda baja, Parte interna del muslo y Cadera",
             "consejo": "Deja caer la frente al suelo y relaja totalmente el cuello y hombros.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "leg-cool-14.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "leg-cool-14.svg"
+            }
           },
           {
             "id": "leg-cool-15",
-            "nombre": "Estiramiento de empeine y tibiales sentado (Seiza)",
+            "nombre": "Estiramiento de empeines y tobillos sentado",
             "instrucciones": "De rodillas, sentarse con cuidado sobre los talones con los empeines planos contra el suelo.",
             "repsOTiempo": "30 a 45s suave",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Tibial anterior, Músculos peroneos y Empeine",
+            "musculoObjetivo": "Tobillos y empeine",
             "consejo": "Si sientes mucha presión en las rodillas, coloca una toalla doblada bajo los glúteos.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "leg-cool-15.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "leg-cool-15.svg"
+            }
           }
         ]
       }
@@ -369,10 +459,13 @@
             "instrucciones": "Círculos controlados de menor a mayor diámetro con brazos rectos.",
             "repsOTiempo": "15 reps o 30s",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Deltoides anterior y Manguito rotador",
+            "musculoObjetivo": "Parte frontal del hombro y Hombros",
             "consejo": "Mantén los brazos totalmente estirados sin encoger los hombros.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "arm-warm-01.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "arm-warm-01.svg"
+            }
           },
           {
             "id": "arm-warm-02",
@@ -380,10 +473,13 @@
             "instrucciones": "Círculos amplios abriendo el pecho al pasar los brazos hacia atrás.",
             "repsOTiempo": "15 reps o 30s",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Deltoides posterior, Pecho y Bíceps",
+            "musculoObjetivo": "Parte trasera del hombro, Pecho y Bíceps",
             "consejo": "Siente cómo se juntan las escápulas al ir hacia atrás.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "arm-warm-02.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "arm-warm-02.svg"
+            }
           },
           {
             "id": "arm-warm-03",
@@ -391,10 +487,13 @@
             "instrucciones": "Simulando un curl rápido sin peso para bombear líquido sinovial a los codos.",
             "repsOTiempo": "20 reps rítmicas o 30s",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Articulación del codo, Bíceps y Tríceps",
+            "musculoObjetivo": "Articulación del codo, Bíceps y Parte trasera del brazo",
             "consejo": "Mantén los codos pegados a los costados del cuerpo.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "arm-warm-03.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "arm-warm-03.svg"
+            }
           },
           {
             "id": "arm-warm-04",
@@ -402,10 +501,13 @@
             "instrucciones": "Repeticiones continuas con muy baja tensión calentando el tendón distal.",
             "repsOTiempo": "15 a 20 reps fluidas",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Tendón del bíceps braquial",
+            "musculoObjetivo": "Tendón del Bíceps",
             "consejo": "Si no tienes banda, genera contracción isométrica voluntaria.",
             "equipamiento": "Banda elástica ligera",
-            "media": { "tipo": "svg", "archivo": "arm-warm-04.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "arm-warm-04.svg"
+            }
           },
           {
             "id": "arm-warm-05",
@@ -413,10 +515,13 @@
             "instrucciones": "Codos elevados apuntando al techo, doblando y extendiendo antebrazos dinámicamente.",
             "repsOTiempo": "15 reps continuas o 30s",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Cabeza larga del tríceps braquial",
+            "musculoObjetivo": "Parte trasera del brazo",
             "consejo": "Asegura rango completo de extensión arriba.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "arm-warm-05.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "arm-warm-05.svg"
+            }
           },
           {
             "id": "arm-warm-06",
@@ -424,54 +529,69 @@
             "instrucciones": "Dedos entrelazados dibujando figuras en 'ocho' en ambos sentidos.",
             "repsOTiempo": "15 giros por sentido",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Tendones flexores, extensores y Túnel carpiano",
+            "musculoObjetivo": "Muñecas y Muñecas",
             "consejo": "Vital para prevenir molestias en agarre de barra z o mancuernas.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "arm-warm-06.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "arm-warm-06.svg"
+            }
           },
           {
             "id": "arm-warm-07",
-            "nombre": "Elevaciones laterales dinámicas sin peso (deltoides lateral)",
+            "nombre": "Elevaciones laterales dinámicas sin peso",
             "instrucciones": "Subir brazos a los lados hasta la horizontal y bajar a tempo continuo.",
             "repsOTiempo": "15 reps controladas",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Deltoides lateral (cabeza media)",
+            "musculoObjetivo": "Lateral del hombro",
             "consejo": "Piensa en alejar los nudillos hacia las paredes.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "arm-warm-07.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "arm-warm-07.svg"
+            }
           },
           {
             "id": "arm-warm-08",
-            "nombre": "Flexión dorsal y palmar de muñecas de pie",
+            "nombre": "Estirar muñecas arriba y abajo",
             "instrucciones": "Brazos estirados al frente, flexionando y extendiendo palmas a ritmo dinámico.",
             "repsOTiempo": "20 flexiones rápidas",
             "duracionSegundos": 30,
             "musculoObjetivo": "Antebrazos anteriores y posteriores",
             "consejo": "Abre y cierra los dedos enérgicamente para aumentar el flujo sanguíneo.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "arm-warm-08.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "arm-warm-08.svg"
+            }
           },
           {
             "id": "arm-warm-09",
-            "nombre": "Patadas traseras de tríceps dinámicas (Kickbacks al aire)",
+            "nombre": "Patadas traseras de tríceps dinámicas",
             "instrucciones": "Torso inclinado a 45°, codos pegados a costillas, extendiendo antebrazos hacia atrás.",
             "repsOTiempo": "15 reps apretando 1 segundo atrás",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Cabeza medial y lateral del tríceps",
+            "musculoObjetivo": "Parte trasera del brazo",
             "consejo": "No balancees los hombros; el codo actúa como bisagra fija.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "arm-warm-09.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "arm-warm-09.svg"
+            }
           },
           {
             "id": "arm-warm-10",
-            "nombre": "Pronación y supinación de antebrazos con codos a 90°",
+            "nombre": "Giros de antebrazos con codos doblados",
             "instrucciones": "Codos pegados a costillas doblados a 90°, girar palmas al techo y al suelo rápidamente.",
             "repsOTiempo": "20 giros alternos",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Músculo pronador redondo y supinador corto",
+            "musculoObjetivo": "Antebrazos",
             "consejo": "Prepara el codo para los curls invertidos y martillo.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "arm-warm-10.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "arm-warm-10.svg"
+            }
           },
           {
             "id": "arm-warm-11",
@@ -479,10 +599,13 @@
             "instrucciones": "Subir y bajar antebrazos con palmas mirándose entre sí, apretando los puños con fuerza.",
             "repsOTiempo": "15 reps con tensión isométrica",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Braquial anterior y Braquiorradial",
+            "musculoObjetivo": "Bíceps y antebrazo",
             "consejo": "La presión del puño activa la estabilidad de toda la cadena del brazo.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "arm-warm-11.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "arm-warm-11.svg"
+            }
           },
           {
             "id": "arm-warm-12",
@@ -490,10 +613,13 @@
             "instrucciones": "Manos apoyadas al borde de un banco o suelo, bajando solo 5-10 cm de forma muy suave.",
             "repsOTiempo": "10 reps de activación térmica",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Tríceps y Deltoides anterior",
+            "musculoObjetivo": "Parte trasera del brazo y Parte frontal del hombro",
             "consejo": "No bajes profundo; es activación, no una serie efectiva.",
             "equipamiento": "Banco o suelo",
-            "media": { "tipo": "svg", "archivo": "arm-warm-12.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "arm-warm-12.svg"
+            }
           },
           {
             "id": "arm-warm-13",
@@ -504,7 +630,10 @@
             "musculoObjetivo": "Bíceps en todos sus rangos articulares",
             "consejo": "Excelente para llevar sangre directo a los vientres musculares.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "arm-warm-13.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "arm-warm-13.svg"
+            }
           },
           {
             "id": "arm-warm-14",
@@ -512,21 +641,27 @@
             "instrucciones": "Palmas en pared a la altura de la frente, doblar codos acercando la frente y empujar con tríceps.",
             "repsOTiempo": "12 reps suaves",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Tríceps y Estabilidad de muñeca",
+            "musculoObjetivo": "Parte trasera del brazo y Estabilidad de muñeca",
             "consejo": "Mantén los codos cerrados hacia adelante, sin abrirlos hacia los lados.",
             "equipamiento": "Pared",
-            "media": { "tipo": "svg", "archivo": "arm-warm-14.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "arm-warm-14.svg"
+            }
           },
           {
             "id": "arm-warm-15",
-            "nombre": "Apertura y cierre rápido de manos (Flick de dedos)",
+            "nombre": "Apertura y cierre rápido de manos",
             "instrucciones": "Brazos en cruz, abrir y cerrar los dedos a máxima velocidad como disparando chispas.",
             "repsOTiempo": "30 segundos continuos",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Musculatura intrínseca de la mano y flexores de dedos",
+            "musculoObjetivo": "Manos y dedos",
             "consejo": "Notarás ardor en los antebrazos; activa el agarre al 100%.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "arm-warm-15.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "arm-warm-15.svg"
+            }
           }
         ]
       },
@@ -540,10 +675,13 @@
             "instrucciones": "Brazo doblado detrás de la nuca, jalando suavemente el codo con la mano opuesta.",
             "repsOTiempo": "30 a 45s por brazo",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Tríceps (cabeza larga) y Dorsal superior",
+            "musculoObjetivo": "Parte trasera del brazo y Espalda alta",
             "consejo": "Mantén la cabeza erguida con la mirada al frente, sin bajar la barbilla.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "arm-cool-01.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "arm-cool-01.svg"
+            }
           },
           {
             "id": "arm-cool-02",
@@ -551,10 +689,13 @@
             "instrucciones": "Palma apoyada plana contra la pared a la altura del hombro con codo recto, girando el torso al lado opuesto.",
             "repsOTiempo": "30 a 45s por brazo",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Bíceps braquial y Deltoides anterior",
+            "musculoObjetivo": "Bíceps y Parte frontal del hombro",
             "consejo": "Asegúrate de bloquear completamente el codo para que el estiramiento llegue al tendón.",
             "equipamiento": "Pared o columna",
-            "media": { "tipo": "svg", "archivo": "arm-cool-02.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "arm-cool-02.svg"
+            }
           },
           {
             "id": "arm-cool-03",
@@ -562,10 +703,13 @@
             "instrucciones": "Brazo extendido al frente, palma hacia arriba, tirando de los dedos suavemente hacia abajo.",
             "repsOTiempo": "30 a 45s por brazo",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Flexores del antebrazo y Túnel carpiano",
+            "musculoObjetivo": "Flexores del antebrazo y Muñecas",
             "consejo": "Incluye el pulgar en el agarre para descomprimir la mano completa.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "arm-cool-03.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "arm-cool-03.svg"
+            }
           },
           {
             "id": "arm-cool-04",
@@ -573,10 +717,13 @@
             "instrucciones": "Brazo extendido al frente, palma hacia abajo, tirando del dorso de la mano hacia abajo.",
             "repsOTiempo": "30 a 45s por brazo",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Extensores del antebrazo y Epicóndilo lateral",
+            "musculoObjetivo": "Extensores del antebrazo y Codo y antebrazo",
             "consejo": "Fundamental para prevenir el codo de tenista y liberar tensión de curl martillo.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "arm-cool-04.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "arm-cool-04.svg"
+            }
           },
           {
             "id": "arm-cool-05",
@@ -584,10 +731,13 @@
             "instrucciones": "Brazo estirado cruzando horizontalmente por debajo de la barbilla, presionando con el antebrazo contrario.",
             "repsOTiempo": "30 a 45s por brazo",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Deltoides posterior y Tríceps lateral",
+            "musculoObjetivo": "Parte trasera del hombro y Parte trasera del brazo",
             "consejo": "Mantén el hombro bajo, lejos de la oreja.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "arm-cool-05.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "arm-cool-05.svg"
+            }
           },
           {
             "id": "arm-cool-06",
@@ -595,10 +745,13 @@
             "instrucciones": "Entrelazar dedos por detrás de la espalda, estirar codos y elevar suavemente los brazos.",
             "repsOTiempo": "35 a 45s sostenido",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Bíceps, Deltoides anterior y Pectoral mayor",
+            "musculoObjetivo": "Bíceps, Parte frontal del hombro y Pecho",
             "consejo": "Abre bien el pecho sin inclinar el torso hacia adelante.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "arm-cool-06.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "arm-cool-06.svg"
+            }
           },
           {
             "id": "arm-cool-07",
@@ -606,10 +759,13 @@
             "instrucciones": "Codo apoyado en alto en el marco, inclinando el cuerpo hacia adelante para empujar el codo hacia atrás.",
             "repsOTiempo": "30 a 45s por brazo",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Tríceps (cabeza larga)",
+            "musculoObjetivo": "Parte trasera del brazo",
             "consejo": "Permite una elongación más intensa que el estiramiento manual.",
             "equipamiento": "Marco de puerta o soporte vertical",
-            "media": { "tipo": "svg", "archivo": "arm-cool-07.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "arm-cool-07.svg"
+            }
           },
           {
             "id": "arm-cool-08",
@@ -617,21 +773,27 @@
             "instrucciones": "Sentado con palmas apoyadas en suelo detrás de ti con dedos apuntando en dirección contraria, deslizando glúteos adelante.",
             "repsOTiempo": "35 a 45s continuo",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Vientre muscular de bíceps y cápsula anterior del hombro",
+            "musculoObjetivo": "Bíceps y Frente del hombro",
             "consejo": "No fuerces el hombro; deslízate solo hasta sentir un tirón suave y agradable.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "arm-cool-08.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "arm-cool-08.svg"
+            }
           },
           {
             "id": "arm-cool-09",
-            "nombre": "Estiramiento de antebrazo en cuatro apoyos (Prayer reverse)",
+            "nombre": "Estiramiento de antebrazo en cuatro apoyos",
             "instrucciones": "En cuadrupedia, apoyar palmas en suelo con los dedos apuntando hacia tus rodillas, llevando el peso atrás.",
             "repsOTiempo": "30 a 40s suave",
             "duracionSegundos": 35,
             "musculoObjetivo": "Flexores profundos de muñeca y dedos",
             "consejo": "Mantén las palmas completamente apoyadas en el suelo.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "arm-cool-09.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "arm-cool-09.svg"
+            }
           },
           {
             "id": "arm-cool-10",
@@ -639,10 +801,13 @@
             "instrucciones": "Colocar el dorso de la mano sobre el costado de las costillas y llevar el codo suavemente hacia el frente.",
             "repsOTiempo": "30s por lado",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Tríceps, Rotadores internos y Cápsula posterior",
+            "musculoObjetivo": "Parte trasera del brazo, Rotadores internos y Parte trasera del hombro",
             "consejo": "Tracción muy ligera sin dolor articular.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "arm-cool-10.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "arm-cool-10.svg"
+            }
           },
           {
             "id": "arm-cool-11",
@@ -650,10 +815,13 @@
             "instrucciones": "Cerrar el puño suavemente, flexionar la muñeca hacia adentro y presionar con la otra mano.",
             "repsOTiempo": "30s por brazo",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Tendones extensores de los dedos",
+            "musculoObjetivo": "Muñecas y manos",
             "consejo": "Excelente para descargar el agarre tras series pesadas de curl invertido.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "arm-cool-11.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "arm-cool-11.svg"
+            }
           },
           {
             "id": "arm-cool-12",
@@ -661,10 +829,13 @@
             "instrucciones": "Agarrar un poste a la altura del hombro con el pulgar apuntando al suelo y rotar el cuerpo afuera.",
             "repsOTiempo": "30 a 45s por brazo",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Cabeza corta del bíceps y Braquial",
+            "musculoObjetivo": "Bíceps",
             "consejo": "La rotación interna del pulgar estira fibras que la pared plana no alcanza.",
             "equipamiento": "Poste o columna",
-            "media": { "tipo": "svg", "archivo": "arm-cool-12.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "arm-cool-12.svg"
+            }
           },
           {
             "id": "arm-cool-13",
@@ -672,10 +843,13 @@
             "instrucciones": "Sostener una toalla tras la espalda con ambas manos (una arriba y una abajo) tirando de la toalla hacia abajo.",
             "repsOTiempo": "30 a 40s por lado",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Tríceps de brazo superior",
+            "musculoObjetivo": "Parte trasera del brazo de brazo superior",
             "consejo": "Permite un control milimétrico de la tensión.",
             "equipamiento": "Toalla pequeña o banda",
-            "media": { "tipo": "svg", "archivo": "arm-cool-13.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "arm-cool-13.svg"
+            }
           },
           {
             "id": "arm-cool-14",
@@ -686,7 +860,10 @@
             "musculoObjetivo": "Musculatura del pulgar y palma de la mano",
             "consejo": "Reduce la fatiga neuromuscular acumulada en mancuernas pesadas.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "arm-cool-14.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "arm-cool-14.svg"
+            }
           },
           {
             "id": "arm-cool-15",
@@ -694,10 +871,13 @@
             "instrucciones": "Cruzar los codos uno sobre el otro y entrelazar antebrazos elevando los codos suavemente.",
             "repsOTiempo": "30 a 40s cambiando el cruce",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Tríceps, Deltoides posterior y Romboides",
+            "musculoObjetivo": "Parte trasera del brazo, Parte trasera del hombro y Espalda alta",
             "consejo": "Respira hacia la espalda alta sintiendo cómo se separan los omóplatos.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "arm-cool-15.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "arm-cool-15.svg"
+            }
           }
         ]
       }
@@ -719,10 +899,13 @@
             "instrucciones": "Brazos abiertos en cruz y cruzando rítmicamente al frente alternando qué brazo va arriba.",
             "repsOTiempo": "15 reps continuas o 30s",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Pectoral mayor y Deltoides posterior",
+            "musculoObjetivo": "Pecho y Parte trasera del hombro",
             "consejo": "Abre bien el pecho en cada repetición sin arquear la zona lumbar.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "chest-warm-01.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "chest-warm-01.svg"
+            }
           },
           {
             "id": "chest-warm-02",
@@ -730,10 +913,13 @@
             "instrucciones": "Pies firmes a lo ancho de caderas, girando torso de lado a lado con codos a 90°.",
             "repsOTiempo": "20 giros alternos",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Columna torácica y Caja torácica",
+            "musculoObjetivo": "Espalda media y pecho",
             "consejo": "Gira desde la parte alta de la espalda facilitando la expansión torácica.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "chest-warm-02.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "chest-warm-02.svg"
+            }
           },
           {
             "id": "chest-warm-03",
@@ -741,10 +927,13 @@
             "instrucciones": "En pared o banco alto, flexionar codos a 45° bajando lento y empujando con control.",
             "repsOTiempo": "10 a 12 reps controladas",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Pectoral mayor, Tríceps y Deltoides anterior",
+            "musculoObjetivo": "Pecho, Parte trasera del brazo y Parte frontal del hombro",
             "consejo": "Enfócate en la conexión mente-músculo apretando el pecho al extender.",
             "equipamiento": "Pared o banco alto",
-            "media": { "tipo": "svg", "archivo": "chest-warm-03.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "chest-warm-03.svg"
+            }
           },
           {
             "id": "chest-warm-04",
@@ -752,10 +941,13 @@
             "instrucciones": "Brazos en molino alternado hacia adelante y atrás simulando crol.",
             "repsOTiempo": "15 reps por lado o 30s",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Cápsula anterior del hombro y Pectoral",
+            "musculoObjetivo": "Frente del hombro y Pecho",
             "consejo": "Movimiento fluido sin tirones bruscos.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "chest-warm-04.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "chest-warm-04.svg"
+            }
           },
           {
             "id": "chest-warm-05",
@@ -763,21 +955,27 @@
             "instrucciones": "Empujes frontales enérgicos extendiendo brazos y retrayendo escápulas al volver.",
             "repsOTiempo": "15 reps enérgicas",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Pectoral y Serrato anterior",
+            "musculoObjetivo": "Pecho y Costillas y hombros",
             "consejo": "Imagina que empujas una barra imaginaria pesada activando el núcleo.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "chest-warm-05.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "chest-warm-05.svg"
+            }
           },
           {
             "id": "chest-warm-06",
-            "nombre": "Elevaciones frontales dinámicas sin peso (deltoides anterior)",
+            "nombre": "Elevaciones frontales dinámicas sin peso",
             "instrucciones": "Subir brazos rectos al frente hasta la altura de los ojos y bajar a tempo constante.",
             "repsOTiempo": "15 reps continuas",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Deltoides anterior y Porción clavicular del pectoral",
+            "musculoObjetivo": "Parte frontal del hombro y Parte alta del pecho",
             "consejo": "Mantén el abdomen firme para no balancear el tronco.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "chest-warm-06.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "chest-warm-06.svg"
+            }
           },
           {
             "id": "chest-warm-07",
@@ -785,10 +983,13 @@
             "instrucciones": "Tomar un palo o banda con agarre ancho y pasarlo de adelante hacia atrás con brazos rectos.",
             "repsOTiempo": "12 a 15 pasadas suaves",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Movilidad global glenohumeral, Pectoral menor y Deltoides",
+            "musculoObjetivo": "Movilidad de hombros, Pecho y Hombros",
             "consejo": "Si sientes que los codos se doblan, separa más el agarre de las manos.",
             "equipamiento": "Palo de escoba o banda elástica",
-            "media": { "tipo": "svg", "archivo": "chest-warm-07.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "chest-warm-07.svg"
+            }
           },
           {
             "id": "chest-warm-08",
@@ -796,21 +997,27 @@
             "instrucciones": "Inclinando el torso a 45°, elevar brazos en forma de Y y luego en cruz formando una T.",
             "repsOTiempo": "12 a 14 reps",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Trapecio inferior, Supraespinoso e Infraespinoso",
+            "musculoObjetivo": "Espalda media, Hombros",
             "consejo": "El calentamiento más importante para prevenir pinzamientos en press de banca.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "chest-warm-08.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "chest-warm-08.svg"
+            }
           },
           {
             "id": "chest-warm-09",
-            "nombre": "Flexiones escapulares (Scapular Push-ups en pared o suelo)",
+            "nombre": "Flexiones escapularesen pared o suelo",
             "instrucciones": "Brazos totalmente rectos, juntar las escápulas y luego empujar separándolas al máximo.",
             "repsOTiempo": "12 reps sintiendo el deslizamiento escapular",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Serrato anterior (estabilidad escapular)",
+            "musculoObjetivo": "Costillas y hombros",
             "consejo": "Los codos NO se doblan en ningún momento; el movimiento ocurre solo en omóplatos.",
             "equipamiento": "Pared o colchoneta",
-            "media": { "tipo": "svg", "archivo": "chest-warm-09.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "chest-warm-09.svg"
+            }
           },
           {
             "id": "chest-warm-10",
@@ -818,10 +1025,13 @@
             "instrucciones": "Codos a 90° pegados a los costados, rotar antebrazos hacia afuera manteniendo codos fijos.",
             "repsOTiempo": "15 rotaciones controladas",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Manguito rotador (Infraespinoso y Redondo menor)",
+            "musculoObjetivo": "Hombros",
             "consejo": "Prepara la articulación para soportar la carga excéntrica de la barra.",
             "equipamiento": "Opcional banda ligera",
-            "media": { "tipo": "svg", "archivo": "chest-warm-10.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "chest-warm-10.svg"
+            }
           },
           {
             "id": "chest-warm-11",
@@ -829,10 +1039,13 @@
             "instrucciones": "Extender brazos sobre la cabeza juntando palmas imaginarias y bajando a 90°.",
             "repsOTiempo": "15 reps activas",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Deltoides anterior y Serratos",
+            "musculoObjetivo": "Parte frontal del hombro y Costillass",
             "consejo": "No arquees la zona lumbar al extender los brazos.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "chest-warm-11.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "chest-warm-11.svg"
+            }
           },
           {
             "id": "chest-warm-12",
@@ -840,10 +1053,13 @@
             "instrucciones": "En 4 apoyos con una mano en la nuca, apuntar el codo al suelo y luego abrir rotando al techo.",
             "repsOTiempo": "8 reps por lado",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Columna torácica y Pectoral",
+            "musculoObjetivo": "Espalda media y Pecho",
             "consejo": "Sigue el movimiento del codo con la mirada.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "chest-warm-12.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "chest-warm-12.svg"
+            }
           },
           {
             "id": "chest-warm-13",
@@ -851,10 +1067,13 @@
             "instrucciones": "En pared o banco, bajar a medio recorrido, pausar 1 segundo y subir apretando.",
             "repsOTiempo": "8 reps",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Fibras medias del pectoral y Estabilidad",
+            "musculoObjetivo": "Centro del pecho y Estabilidad",
             "consejo": "Estimula el reclutamiento de unidades motoras.",
             "equipamiento": "Banco o pared",
-            "media": { "tipo": "svg", "archivo": "chest-warm-13.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "chest-warm-13.svg"
+            }
           },
           {
             "id": "chest-warm-14",
@@ -862,10 +1081,13 @@
             "instrucciones": "Brazos en cruz a 90°, dibujar círculos pequeños y rápidos aumentando tamaño.",
             "repsOTiempo": "15s adelante y 15s atrás",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Deltoides y Pectoral superior",
+            "musculoObjetivo": "Hombros y Pecho superior",
             "consejo": "Mantén los brazos firmes a la altura de los hombros.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "chest-warm-14.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "chest-warm-14.svg"
+            }
           },
           {
             "id": "chest-warm-15",
@@ -873,10 +1095,13 @@
             "instrucciones": "En posición de plancha alta, empujar el suelo alejando el pecho y regresar a posición neutra.",
             "repsOTiempo": "10 reps de empuje activo",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Serrato anterior, Pectoral y Core",
+            "musculoObjetivo": "Costillas y hombros, Pecho y Abdomen",
             "consejo": "Asegura el soporte escapular para press de banca con mancuernas.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "chest-warm-15.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "chest-warm-15.svg"
+            }
           }
         ]
       },
@@ -890,10 +1115,13 @@
             "instrucciones": "Antebrazo apoyado en marco a 90°, dar un paso al frente y rotar el torso ligeramente.",
             "repsOTiempo": "30 a 45s por lado",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Fibras medias del pectoral mayor",
+            "musculoObjetivo": "Fibras medias del Pecho",
             "consejo": "No dejes caer el hombro hacia adelante; mantenlo alineado.",
             "equipamiento": "Marco de puerta o poste",
-            "media": { "tipo": "svg", "archivo": "chest-cool-01.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "chest-cool-01.svg"
+            }
           },
           {
             "id": "chest-cool-02",
@@ -901,10 +1129,13 @@
             "instrucciones": "Brazo estirado hacia arriba en el marco, inclinando el cuerpo al frente.",
             "repsOTiempo": "30 a 45s por lado",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Fibras inferiores y esternales del pectoral",
+            "musculoObjetivo": "Parte baja del pecho",
             "consejo": "Excelente tras fondos en paralelas o press declinado.",
             "equipamiento": "Marco o poste alto",
-            "media": { "tipo": "svg", "archivo": "chest-cool-02.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "chest-cool-02.svg"
+            }
           },
           {
             "id": "chest-cool-03",
@@ -912,10 +1143,13 @@
             "instrucciones": "Juntar dedos atrás, estirar codos y elevar suavemente los brazos sacando el pecho al techo.",
             "repsOTiempo": "35 a 45s continuo",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Pectoral menor, Deltoides anterior y Bíceps",
+            "musculoObjetivo": "Pecho, Parte frontal del hombro y Bíceps",
             "consejo": "Inhala profundamente expandiendo la caja torácica en cada ciclo.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "chest-cool-03.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "chest-cool-03.svg"
+            }
           },
           {
             "id": "chest-cool-04",
@@ -923,10 +1157,13 @@
             "instrucciones": "Boca abajo, un brazo en cruz apoyado en suelo y rotar la cadera sobre ese costado con la pierna opuesta.",
             "repsOTiempo": "30 a 45s por lado",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Pectoral profundo y Cápsula anterior del hombro",
+            "musculoObjetivo": "Pecho y Frente del hombro",
             "consejo": "El estiramiento más profundo de pecho; muévete con suavidad.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "chest-cool-04.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "chest-cool-04.svg"
+            }
           },
           {
             "id": "chest-cool-05",
@@ -934,10 +1171,13 @@
             "instrucciones": "Apoyado o colgado de una barra alta, dejando caer el peso del cuerpo de forma pasiva.",
             "repsOTiempo": "30 a 40s relajado",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Pectoral menor, Dorsales y Descompresión torácica",
+            "musculoObjetivo": "Pecho, Espalda y Espalda media",
             "consejo": "Puedes apoyar las puntas de los pies si prefieres menor intensidad.",
             "equipamiento": "Barra alta de dominadas",
-            "media": { "tipo": "svg", "archivo": "chest-cool-05.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "chest-cool-05.svg"
+            }
           },
           {
             "id": "chest-cool-06",
@@ -948,18 +1188,24 @@
             "musculoObjetivo": "Pared torácica anterior y Abdomen",
             "consejo": "No comprimas lumbares; alarga la coronilla hacia el techo.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "chest-cool-06.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "chest-cool-06.svg"
+            }
           },
           {
             "id": "chest-cool-07",
-            "nombre": "Deltoides anterior en pared con brazo atrás",
+            "nombre": "Hombro frontal en pared con brazo atrás",
             "instrucciones": "Brazo extendido hacia atrás pegado a la pared con la palma apoyada, girando el pecho al frente.",
             "repsOTiempo": "30 a 45s por lado",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Deltoides anterior y Tendón del bíceps",
+            "musculoObjetivo": "Parte frontal del hombro y Tendón del bíceps",
             "consejo": "Mantenlo a la altura exacta de tu hombro.",
             "equipamiento": "Pared",
-            "media": { "tipo": "svg", "archivo": "chest-cool-07.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "chest-cool-07.svg"
+            }
           },
           {
             "id": "chest-cool-08",
@@ -967,10 +1213,13 @@
             "instrucciones": "Boca arriba con un rodillo de espuma o toalla bajo la espalda media, brazos abiertos en cruz.",
             "repsOTiempo": "40 a 50s relajado",
             "duracionSegundos": 40,
-            "musculoObjetivo": "Pectoral mayor y Extensión de columna torácica",
+            "musculoObjetivo": "Pecho y Extensión de Espalda media",
             "consejo": "Contrarresta la postura encorvada post-press de banca.",
             "equipamiento": "Foam roller o toalla enrollada",
-            "media": { "tipo": "svg", "archivo": "chest-cool-08.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "chest-cool-08.svg"
+            }
           },
           {
             "id": "chest-cool-09",
@@ -978,10 +1227,13 @@
             "instrucciones": "En una esquina de la pared, apoyar ambos antebrazos a la vez y dar un paso al frente.",
             "repsOTiempo": "35 a 45s continuo",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Ambos pectorales de forma simétrica",
+            "musculoObjetivo": "Ambos Pecho de forma simétrica",
             "consejo": "Mantén el peso centrado sin arquear la espalda baja.",
             "equipamiento": "Esquina de pared",
-            "media": { "tipo": "svg", "archivo": "chest-cool-09.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "chest-cool-09.svg"
+            }
           },
           {
             "id": "chest-cool-10",
@@ -989,21 +1241,27 @@
             "instrucciones": "Palma apoyada en marco más baja que la cadera (45° hacia abajo), inclinando el cuerpo al frente.",
             "repsOTiempo": "30 a 40s por lado",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Porción clavicular superior del pectoral",
+            "musculoObjetivo": "Parte alta del pecho",
             "consejo": "Excelente tras press inclinado con barra.",
             "equipamiento": "Marco o poste",
-            "media": { "tipo": "svg", "archivo": "chest-cool-10.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "chest-cool-10.svg"
+            }
           },
           {
             "id": "chest-cool-11",
-            "nombre": "Inclinación lateral y suave de cuello (Liberación de escalenos)",
+            "nombre": "Inclinación lateral y suave de cuello",
             "instrucciones": "Llevar la oreja suavemente hacia el hombro con la ayuda del peso de la mano.",
             "repsOTiempo": "30s por lado",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Escalenos y Trapecio superior",
+            "musculoObjetivo": "Lateral del cuello y Cuello y hombros",
             "consejo": "Libera la tensión que se acumula en el cuello al bloquear los presses pesados.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "chest-cool-11.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "chest-cool-11.svg"
+            }
           },
           {
             "id": "chest-cool-12",
@@ -1011,10 +1269,13 @@
             "instrucciones": "Boca abajo apoyado en antebrazos, empujar los codos contra el suelo y proyectar el esternón al frente.",
             "repsOTiempo": "35 a 45s",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Pectoral profundo y Caja torácica",
+            "musculoObjetivo": "Pecho y Caja torácica",
             "consejo": "Relaja los glúteos y respira con el diafragma.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "chest-cool-12.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "chest-cool-12.svg"
+            }
           },
           {
             "id": "chest-cool-13",
@@ -1022,10 +1283,13 @@
             "instrucciones": "Espalda pegada a la pared con brazos en forma de W, deslizando codos y manos contra el muro.",
             "repsOTiempo": "35s manteniendo contacto",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Pectoral menor y Rotadores externos",
+            "musculoObjetivo": "Pecho y Rotadores externos",
             "consejo": "Intenta que muñecas y codos no se despeguen de la pared.",
             "equipamiento": "Pared lisa",
-            "media": { "tipo": "svg", "archivo": "chest-cool-13.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "chest-cool-13.svg"
+            }
           },
           {
             "id": "chest-cool-14",
@@ -1033,10 +1297,13 @@
             "instrucciones": "En V invertida, empujar el suelo con las palmas dejando caer el pecho hacia las rodillas.",
             "repsOTiempo": "35 a 45s",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Pectoral menor, Dorsales y Hombros",
+            "musculoObjetivo": "Pecho, Espalda y Hombros",
             "consejo": "Flexiona ligeramente las rodillas para priorizar la apertura del pecho.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "chest-cool-14.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "chest-cool-14.svg"
+            }
           },
           {
             "id": "chest-cool-15",
@@ -1044,10 +1311,13 @@
             "instrucciones": "De rodillas junto a un banco plano, apoyar el codo y dejar caer el torso hacia el suelo.",
             "repsOTiempo": "30 a 45s por lado",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Fibras externas del pectoral y Tríceps",
+            "musculoObjetivo": "Lateral del pecho y Parte trasera del brazo",
             "consejo": "Respira hondo para profundizar el estiramiento por gravedad.",
             "equipamiento": "Banco plano",
-            "media": { "tipo": "svg", "archivo": "chest-cool-15.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "chest-cool-15.svg"
+            }
           }
         ]
       }
@@ -1065,14 +1335,17 @@
         "ejercicios": [
           {
             "id": "back-warm-01",
-            "nombre": "Tirones al pecho con banda (Band pull-aparts)",
+            "nombre": "Tirones al pecho con banda",
             "instrucciones": "Separar la banda elástica horizontalmente hasta tocar el esternón juntando escápulas atrás.",
             "repsOTiempo": "15 a 20 reps controladas",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Deltoides posterior, Romboides y Trapecio medio",
+            "musculoObjetivo": "Parte trasera del hombro, Espalda alta y Espalda alta",
             "consejo": "Mantén los brazos rectos y aprieta 1 segundo atrás.",
             "equipamiento": "Banda elástica",
-            "media": { "tipo": "svg", "archivo": "back-warm-01.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "back-warm-01.svg"
+            }
           },
           {
             "id": "back-warm-02",
@@ -1080,10 +1353,13 @@
             "instrucciones": "En cuatro apoyos, alternar arqueo y redondeo completo de toda la columna vertebral.",
             "repsOTiempo": "10 a 12 ciclos lentos",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Movilidad global de columna y Erectores espinales",
+            "musculoObjetivo": "Movilidad global de columna y Espalda baja",
             "consejo": "Coordina con tu respiración: inhala al arquear, exhala al redondear.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "back-warm-02.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "back-warm-02.svg"
+            }
           },
           {
             "id": "back-warm-03",
@@ -1091,10 +1367,13 @@
             "instrucciones": "Llevar hombros a las orejas, luego hacia atrás y hacia abajo en círculos amplios.",
             "repsOTiempo": "15 rotaciones profundas",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Trapecio superior, medio y Elevador de la escápula",
+            "musculoObjetivo": "Cuello y espalda alta",
             "consejo": "Siente cómo deslizan las escápulas por la espalda.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "back-warm-03.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "back-warm-03.svg"
+            }
           },
           {
             "id": "back-warm-04",
@@ -1102,10 +1381,13 @@
             "instrucciones": "Torso inclinado a 45°, tirar los codos hacia atrás pegados a costillas juntando escápulas.",
             "repsOTiempo": "15 reps con contracción voluntaria",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Dorsal ancho y Romboides",
+            "musculoObjetivo": "Espalda y Espalda alta",
             "consejo": "Cuello neutro alineado con la columna en todo momento.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "back-warm-04.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "back-warm-04.svg"
+            }
           },
           {
             "id": "back-warm-05",
@@ -1113,10 +1395,13 @@
             "instrucciones": "Manos tras la nuca, empujar glúteos atrás con espalda recta y rodillas ligeramente dobladas.",
             "repsOTiempo": "12 a 15 reps",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Erectores espinales y Cadena posterior",
+            "musculoObjetivo": "Espalda baja y Cadena posterior",
             "consejo": "Fundamental para preparar la zona lumbar antes de peso muerto o remo con barra.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "back-warm-05.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "back-warm-05.svg"
+            }
           },
           {
             "id": "back-warm-06",
@@ -1124,65 +1409,83 @@
             "instrucciones": "Brazos extendidos a los lados girando activamente a izquierda y derecha con pivote de pies.",
             "repsOTiempo": "20 giros rítmicos",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Rotadores espinales y Oblicuos",
+            "musculoObjetivo": "Rotadores espinales y Cintura (laterales)",
             "consejo": "Pivota el pie opuesto para proteger tus rodillas.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "back-warm-06.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "back-warm-06.svg"
+            }
           },
           {
             "id": "back-warm-07",
-            "nombre": "Face pulls dinámicos con banda ligera",
+            "nombre": "Tirón hacia el rostro con banda ligera",
             "instrucciones": "Tirar hacia la frente rotando las manos hacia afuera con pulgares apuntando hacia atrás.",
             "repsOTiempo": "15 reps enfocadas",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Deltoides posterior y Rotadores externos",
+            "musculoObjetivo": "Parte trasera del hombro y Rotadores externos",
             "consejo": "El ejercicio rey para la salud del hombro y postura escapular.",
             "equipamiento": "Banda elástica o polea suave",
-            "media": { "tipo": "svg", "archivo": "back-warm-07.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "back-warm-07.svg"
+            }
           },
           {
             "id": "back-warm-08",
-            "nombre": "Retracción escapular colgado de la barra (Scapular Pull-ups)",
+            "nombre": "Retracción escapular colgado de la barra",
             "instrucciones": "Colgado de la barra con brazos rectos, elevar el cuerpo 5 cm solo juntando las escápulas hacia abajo.",
             "repsOTiempo": "8 a 10 reps controladas",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Trapecio inferior, Dorsal y Serrato",
+            "musculoObjetivo": "Espalda media, Dorsal y Costillas",
             "consejo": "No dobles los codos; el movimiento es 100% de los omóplatos.",
             "equipamiento": "Barra de dominadas",
-            "media": { "tipo": "svg", "archivo": "back-warm-08.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "back-warm-08.svg"
+            }
           },
           {
             "id": "back-warm-09",
-            "nombre": "Nadadores en suelo boca abajo (Prone Swimmers)",
+            "nombre": "Nadadores en suelo boca abajo",
             "instrucciones": "Boca abajo, llevar manos de la nuca a la espalda baja dibujando un semicírculo en el aire sin tocar el suelo.",
             "repsOTiempo": "8 a 10 ciclos suaves",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Manguito rotador, Deltoides posterior y Dorsales",
+            "musculoObjetivo": "Hombros, Parte trasera del hombro y Espalda",
             "consejo": "Mantén los brazos lo más despegados del suelo que puedas.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "back-warm-09.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "back-warm-09.svg"
+            }
           },
           {
             "id": "back-warm-10",
-            "nombre": "Jalón al pecho dinámico al aire (Lat pulldown sin peso)",
+            "nombre": "Jalón al pecho dinámico al aire",
             "instrucciones": "Brazos en V arriba, bajar codos clavándolos hacia las costillas apretando los dorsales fuertemente.",
             "repsOTiempo": "15 reps sintiendo la espalda",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Dorsal ancho y Romboides",
+            "musculoObjetivo": "Espalda y Espalda alta",
             "consejo": "Piensa en meter los omóplatos dentro de los bolsillos traseros del pantalón.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "back-warm-10.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "back-warm-10.svg"
+            }
           },
           {
             "id": "back-warm-11",
-            "nombre": "Pájaro-perro en cuadrupedia (Bird-Dog)",
+            "nombre": "Brazo y pierna contrarios en cuatro apoyos",
             "instrucciones": "En 4 apoyos, extender brazo derecho al frente y pierna izquierda atrás simultáneamente.",
             "repsOTiempo": "12 reps alternas o 30s",
             "duracionSegundos": 30,
             "musculoObjetivo": "Cadena cruzada posterior, Erectores y Glúteos",
             "consejo": "Mantén la pelvis y hombros paralelos al suelo en todo momento.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "back-warm-11.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "back-warm-11.svg"
+            }
           },
           {
             "id": "back-warm-12",
@@ -1190,21 +1493,27 @@
             "instrucciones": "Sostener banda en diagonal con una mano alta y otra baja, separando brazos y alternando.",
             "repsOTiempo": "12 reps por diagonal",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Romboides, Trapecio medio y Deltoides posterior",
+            "musculoObjetivo": "Espalda alta, Espalda alta y Parte trasera del hombro",
             "consejo": "Activa las fibras diagonales de la musculatura interescapular.",
             "equipamiento": "Banda elástica",
-            "media": { "tipo": "svg", "archivo": "back-warm-12.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "back-warm-12.svg"
+            }
           },
           {
             "id": "back-warm-13",
-            "nombre": "Enhebrar la aguja dinámico (Thread the needle)",
+            "nombre": "Enhebrar la aguja dinámico",
             "instrucciones": "En 4 apoyos, pasar un brazo por debajo del cuerpo rotando el torso y luego abrir hacia el techo.",
             "repsOTiempo": "8 reps por lado",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Movilidad torácica y Deltoides posterior",
+            "musculoObjetivo": "Movilidad torácica y Parte trasera del hombro",
             "consejo": "Libera rigidez de la columna previa a remos pesados.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "back-warm-13.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "back-warm-13.svg"
+            }
           },
           {
             "id": "back-warm-14",
@@ -1212,10 +1521,13 @@
             "instrucciones": "Anclar banda al frente, tirar con un codo atrás rotando levemente el torso y extender.",
             "repsOTiempo": "10 reps por lado",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Dorsal ancho unilateral y Oblicuos",
+            "musculoObjetivo": "Espalda (un lado) y Cintura (laterales)",
             "consejo": "Despierta la musculatura unilateral para remos con mancuerna.",
             "equipamiento": "Banda elástica",
-            "media": { "tipo": "svg", "archivo": "back-warm-14.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "back-warm-14.svg"
+            }
           },
           {
             "id": "back-warm-15",
@@ -1223,10 +1535,13 @@
             "instrucciones": "Subir hombros pegándolos a las orejas, mantener 2 segundos y soltar de golpe.",
             "repsOTiempo": "12 reps",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Trapecio superior y Elevador escapular",
+            "musculoObjetivo": "Cuello y hombros y Cuello y hombros",
             "consejo": "Activa la parte alta de la espalda antes de cargadas o peso muerto.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "back-warm-15.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "back-warm-15.svg"
+            }
           }
         ]
       },
@@ -1236,25 +1551,31 @@
         "ejercicios": [
           {
             "id": "back-cool-01",
-            "nombre": "Colgarse de la barra (Dead hang descompresivo)",
+            "nombre": "Colgarse de la barra",
             "instrucciones": "Suspenderse de una barra de dominadas dejando que la gravedad descomprima toda la columna.",
             "repsOTiempo": "30 a 45s",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Descompresión vertebral, Dorsales y Antebrazos",
+            "musculoObjetivo": "Relajar la columna, Espalda y Antebrazos",
             "consejo": "Relaja completamente los hombros y exhala soltando el peso.",
             "equipamiento": "Barra de dominadas",
-            "media": { "tipo": "svg", "archivo": "back-cool-01.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "back-cool-01.svg"
+            }
           },
           {
             "id": "back-cool-02",
-            "nombre": "Pose del niño (Child's Pose tradicional)",
+            "nombre": "Descanso de espalda en el suelo",
             "instrucciones": "Sentado sobre talones, brazos estirados al frente tocando el suelo con la frente.",
             "repsOTiempo": "40 a 50s continuo",
             "duracionSegundos": 40,
-            "musculoObjetivo": "Zona lumbar y Dorsal ancho",
+            "musculoObjetivo": "Espalda baja y Espalda",
             "consejo": "Camina con las yemas de los dedos lo más lejos posible para abrir la espalda.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "back-cool-02.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "back-cool-02.svg"
+            }
           },
           {
             "id": "back-cool-03",
@@ -1262,43 +1583,55 @@
             "instrucciones": "Sujétate con una mano de un soporte vertical y empuja la cadera hacia el lado opuesto flexionando torso.",
             "repsOTiempo": "30 a 45s por lado",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Dorsal ancho y Cuadrado lumbar",
+            "musculoObjetivo": "Espalda y Espalda baja y cintura",
             "consejo": "Siente la línea completa desde la axila hasta la cresta ilíaca.",
             "equipamiento": "Poste o soporte",
-            "media": { "tipo": "svg", "archivo": "back-cool-03.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "back-cool-03.svg"
+            }
           },
           {
             "id": "back-cool-04",
-            "nombre": "Estiramiento de romboides (Abrazo apretado)",
+            "nombre": "Abrazo para relajar la espalda alta",
             "instrucciones": "Cruzar brazos sobre el pecho abrazándote con fuerza e intentando tocar los omóplatos con los dedos.",
             "repsOTiempo": "30 a 40s continuo",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Romboides y Trapecio medio",
+            "musculoObjetivo": "Espalda alta y Espalda alta",
             "consejo": "Redondea suavemente la espalda alta mientras tiras hacia afuera.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "back-cool-04.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "back-cool-04.svg"
+            }
           },
           {
             "id": "back-cool-05",
-            "nombre": "Pose del niño desplazada a la derecha",
+            "nombre": "Descanso de espalda en el suelo desplazada a la derecha",
             "instrucciones": "En pose del niño, caminar con ambas manos hacia la derecha para abrir todo el costado izquierdo.",
             "repsOTiempo": "30 a 45s",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Dorsal ancho izquierdo y Cuadrado lumbar",
+            "musculoObjetivo": "Espalda (lado izquierdo) y Espalda baja y cintura",
             "consejo": "Empuja el glúteo izquierdo hacia atrás contra el talón.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "back-cool-05.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "back-cool-05.svg"
+            }
           },
           {
             "id": "back-cool-06",
-            "nombre": "Pose del niño desplazada a la izquierda",
+            "nombre": "Descanso de espalda en el suelo desplazada a la izquierda",
             "instrucciones": "En pose del niño, caminar con ambas manos hacia la izquierda para abrir todo el costado derecho.",
             "repsOTiempo": "30 a 45s",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Dorsal ancho derecho y Cuadrado lumbar",
+            "musculoObjetivo": "Espalda (lado derecho) y Espalda baja y cintura",
             "consejo": "Empuja el glúteo derecho hacia atrás contra el talón.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "back-cool-06.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "back-cool-06.svg"
+            }
           },
           {
             "id": "back-cool-07",
@@ -1306,10 +1639,13 @@
             "instrucciones": "Brazo cruzado horizontalmente frente al pecho presionando con el antebrazo contrario.",
             "repsOTiempo": "30 a 45s por lado",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Deltoides posterior e Infraespinoso",
+            "musculoObjetivo": "Parte trasera del hombro e Hombros",
             "consejo": "Baja el hombro; no dejes que suba hacia la oreja.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "back-cool-07.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "back-cool-07.svg"
+            }
           },
           {
             "id": "back-cool-08",
@@ -1317,21 +1653,27 @@
             "instrucciones": "Entrelazar dedos al frente, empujar palmas hacia adelante y redondear la espalda alta metiendo barbilla.",
             "repsOTiempo": "35 a 45s continuo",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Espalda alta, Trapecio medio y Deltoides posterior",
+            "musculoObjetivo": "Espalda alta, Espalda alta y Parte trasera del hombro",
             "consejo": "Siente cómo se expande el espacio entre tus dos omóplatos.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "back-cool-08.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "back-cool-08.svg"
+            }
           },
           {
             "id": "back-cool-09",
-            "nombre": "Estiramiento de trapecio superior con mano en espalda baja",
+            "nombre": "Estiramiento lateral de cuello y hombro",
             "instrucciones": "Colocar una mano en la espalda baja mientras inclinas suavemente la cabeza hacia el hombro opuesto.",
             "repsOTiempo": "30 a 40s por lado",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Trapecio superior y Cuello",
+            "musculoObjetivo": "Cuello y hombros y Cuello",
             "consejo": "Aplica una presión muy sutil con la mano que guía la cabeza.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "back-cool-09.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "back-cool-09.svg"
+            }
           },
           {
             "id": "back-cool-10",
@@ -1339,10 +1681,13 @@
             "instrucciones": "Girar la cabeza 45° e inclinar la barbilla apuntando hacia la axila con suave apoyo manual.",
             "repsOTiempo": "30s por lado",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Músculo elevador de la escápula",
+            "musculoObjetivo": "Cuello y hombros",
             "consejo": "Alivia el nudo típico entre el cuello y la paletilla post-remos pesados.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "back-cool-10.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "back-cool-10.svg"
+            }
           },
           {
             "id": "back-cool-11",
@@ -1350,21 +1695,27 @@
             "instrucciones": "De rodillas frente a un banco, apoyar codos en el borde con manos juntas tras la nuca y dejar caer el pecho.",
             "repsOTiempo": "40 a 50s continuo",
             "duracionSegundos": 40,
-            "musculoObjetivo": "Dorsal ancho, Tríceps y Columna torácica",
+            "musculoObjetivo": "Espalda, Parte trasera del brazo y Espalda media",
             "consejo": "Uno de los estiramientos más efectivos para ganar movilidad en jalón vertical.",
             "equipamiento": "Banco plano",
-            "media": { "tipo": "svg", "archivo": "back-cool-11.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "back-cool-11.svg"
+            }
           },
           {
             "id": "back-cool-12",
-            "nombre": "Enhebrar la aguja estático (Thread the needle hold)",
+            "nombre": "Enhebrar la aguja estático",
             "instrucciones": "En 4 apoyos, pasar un brazo por debajo apoyando hombro y mejilla en el suelo con el otro brazo estirado al frente.",
             "repsOTiempo": "35 a 45s por lado",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Deltoides posterior, Romboides y Columna torácica",
+            "musculoObjetivo": "Parte trasera del hombro, Espalda alta y Espalda media",
             "consejo": "Permite que el peso del cuerpo relaje la articulación del hombro.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "back-cool-12.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "back-cool-12.svg"
+            }
           },
           {
             "id": "back-cool-13",
@@ -1372,10 +1723,13 @@
             "instrucciones": "Sujetarse a un poste con ambas manos a la altura de la cintura y echar los glúteos atrás flexionando rodillas.",
             "repsOTiempo": "35 a 45s",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Dorsales bilaterales y Zona lumbar media",
+            "musculoObjetivo": "Toda la espalda y Espalda baja",
             "consejo": "Deja que los brazos actúen como cuerdas relajadas sosteniendo tu peso.",
             "equipamiento": "Poste resistente",
-            "media": { "tipo": "svg", "archivo": "back-cool-13.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "back-cool-13.svg"
+            }
           },
           {
             "id": "back-cool-14",
@@ -1386,18 +1740,24 @@
             "musculoObjetivo": "Descompresión anterior y Relajación lumbar",
             "consejo": "Respira llenando el abdomen de aire para relajar la espalda baja.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "back-cool-14.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "back-cool-14.svg"
+            }
           },
           {
             "id": "back-cool-15",
-            "nombre": "Abrazo de rodillas al pecho en suelo (Apanasana)",
+            "nombre": "Abrazo de rodillas al pecho en suelo",
             "instrucciones": "Boca arriba, abrazar ambas rodillas contra el pecho balanceándose milimétricamente de lado a lado.",
             "repsOTiempo": "40 a 50s continuo",
             "duracionSegundos": 40,
-            "musculoObjetivo": "Zona lumbar baja, Sacro y Erectores espinales",
+            "musculoObjetivo": "Espalda baja baja, Sacro y Espalda baja",
             "consejo": "Masajea toda la espalda contra el suelo tras cargar peso muerto.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "back-cool-15.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "back-cool-15.svg"
+            }
           }
         ]
       }
@@ -1419,10 +1779,13 @@
             "instrucciones": "En posición de flexión, llevar rodillas alternas hacia el pecho a ritmo ágil.",
             "repsOTiempo": "20 a 24 pasos o 30s",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Core global, Recto abdominal y Flexores",
+            "musculoObjetivo": "Abdomen global, Recto abdominal y Flexores",
             "consejo": "Mantén la cadera baja alineada con los hombros.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "abs-warm-01.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "abs-warm-01.svg"
+            }
           },
           {
             "id": "abs-warm-02",
@@ -1430,10 +1793,13 @@
             "instrucciones": "Manos en la cintura haciendo círculos gigantes para despertar la faja pélvica.",
             "repsOTiempo": "10 círculos por sentido",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Pelvis, Suelo pélvico y Zona lumbar",
+            "musculoObjetivo": "Pelvis, Suelo pélvico y Espalda baja",
             "consejo": "Movimiento relajado y fluido sin tensión.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "abs-warm-02.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "abs-warm-02.svg"
+            }
           },
           {
             "id": "abs-warm-03",
@@ -1441,10 +1807,13 @@
             "instrucciones": "Apoyo en antebrazos apretando abdomen y glúteos al 100% durante tiempo breve.",
             "repsOTiempo": "20 segundos máximo",
             "duracionSegundos": 20,
-            "musculoObjetivo": "Transverso abdominal y Recto anterior",
+            "musculoObjetivo": "Abdomen profundo y Abdomen",
             "consejo": "El objetivo es despertar la rigidez neuromuscular, no fatigarte.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "abs-warm-03.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "abs-warm-03.svg"
+            }
           },
           {
             "id": "abs-warm-04",
@@ -1452,10 +1821,13 @@
             "instrucciones": "Cuerpo recto apoyado en un antebrazo, 15 segundos por cada costado.",
             "repsOTiempo": "15s por lado",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Oblicuos internos, externos y Cuadrado lumbar",
+            "musculoObjetivo": "Cintura (laterales) internos, externos y Espalda baja y cintura",
             "consejo": "No dejes que la cadera caiga hacia el suelo.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "abs-warm-04.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "abs-warm-04.svg"
+            }
           },
           {
             "id": "abs-warm-05",
@@ -1463,10 +1835,13 @@
             "instrucciones": "Piernas abiertas, tocar mano derecha a pie izquierdo y viceversa alternando.",
             "repsOTiempo": "16 toques alternos o 30s",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Cadena cruzada anterior, Oblicuos y Rotadores",
+            "musculoObjetivo": "Cadena cruzada anterior, Cintura (laterales) y Rotadores",
             "consejo": "Dobla levemente las rodillas si sientes tensión en isquiotibiales.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "abs-warm-05.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "abs-warm-05.svg"
+            }
           },
           {
             "id": "abs-warm-06",
@@ -1474,87 +1849,111 @@
             "instrucciones": "Manos tras la nuca, llevando rodilla y codo opuesto a encontrarse al frente.",
             "repsOTiempo": "16 reps alternas o 30s",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Oblicuos y Recto anterior",
+            "musculoObjetivo": "Cintura (laterales) y Abdomen",
             "consejo": "Exhala con fuerza en cada encuentro de codo y rodilla.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "abs-warm-06.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "abs-warm-06.svg"
+            }
           },
           {
             "id": "abs-warm-07",
-            "nombre": "Bicho muerto dinámico (Dead Bug)",
+            "nombre": "Bicho muerto dinámico",
             "instrucciones": "Boca arriba, bajar brazo derecho y pierna izquierda al unísono manteniendo la zona lumbar pegada al suelo.",
             "repsOTiempo": "12 reps alternas lentas",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Transverso profundo y Estabilidad lumbo-pélvica",
+            "musculoObjetivo": "Abdomen y espalda baja",
             "consejo": "Si se te despega la espalda del suelo, no bajes la pierna tan abajo.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "abs-warm-07.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "abs-warm-07.svg"
+            }
           },
           {
             "id": "abs-warm-08",
-            "nombre": "Caminatas con manos en el suelo (Walkouts / Inchworms)",
+            "nombre": "Caminatas con manos en el suelo",
             "instrucciones": "De pie, doblar torso, caminar con las manos hasta posición de plancha y regresar.",
             "repsOTiempo": "6 a 8 reps continuas",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Core anti-extensión e Isquios",
+            "musculoObjetivo": "Abdomen e Parte trasera del muslo",
             "consejo": "Mantén las piernas lo más rectas posible.",
             "equipamiento": "Colchoneta o suelo",
-            "media": { "tipo": "svg", "archivo": "abs-warm-08.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "abs-warm-08.svg"
+            }
           },
           {
             "id": "abs-warm-09",
-            "nombre": "Toques de hombros en posición de plancha (Plank Shoulder Taps)",
+            "nombre": "Toques de hombros en posición de plancha",
             "instrucciones": "En plancha alta sobre palmas, tocar con mano derecha el hombro izquierdo sin balancear la cadera.",
             "repsOTiempo": "16 toques alternados",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Anti-rotación del core y Estabilidad",
+            "musculoObjetivo": "Abdomen y Estabilidad",
             "consejo": "Separa los pies para tener mejor base de estabilidad.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "abs-warm-09.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "abs-warm-09.svg"
+            }
           },
           {
             "id": "abs-warm-10",
-            "nombre": "Elevación de rodillas en plancha lateral (Lateral knee drives)",
+            "nombre": "Elevación de rodillas en plancha lateral",
             "instrucciones": "En plancha lateral sobre antebrazo, llevar la rodilla de arriba hacia el pecho y volver.",
             "repsOTiempo": "8 reps por lado",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Oblicuos y Flexores laterales",
+            "musculoObjetivo": "Cintura (laterales) y Flexores laterales",
             "consejo": "Controla el ritmo sin apresurarte.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "abs-warm-10.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "abs-warm-10.svg"
+            }
           },
           {
             "id": "abs-warm-11",
-            "nombre": "Bird-Dog dinámico con toque codo-rodilla",
+            "nombre": "Brazo y pierna contrarios en cuatro apoyos",
             "instrucciones": "En 4 apoyos, extender brazo y pierna opuesta y luego juntar codo y rodilla bajo el ombligo.",
             "repsOTiempo": "8 reps por lado",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Core posterior y anterior integrados",
+            "musculoObjetivo": "Abdomen y espalda",
             "consejo": "Aprieta el abdomen al juntar codo y rodilla.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "abs-warm-11.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "abs-warm-11.svg"
+            }
           },
           {
             "id": "abs-warm-12",
-            "nombre": "Hollow body hold suave (Posición de barca)",
+            "nombre": "Mantener posición de barca suave",
             "instrucciones": "Boca arriba con piernas dobladas a 90° y omóplatos despegados del suelo apretando el vientre.",
             "repsOTiempo": "20 segundos sostenidos",
             "duracionSegundos": 20,
-            "musculoObjetivo": "Recto anterior y Transverso",
+            "musculoObjetivo": "Abdomen y Abdomen profundo",
             "consejo": "Pega la zona lumbar al suelo con fuerza como aplastando una uva.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "abs-warm-12.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "abs-warm-12.svg"
+            }
           },
           {
             "id": "abs-warm-13",
-            "nombre": "Rotaciones rusas dinámicas sin peso (Russian Twists al aire)",
+            "nombre": "Rotaciones rusas dinámicas sin peso",
             "instrucciones": "Sentado con pies apoyados y torso a 45°, rotar las manos de lado a lado rápidamente.",
             "repsOTiempo": "20 giros alternos",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Oblicuos y Rotadores del tronco",
+            "musculoObjetivo": "Cintura (laterales) y Rotadores del tronco",
             "consejo": "Gira desde los hombros, no solo con las manos.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "abs-warm-13.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "abs-warm-13.svg"
+            }
           },
           {
             "id": "abs-warm-14",
@@ -1565,7 +1964,10 @@
             "musculoObjetivo": "Porción baja del abdomen y Flexores",
             "consejo": "No despegues la zona lumbar de la colchoneta.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "abs-warm-14.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "abs-warm-14.svg"
+            }
           },
           {
             "id": "abs-warm-15",
@@ -1573,10 +1975,13 @@
             "instrucciones": "Boca arriba con plantas de pies juntas abiertas en mariposa, subir el torso suavemente.",
             "repsOTiempo": "12 a 15 reps suaves",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Recto anterior aislando flexores",
+            "musculoObjetivo": "Abdomen",
             "consejo": "La posición de mariposa anula los flexores de cadera enfocando el abdomen.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "abs-warm-15.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "abs-warm-15.svg"
+            }
           }
         ]
       },
@@ -1590,10 +1995,13 @@
             "instrucciones": "Pelvis pegada al suelo, empujando suavemente el piso con palmas y alargando el vientre hacia arriba.",
             "repsOTiempo": "35 a 45s continuo",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Recto anterior del abdomen y Fascia abdominal",
+            "musculoObjetivo": "Abdomen",
             "consejo": "Activa suavemente los glúteos para proteger las vértebras lumbares.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "abs-cool-01.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "abs-cool-01.svg"
+            }
           },
           {
             "id": "abs-cool-02",
@@ -1601,10 +2009,13 @@
             "instrucciones": "Boca arriba, cruzar una rodilla flexionada sobre el cuerpo girando la cabeza al lado contrario.",
             "repsOTiempo": "30 a 45s por lado",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Oblicuos, Cuadrado lumbar y Glúteo",
+            "musculoObjetivo": "Cintura (laterales), Espalda baja y cintura y Glúteo",
             "consejo": "Intenta mantener ambos hombros pegados a la colchoneta.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "abs-cool-02.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "abs-cool-02.svg"
+            }
           },
           {
             "id": "abs-cool-03",
@@ -1612,21 +2023,27 @@
             "instrucciones": "De pie, elevar un brazo por encima de la cabeza e inclinarse lateralmente sin rotar el torso.",
             "repsOTiempo": "30 a 45s por lado",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Oblicuo externo, Serratos e Intercostales",
+            "musculoObjetivo": "Cintura (laterales), Costillas y cintura",
             "consejo": "Imagina que te mueves entre dos paredes de vidrio.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "abs-cool-03.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "abs-cool-03.svg"
+            }
           },
           {
             "id": "abs-cool-04",
-            "nombre": "Estiramiento de flexores de cadera en zancada",
+            "nombre": "Estiramiento de cadera en zancada",
             "instrucciones": "En zancada con rodilla trasera en suelo, empujar la pelvis hacia adelante y abajo con torso erguido.",
             "repsOTiempo": "30 a 45s por lado",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Psoas mayor y Recto femoral",
+            "musculoObjetivo": "Cadera y muslo",
             "consejo": "Contrae el glúteo de la pierna de atrás para profundizar la apertura.",
             "equipamiento": "Colchoneta para rodilla",
-            "media": { "tipo": "svg", "archivo": "abs-cool-04.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "abs-cool-04.svg"
+            }
           },
           {
             "id": "abs-cool-05",
@@ -1637,7 +2054,10 @@
             "musculoObjetivo": "Descompresión total de la pared abdominal",
             "consejo": "Si no hay Fitball, puedes usar una colchoneta enrollada bajo la espalda baja.",
             "equipamiento": "Fitball o rodillo",
-            "media": { "tipo": "svg", "archivo": "abs-cool-05.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "abs-cool-05.svg"
+            }
           },
           {
             "id": "abs-cool-06",
@@ -1648,18 +2068,24 @@
             "musculoObjetivo": "Fascia abdominal y Zona media",
             "consejo": "Inhala profundamente expandiendo la barriga con aire para estirar la fascia.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "abs-cool-06.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "abs-cool-06.svg"
+            }
           },
           {
             "id": "abs-cool-07",
-            "nombre": "Postura del camello suave (Ustrasana modificada)",
+            "nombre": "Estiramiento de abdomen de rodillas",
             "instrucciones": "De rodillas, colocar manos en la espalda baja y arquear suavemente el pecho hacia el techo.",
             "repsOTiempo": "30 a 40s suave",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Recto anterior completo y Cadena anterior",
+            "musculoObjetivo": "Abdomen",
             "consejo": "Empuja la pelvis hacia el frente; no tires la cabeza bruscamente hacia atrás.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "abs-cool-07.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "abs-cool-07.svg"
+            }
           },
           {
             "id": "abs-cool-08",
@@ -1667,21 +2093,27 @@
             "instrucciones": "Sentado con una pierna cruzada sobre la otra, apoyar el codo opuesto en la rodilla y rotar el torso.",
             "repsOTiempo": "30 a 40s por lado",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Oblicuos, Lumbares y Glúteos",
+            "musculoObjetivo": "Cintura (laterales), Espalda baja y Glúteos",
             "consejo": "Alarga la coronilla hacia arriba antes de rotar.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "abs-cool-08.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "abs-cool-08.svg"
+            }
           },
           {
             "id": "abs-cool-09",
-            "nombre": "Estiramiento de la sirena de rodillas (Mermaid stretch)",
+            "nombre": "Estiramiento de la sirena de rodillas",
             "instrucciones": "De rodillas, apoyar una mano en el suelo al costado y estirar el otro brazo en curva lateral.",
             "repsOTiempo": "30 a 45s por lado",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Cuadrado lumbar, Oblicuos e Intercostales",
+            "musculoObjetivo": "Espalda baja y cintura, Cintura (laterales) e Intercostales",
             "consejo": "Siente cómo se expande la caja torácica lateral.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "abs-cool-09.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "abs-cool-09.svg"
+            }
           },
           {
             "id": "abs-cool-10",
@@ -1689,54 +2121,69 @@
             "instrucciones": "Boca arriba elevando la pelvis y apoyando las manos en la cadera o un bloque bajo el sacro.",
             "repsOTiempo": "35 a 45s",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Flexores de cadera y Abdomen inferior",
+            "musculoObjetivo": "Cadera y Abdomen inferior",
             "consejo": "Permite que la pelvis quede suspendida relajadamente.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "abs-cool-10.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "abs-cool-10.svg"
+            }
           },
           {
             "id": "abs-cool-11",
-            "nombre": "Postura del arco suave (Dhanurasana preparatoria)",
+            "nombre": "Estiramiento suave de pecho y abdomen",
             "instrucciones": "Boca abajo, tomar los tobillos con las manos y levantar suavemente el pecho.",
             "repsOTiempo": "25 a 35s suave",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Pared abdominal completa, Pectorales y Cuádriceps",
+            "musculoObjetivo": "Pared abdominal completa, Pecho y Muslos",
             "consejo": "Si no alcanzas ambos tobillos, hazlo sujetando uno a la vez.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "abs-cool-11.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "abs-cool-11.svg"
+            }
           },
           {
             "id": "abs-cool-12",
-            "nombre": "Estiramiento de psoas con elevación de brazo lateral",
+            "nombre": "Estiramiento frontal de cadera con elevación de brazo lateral",
             "instrucciones": "En zancada baja, elevar el brazo del mismo lado de la rodilla apoyada e inclinarse al lateral opuesto.",
             "repsOTiempo": "30 a 45s por lado",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Psoas profundo y Oblicuo inferior",
+            "musculoObjetivo": "Cadera y cintura",
             "consejo": "Conecta toda la fascia desde el muslo hasta la axila.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "abs-cool-12.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "abs-cool-12.svg"
+            }
           },
           {
             "id": "abs-cool-13",
-            "nombre": "Estiramiento en posición de plátano en el suelo (Bananásana)",
+            "nombre": "Estiramiento en posición de plátano en el suelo",
             "instrucciones": "Boca arriba, mover pies y brazos hacia la derecha formando una C con el cuerpo sin despegar glúteos.",
             "repsOTiempo": "35 a 45s por lado",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Oblicuos, Fascia lateral y Cadera",
+            "musculoObjetivo": "Cintura (laterales), Fascia lateral y Cadera",
             "consejo": "Cruza el tobillo exterior sobre el interior para mayor tensión pasiva.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "abs-cool-13.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "abs-cool-13.svg"
+            }
           },
           {
             "id": "abs-cool-14",
-            "nombre": "Pose del niño con brazos en copa al frente",
+            "nombre": "Descanso de espalda en el suelo con brazos en copa al frente",
             "instrucciones": "En pose del niño, apoyar solo las yemas de los dedos en forma de copa para alargar dorsales y abdomen.",
             "repsOTiempo": "40 a 50s",
             "duracionSegundos": 40,
-            "musculoObjetivo": "Transverso abdominal y Lumbares",
+            "musculoObjetivo": "Abdomen profundo y Espalda baja",
             "consejo": "Respira profundamente hacia la espalda.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "abs-cool-14.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "abs-cool-14.svg"
+            }
           },
           {
             "id": "abs-cool-15",
@@ -1744,10 +2191,13 @@
             "instrucciones": "Boca arriba con piernas flexionadas, inhalar expandiendo el abdomen y exhalar vaciando al 100%.",
             "repsOTiempo": "8 ciclos respiratorios lentos",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Diafragma y Transverso abdominal",
+            "musculoObjetivo": "Diafragma y Abdomen profundo",
             "consejo": "Baja las pulsaciones y reduce el tono simpático del sistema nervioso.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "abs-cool-15.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "abs-cool-15.svg"
+            }
           }
         ]
       }
@@ -1769,21 +2219,27 @@
             "instrucciones": "Impacto muy suave, soltando brazos y hombros.",
             "repsOTiempo": "30 a 40 segundos",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Elevación cardiovascular y Temperatura corporal",
+            "musculoObjetivo": "Activar el cuerpo y ritmo cardíaco",
             "consejo": "Aterriza con la parte media del pie, no con el talón.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "cardio-warm-01.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "cardio-warm-01.svg"
+            }
           },
           {
             "id": "cardio-warm-02",
-            "nombre": "Jumping Jacks (Saltos en tijera)",
+            "nombre": "Saltos abriendo brazos y piernas",
             "instrucciones": "Saltos coordinados abriendo y cerrando piernas y brazos de forma rítmica.",
             "repsOTiempo": "25 a 30 saltos o 30s",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Sistema cardiovascular y Coordinación motora",
+            "musculoObjetivo": "Corazón y respiración y Coordinación motora",
             "consejo": "Mantén las rodillas ligeramente dobladas al amortiguar el aterrizaje.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "cardio-warm-02.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "cardio-warm-02.svg"
+            }
           },
           {
             "id": "cardio-warm-03",
@@ -1794,29 +2250,38 @@
             "musculoObjetivo": "Tendón de Aquiles, Gemelos y Sóleo",
             "consejo": "Apenas 2 o 3 centímetros de elevación del suelo son suficientes.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "cardio-warm-03.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "cardio-warm-03.svg"
+            }
           },
           {
             "id": "cardio-warm-04",
-            "nombre": "High Knees (Rodillas altas dinámicas)",
+            "nombre": "Rodillas arriba en el sitio",
             "instrucciones": "Subir rodillas alternas hacia el pecho a ritmo ágil braceando.",
             "repsOTiempo": "20 a 30 segundos continuos",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Flexores de cadera y Potencia aeróbica",
+            "musculoObjetivo": "Cadera y Resistencia",
             "consejo": "Mantén el torso ligeramente inclinado al frente con núcleo firme.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "cardio-warm-04.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "cardio-warm-04.svg"
+            }
           },
           {
             "id": "cardio-warm-05",
-            "nombre": "Butt Kicks (Talones a los glúteos)",
+            "nombre": "Talones atrás hacia los glúteos",
             "instrucciones": "Llevar talones rápidamente hacia los glúteos en carrera estacionaria.",
             "repsOTiempo": "20 a 30 segundos",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Cuádriceps dinámicos y Cadencia",
+            "musculoObjetivo": "Muslos dinámicos y Cadencia",
             "consejo": "Mantén un braceo atlético activo coordinado con los pies.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "cardio-warm-05.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "cardio-warm-05.svg"
+            }
           },
           {
             "id": "cardio-warm-06",
@@ -1824,43 +2289,55 @@
             "instrucciones": "En posición atlética baja, dar 2 o 3 pasos laterales rápidos a cada lado tocando el suelo.",
             "repsOTiempo": "30 segundos continuos",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Abductores, Glúteo medio y Agilidad",
+            "musculoObjetivo": "Cadera lateral, Glúteos y Agilidad",
             "consejo": "Permanece bajo y no cruces los pies.",
             "equipamiento": "Espacio libre",
-            "media": { "tipo": "svg", "archivo": "cardio-warm-06.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "cardio-warm-06.svg"
+            }
           },
           {
             "id": "cardio-warm-07",
-            "nombre": "Patinadores laterales (Skater Hops)",
+            "nombre": "Patinadores laterales",
             "instrucciones": "Saltar lateralmente de un pie al otro cruzando la pierna libre por detrás.",
             "repsOTiempo": "16 a 20 saltos alternados",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Estabilidad lateral, Tobillos y Glúteo medio",
+            "musculoObjetivo": "Estabilidad lateral, Tobillos y Glúteos",
             "consejo": "Amortigua suavemente flexionando la rodilla de recepción.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "cardio-warm-07.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "cardio-warm-07.svg"
+            }
           },
           {
             "id": "cardio-warm-08",
-            "nombre": "Golpes de boxeo directos al aire (Jab-Cross continuo)",
+            "nombre": "Golpes de boxeo directos al aire",
             "instrucciones": "De pie en guardia atlética, lanzar puños rectos continuos rotando caderas y hombros.",
             "repsOTiempo": "30 segundos rítmicos",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Hombros, Core y Elevación térmica",
+            "musculoObjetivo": "Hombros, Abdomen y Elevación térmica",
             "consejo": "Exhala con cada impacto imaginario.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "cardio-warm-08.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "cardio-warm-08.svg"
+            }
           },
           {
             "id": "cardio-warm-09",
-            "nombre": "Zancadas con salto suave alternadas (Split Jumps suaves)",
+            "nombre": "Zancadas con salto suave alternadas",
             "instrucciones": "Zancadas alternadas cambiando de pierna con un pequeño salto intermedio amortiguado.",
             "repsOTiempo": "12 a 14 saltos",
             "duracionSegundos": 30,
             "musculoObjetivo": "Reactividad muscular en piernas",
             "consejo": "Si sientes mucho impacto, hazlo como zancadas rápidas sin despegar el pie.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "cardio-warm-09.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "cardio-warm-09.svg"
+            }
           },
           {
             "id": "cardio-warm-10",
@@ -1871,7 +2348,10 @@
             "musculoObjetivo": "Movilidad de cadera y Coordinación",
             "consejo": "Mueve los brazos en oposición.",
             "equipamiento": "Espacio para caminar",
-            "media": { "tipo": "svg", "archivo": "cardio-warm-10.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "cardio-warm-10.svg"
+            }
           },
           {
             "id": "cardio-warm-11",
@@ -1879,21 +2359,27 @@
             "instrucciones": "Sentadilla suave y al subir ponerse inmediatamente de puntillas arriba con potencia.",
             "repsOTiempo": "12 a 15 reps",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Cuádriceps, Glúteos y Gemelos",
+            "musculoObjetivo": "Muslos, Glúteos y Gemelos",
             "consejo": "Prepara la triple extensión de tobillo, rodilla y cadera.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "cardio-warm-11.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "cardio-warm-11.svg"
+            }
           },
           {
             "id": "cardio-warm-12",
-            "nombre": "Burpees suaves sin flexión (Sprawls)",
+            "nombre": "Burpees suaves sin flexión",
             "instrucciones": "Manos al suelo, lanzar pies atrás a posición de plancha y regresar con un salto vertical.",
             "repsOTiempo": "8 a 10 reps rítmicas",
             "duracionSegundos": 30,
             "musculoObjetivo": "Cuerpo completo y Frecuencia cardíaca",
             "consejo": "Mantén la plancha firme sin dejar caer las lumbares.",
             "equipamiento": "Colchoneta o suelo",
-            "media": { "tipo": "svg", "archivo": "cardio-warm-12.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "cardio-warm-12.svg"
+            }
           },
           {
             "id": "cardio-warm-13",
@@ -1901,21 +2387,27 @@
             "instrucciones": "Salto lateral flexionando la cadera y tocando el pie con la mano opuesta.",
             "repsOTiempo": "14 a 16 reps",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Glúteos, Core y Cadena posterior",
+            "musculoObjetivo": "Glúteos, Abdomen y Cadena posterior",
             "consejo": "Mantén la espalda recta en la flexión.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "cardio-warm-13.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "cardio-warm-13.svg"
+            }
           },
           {
             "id": "cardio-warm-14",
-            "nombre": "Trote con patadas de talón al frente (Heel touches)",
+            "nombre": "Trote con patadas de talón al frente",
             "instrucciones": "Trote corto sacando talones al frente tocando el suelo con el talón alternadamente.",
             "repsOTiempo": "30 segundos",
             "duracionSegundos": 30,
-            "musculoObjetivo": "Tibiales y Cadena anterior",
+            "musculoObjetivo": "Tobillos y espinillas y Cadena anterior",
             "consejo": "Ritmo suelto y ligero.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "cardio-warm-14.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "cardio-warm-14.svg"
+            }
           },
           {
             "id": "cardio-warm-15",
@@ -1926,7 +2418,10 @@
             "musculoObjetivo": "Apertura diafragmática y Enfoque mental",
             "consejo": "Último ejercicio para regular respiración antes de arrancar a correr o hacer HIIT.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "cardio-warm-15.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "cardio-warm-15.svg"
+            }
           }
         ]
       },
@@ -1940,21 +2435,27 @@
             "instrucciones": "Punta del pie en el borde de un escalón o disco, dejando caer el talón hacia abajo por gravedad.",
             "repsOTiempo": "30 a 45s por pierna",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Gastrocnemio y Tendón de Aquiles",
+            "musculoObjetivo": "Pantorrillas y tobillo",
             "consejo": "Permite que el peso del cuerpo estire la pantorrilla sin forzar con rebotes.",
             "equipamiento": "Escalón, bordillo o disco",
-            "media": { "tipo": "svg", "archivo": "cardio-cool-01.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "cardio-cool-01.svg"
+            }
           },
           {
             "id": "cardio-cool-02",
-            "nombre": "Sóleo en pared con rodilla doblada",
+            "nombre": "Pantorrilla en pared con rodilla doblada",
             "instrucciones": "Punta contra pared como en gemelos pero flexionando ligeramente la rodilla de atrás 15°.",
             "repsOTiempo": "30 a 45s por pierna",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Músculo sóleo profundo",
+            "musculoObjetivo": "Pantorrilla",
             "consejo": "Crucial tras correr, cinta rodante o saltos de cuerda continuos.",
             "equipamiento": "Pared",
-            "media": { "tipo": "svg", "archivo": "cardio-cool-02.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "cardio-cool-02.svg"
+            }
           },
           {
             "id": "cardio-cool-03",
@@ -1962,21 +2463,27 @@
             "instrucciones": "Cruzar un tobillo sobre el muslo opuesto y acercar la pierna hacia el pecho con ambas manos.",
             "repsOTiempo": "35 a 45s por lado",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Glúteo medio y Rotadores externos de cadera",
+            "musculoObjetivo": "Glúteos y Rotadores externos de cadera",
             "consejo": "Siente cómo cede la tensión del impacto repetitivo.",
             "equipamiento": "Colchoneta o banco",
-            "media": { "tipo": "svg", "archivo": "cardio-cool-03.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "cardio-cool-03.svg"
+            }
           },
           {
             "id": "cardio-cool-04",
-            "nombre": "Isquiotibiales de pie con piernas cruzadas",
+            "nombre": "Parte trasera del muslo de pie",
             "instrucciones": "Cruzar una pierna por delante de la otra y bajar lentamente el torso a tocar los pies.",
             "repsOTiempo": "30 a 45s por cruce",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Isquiotibiales y Banda iliotibial",
+            "musculoObjetivo": "Parte trasera del muslo y Lateral del muslo",
             "consejo": "Deja caer la cabeza y los brazos relajando el cuello.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "cardio-cool-04.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "cardio-cool-04.svg"
+            }
           },
           {
             "id": "cardio-cool-05",
@@ -1984,10 +2491,13 @@
             "instrucciones": "Acostado sobre un costado, sujetar el empeine superior y llevar el talón al glúteo con pelvis neutra.",
             "repsOTiempo": "30 a 45s por pierna",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Cuádriceps y Flexores de cadera",
+            "musculoObjetivo": "Muslos y Cadera",
             "consejo": "Tumbado es mucho más fácil evitar arquear la zona lumbar que de pie.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "cardio-cool-05.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "cardio-cool-05.svg"
+            }
           },
           {
             "id": "cardio-cool-06",
@@ -1995,76 +2505,97 @@
             "instrucciones": "Sentado, tomar con la mano los dedos del pie y jalarlos firmemente hacia la espinilla.",
             "repsOTiempo": "30 a 45s por pie",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Fascia plantar y Arco del pie",
+            "musculoObjetivo": "Planta del pie",
             "consejo": "Evita la temida fascitis plantar provocada por el calzado de gym y los saltos.",
             "equipamiento": "Ninguno",
-            "media": { "tipo": "svg", "archivo": "cardio-cool-06.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "cardio-cool-06.svg"
+            }
           },
           {
             "id": "cardio-cool-07",
-            "nombre": "Estiramiento de psoas con rodilla en suelo y torso alto",
+            "nombre": "Estiramiento frontal de cadera con rodilla en suelo y torso alto",
             "instrucciones": "Paso amplio con rodilla en colchoneta, empujando cadera hacia adelante con manos en rodilla delantera.",
             "repsOTiempo": "35 a 45s por lado",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Psoas ilíaco",
+            "musculoObjetivo": "Frente de la cadera",
             "consejo": "Compensa el acortamiento provocado por el pedaleo en bicicleta o la zancada de carrera.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "cardio-cool-07.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "cardio-cool-07.svg"
+            }
           },
           {
             "id": "cardio-cool-08",
-            "nombre": "Estiramiento de aductores en cuclillas abiertas (Frog squat hold)",
+            "nombre": "Estiramiento de aductores en cuclillas abiertas",
             "instrucciones": "En sentadilla profunda, apoyar codos en la cara interna de las rodillas y empujar hacia afuera con palmas juntas.",
             "repsOTiempo": "35 a 45s continuo",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Aductores y Movilidad de tobillo",
+            "musculoObjetivo": "Parte interna del muslo y Movilidad de tobillo",
             "consejo": "Mantén los talones en el suelo; si no llegas, coloca una toalla bajo los talones.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "cardio-cool-08.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "cardio-cool-08.svg"
+            }
           },
           {
             "id": "cardio-cool-09",
-            "nombre": "Isquiotibiales con pierna estirada en valla o banco",
+            "nombre": "Parte trasera del muslo en banco",
             "instrucciones": "Apoyar talón sobre un banco o valla, flexionar tobillo y acercar el ombligo al muslo.",
             "repsOTiempo": "30 a 40s por pierna",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Isquiotibiales y Pantorrilla",
+            "musculoObjetivo": "Parte trasera del muslo y Pantorrilla",
             "consejo": "Mantén la pierna de apoyo ligeramente desbloqueada.",
             "equipamiento": "Banco o soporte",
-            "media": { "tipo": "svg", "archivo": "cardio-cool-09.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "cardio-cool-09.svg"
+            }
           },
           {
             "id": "cardio-cool-10",
-            "nombre": "Estiramiento de la banda iliotibial apoyado en pared",
+            "nombre": "Lateral de la cadera apoyado en pared",
             "instrucciones": "De pie de lado a la pared, cruzar la pierna externa por detrás y empujar la cadera hacia el muro.",
             "repsOTiempo": "30 a 40s por lado",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Banda iliotibial (prevención de rodilla de corredor)",
+            "musculoObjetivo": "Lateral del muslo y rodilla",
             "consejo": "Siente el estiramiento a lo largo de toda la cara lateral del muslo.",
             "equipamiento": "Pared",
-            "media": { "tipo": "svg", "archivo": "cardio-cool-10.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "cardio-cool-10.svg"
+            }
           },
           {
             "id": "cardio-cool-11",
-            "nombre": "Estiramiento de tibiales sentado sobre talones con empeines planos",
+            "nombre": "Estiramiento de empeines sentado sobre talones",
             "instrucciones": "De rodillas con empeines en suelo, sentarse suavemente sobre los talones descargando la espinilla.",
             "repsOTiempo": "30 a 40s suave",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Tibial anterior y Tendones del empeine",
+            "musculoObjetivo": "Tobillos y empeine",
             "consejo": "Alivia el dolor de espinillas (periostitis) post-impacto.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "cardio-cool-11.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "cardio-cool-11.svg"
+            }
           },
           {
             "id": "cardio-cool-12",
-            "nombre": "Pose de la paloma profunda en suelo (Pigeon Pose)",
+            "nombre": "Estiramiento profundo de glúteo en suelo",
             "instrucciones": "Pierna delantera doblada a 90° en colchoneta, pierna trasera estirada, dejando caer el torso al suelo.",
             "repsOTiempo": "40s por pierna",
             "duracionSegundos": 40,
             "musculoObjetivo": "Glúteos profundos y Piramidal",
             "consejo": "Desactiva la hipertonía del glúteo acumulada en sprints o cuestas.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "cardio-cool-12.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "cardio-cool-12.svg"
+            }
           },
           {
             "id": "cardio-cool-13",
@@ -2072,32 +2603,41 @@
             "instrucciones": "En posición de V invertida, empujar un talón al suelo y luego el otro pedaleando suavemente.",
             "repsOTiempo": "35 a 45s sostenido",
             "duracionSegundos": 35,
-            "musculoObjetivo": "Gemelos, Sóleo e Isquios",
+            "musculoObjetivo": "Gemelos, Sóleo e Parte trasera del muslo",
             "consejo": "Siente el estiramiento en la pantorrilla con cada talón que baja.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "cardio-cool-13.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "cardio-cool-13.svg"
+            }
           },
           {
             "id": "cardio-cool-14",
-            "nombre": "Elevación de piernas en pared (Viparita Karani)",
+            "nombre": "Elevación de piernas en pared",
             "instrucciones": "Acostado boca arriba con glúteos pegados a la pared y piernas totalmente verticales hacia arriba.",
             "repsOTiempo": "60 segundos relajado",
             "duracionSegundos": 60,
-            "musculoObjetivo": "Retorno venoso, Drenaje linfático y Descarga de piernas",
+            "musculoObjetivo": "Descanso y circulación de piernas",
             "consejo": "El mejor ejercicio para acelerar la recuperación y reducir pesadez en piernas tras cardio.",
             "equipamiento": "Pared lisa",
-            "media": { "tipo": "svg", "archivo": "cardio-cool-14.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "cardio-cool-14.svg"
+            }
           },
           {
             "id": "cardio-cool-15",
-            "nombre": "Savasana con respiración lenta 4-7-8",
+            "nombre": "Relajación final con respiración lenta",
             "instrucciones": "Tumbado bocarriba con ojos cerrados, inhalar en 4s, retener 7s y exhalar en 8s por la boca.",
             "repsOTiempo": "6 ciclos de respiración profunda",
             "duracionSegundos": 45,
-            "musculoObjetivo": "Sistema nervioso parasimpático y Regulación cardíaca",
+            "musculoObjetivo": "Relajación y respiración",
             "consejo": "Baja la frecuencia cardíaca y el cortisol para entrar en modo recuperación óptima.",
             "equipamiento": "Colchoneta",
-            "media": { "tipo": "svg", "archivo": "cardio-cool-15.svg" }
+            "media": {
+              "tipo": "svg",
+              "archivo": "cardio-cool-15.svg"
+            }
           }
         ]
       }
