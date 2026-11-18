@@ -527,13 +527,15 @@ body {
 
 .train-hero-body {
   display: flex;
+  flex-direction: column-reverse;
   align-items: center;
-  justify-content: space-between;
-  gap: 12px;
+  justify-content: center;
+  text-align: center;
+  gap: 6px;
 }
 
 .train-hero-info {
-  flex: 1;
+  width: 100%;
   min-width: 0;
 }
 
@@ -545,15 +547,15 @@ body {
   letter-spacing: 1px;
   text-transform: uppercase;
   background: rgba(255, 255, 255, 0.2);
-  padding: 4px 10px;
+  padding: 4px 12px;
   border-radius: 999px;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 .train-title {
   font-family: 'Anton', sans-serif;
-  font-size: 32px;
-  line-height: 1.08;
+  font-size: 34px;
+  line-height: 1.06;
   letter-spacing: 0.4px;
   color: #ffffff;
 }
@@ -562,25 +564,27 @@ body {
   font-family: 'Antonio', sans-serif;
   font-weight: 300;
   font-size: 15px;
-  color: rgba(255, 255, 255, 0.9);
-  margin-top: 6px;
+  color: rgba(255, 255, 255, 0.92);
+  margin-top: 4px;
   letter-spacing: 0.3px;
 }
 
 .train-hero-art {
-  width: 108px;
-  height: 108px;
+  width: 240px;
+  height: 215px;
+  max-width: 78%;
   flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: -10px;
 }
 
 .train-hero-art img {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.22));
+  filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.26));
 }
 
 /* Tabs Before / After */
