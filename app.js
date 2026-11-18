@@ -144,7 +144,13 @@ function renderTrainScreen() {
       `;
 
       item.addEventListener('click', () => {
-        item.classList.toggle('expanded');
+        const wasExpanded = item.classList.contains('expanded');
+        trainExerciseList.querySelectorAll('.exercise-item.expanded').forEach(el => {
+          el.classList.remove('expanded');
+        });
+        if (!wasExpanded) {
+          item.classList.add('expanded');
+        }
       });
 
       trainExerciseList.appendChild(item);
