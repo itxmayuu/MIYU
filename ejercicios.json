@@ -355,7 +355,7 @@
     {
       "id": "brazos",
       "nombre": "Brazos",
-      "subtitulo": "Arm Day (Bíceps, Tríceps y Antebrazo)",
+      "subtitulo": "Arm Day",
       "icono": "💪",
       "color": "#eab308",
       "descripcion": "Activación articular de codos, muñecas y hombro lateral antes de curl o fondos; descompresión fascial de brazos y antebrazos.",
@@ -705,7 +705,7 @@
     {
       "id": "pecho",
       "nombre": "Pecho",
-      "subtitulo": "Chest Day (Pectoral y Deltoides Anterior)",
+      "subtitulo": "Chest Day",
       "icono": "🫁",
       "color": "#ef4444",
       "descripcion": "Calentamiento de manguito rotador, serratos y deltoides anterior antes de presses; apertura, descompresión y relajación pectoral al finalizar.",
@@ -1055,7 +1055,7 @@
     {
       "id": "espalda",
       "nombre": "Espalda",
-      "subtitulo": "Back Day (Dorsal, Trapecio y Deltoides Posterior)",
+      "subtitulo": "Back Day",
       "icono": "🪽",
       "color": "#06b6d4",
       "descripcion": "Activación escapular, bisagra lumbar y calentamiento de deltoides posterior antes de jalones y remos; descompresión de columna y dorsales.",

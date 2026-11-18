@@ -114,14 +114,11 @@ function renderTrainScreen() {
   const phaseData = groupData[state.selectedPhase];
   const exercises = (phaseData && Array.isArray(phaseData.ejercicios)) ? phaseData.ejercicios : [];
 
-  const totalSeconds = exercises.reduce((acc, ex) => acc + (ex.duracionSegundos || 30), 0);
-  const totalMinutes = (totalSeconds / 60).toFixed(1).replace('.0', '');
-
   if (trainGroupLabel) trainGroupLabel.textContent = groupData.nombre.toUpperCase();
   if (trainTitle) trainTitle.textContent = groupData.subtitulo || groupData.nombre;
   if (trainSummary) {
     const phaseLabel = isAfter ? 'Estiramiento estático' : 'Calentamiento dinámico';
-    trainSummary.textContent = `${exercises.length} ejercicios · ~${totalMinutes} min · ${phaseLabel}`;
+    trainSummary.textContent = `${exercises.length} ejercicios disponibles · ${phaseLabel}`;
   }
   if (trainPhaseDesc) {
     trainPhaseDesc.textContent = groupData.descripcion || '';
