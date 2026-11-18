@@ -7,6 +7,7 @@ const ASSETS = [
   './audio.js',
   './ejercicios.json',
   './manifest.json',
+  './assets/miyu/apple-touch-icon.png',
   './assets/miyu/miyu-icon.svg',
   './assets/miyu/miyu-welcome.svg',
   './assets/topics/leg.svg',
