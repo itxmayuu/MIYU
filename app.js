@@ -249,7 +249,14 @@ function updateTimerUI() {
     progressFill.style.width = `${Math.max(0, Math.min(100, pct))}%`;
   }
   if (btnPlayPause) {
-    btnPlayPause.textContent = state.player.isRunning ? '⏸' : '▶';
+    btnPlayPause.innerHTML = state.player.isRunning
+      ? `<svg class="mood-play-svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+           <rect x="6" y="5" width="4" height="14" rx="1.5"></rect>
+           <rect x="14" y="5" width="4" height="14" rx="1.5"></rect>
+         </svg>`
+      : `<svg class="mood-play-svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+           <path d="M8 5.5v13l11-6.5-11-6.5z"></path>
+         </svg>`;
   }
 }
 
@@ -288,7 +295,12 @@ function loadCurrentPlayerExercise(autoAnnounce = true) {
     seqNav.style.display = queue.length > 1 ? 'flex' : 'none';
   }
   if (prevBtn) prevBtn.disabled = currentIndex === 0;
-  if (nextBtn) nextBtn.disabled = currentIndex >= queue.length - 1;
+  if (nextBtn) {
+    const isLast = currentIndex >= queue.length - 1;
+    nextBtn.disabled = false;
+    nextBtn.textContent = isLast ? 'Listo ✓' : 'Siguiente →';
+    nextBtn.classList.toggle('is-finish', isLast);
+  }
 
   updateTimerUI();
 
@@ -310,13 +322,18 @@ function showCompletedView() {
   if (completedView) completedView.style.display = 'flex';
 
   const isSingle = state.player.queue.length === 1;
+  const isAfter = state.selectedPhase === 'estiramiento';
   if (doneTitle) {
     doneTitle.textContent = isSingle ? '¡Ejercicio completado!' : '¡Rutina completada!';
   }
   if (doneSub) {
-    doneSub.textContent = isSingle
-      ? 'Buen trabajo. Puedes repetirlo o volver a elegir otro.'
-      : 'Completaste tus 5 ejercicios. ¡Ya estás listo para darlo todo!';
+    if (isSingle) {
+      doneSub.textContent = 'Buen trabajo. Puedes repetirlo o volver a elegir otro.';
+    } else {
+      doneSub.textContent = isAfter
+        ? 'Buen trabajo, ya puedes descansar'
+        : 'Buen trabajo, ya puedes ir a entrenar';
+    }
   }
 
   if (!state.player.audioMuted && window.soundManager) {
@@ -548,6 +565,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         state.player.currentIndex += 1;
         loadCurrentPlayerExercise(true);
         if (state.player.isRunning) startTimerLoop();
+      } else {
+        showCompletedView();
       }
     });
   }

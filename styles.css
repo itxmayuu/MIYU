@@ -1053,6 +1053,12 @@ body {
   transform: scale(0.94);
 }
 
+.mood-play-svg {
+  width: 28px;
+  height: 28px;
+  display: block;
+}
+
 /* Navegación entre ejercicios */
 .mood-sequence-nav {
   width: 100%;
@@ -1072,7 +1078,13 @@ body {
   font-weight: 600;
   padding: 9px 16px;
   cursor: pointer;
-  transition: opacity 0.15s ease, transform 0.12s ease;
+  transition: opacity 0.15s ease, transform 0.12s ease, background-color 0.2s ease;
+}
+
+.mood-seq-btn.is-finish {
+  background-color: var(--group-theme);
+  color: #ffffff;
+  padding: 9px 20px;
 }
 
 .mood-seq-btn:disabled {
