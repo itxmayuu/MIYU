@@ -122,15 +122,14 @@ function renderTrainScreen() {
   if (trainExerciseList) {
     trainExerciseList.innerHTML = '';
 
-    exercises.forEach((ex, index) => {
-      const num = index + 1;
+    exercises.forEach((ex) => {
       const seg = ex.duracionSegundos || 30;
 
       const item = document.createElement('div');
       item.className = 'exercise-item';
       item.innerHTML = `
         <div class="exercise-row">
-          <div class="exercise-num">${num}</div>
+          <div class="exercise-play-icon" aria-hidden="true">▶</div>
           <div class="exercise-main">
             <div class="exercise-name">${ex.nombre}</div>
             <div class="exercise-muscle">${ex.musculoObjetivo || ''}</div>
@@ -138,8 +137,15 @@ function renderTrainScreen() {
           <div class="exercise-badge">${seg} SEG</div>
         </div>
         <div class="exercise-details">
-          <div>${ex.instrucciones || ''}</div>
-          ${ex.consejo ? `<div class="exercise-detail-tip">${ex.consejo}</div>` : ''}
+          <div class="exercise-guide-block">
+            <span class="detail-tag">GUÍA</span>
+            <p class="detail-text">${ex.instrucciones || ''}</p>
+          </div>
+          ${ex.consejo ? `
+          <div class="exercise-tip-block">
+            <span class="detail-tag">💡 TIP</span>
+            <p class="detail-text">${ex.consejo}</p>
+          </div>` : ''}
         </div>
       `;
 
